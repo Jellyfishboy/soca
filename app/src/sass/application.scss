@@ -8,14 +8,19 @@ $yellow: #FFF200;
 $red: #ED1C24;
 $magenta: #F06EA9;
 
-$menuOffset: 80%;
+$menuOffset: 50%;
+$transitionSpeed: .5s;
 
 p {
     margin:0 0 10px;
 }
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size:1em;
+}
 .main {
     margin:60px 0 0 60px;
-    padding:30px 0 0 30px;
+    padding:30px;
 }
 .mobile {
     display:none;
@@ -25,6 +30,12 @@ p {
 }
 .menu-trigger-handler {
     display:none;
+}
+.all-wrapper {
+    // -webkit-transform: translate3D(0,0,0);
+    // -moz-transform: translate3D(0,0,0);
+    // -webkit-transition: -webkit-transform $transitionSpeed ease-in-out;
+    // -moz-transition: -moz-transform $transitionSpeed ease-in-out;
 }
 header {
     background-color: #CDC9C9;
@@ -58,13 +69,15 @@ header {
     top:0px;
     bottom:0px;
     margin-top:60px;
-    background-color:#23282d;
+    background-color:#2f363d;
         ul {
             margin-top:50px;
             padding:0px;
                 li {
                     text-align:center;
-                    padding:7px 0;
+                    padding:10px 0;
+                    border-bottom: 1px solid #0d1012;
+                    border-top:1px solid #3b444c;
                         i {
                             font-size:1.1em;
                         }
@@ -102,10 +115,52 @@ header {
     bottom: 0;
     width: $menuOffset;
     z-index: 1;
-    background: #333;
+    background: #2f363d;
     overflow: auto;
     opacity: 0;
     -webkit-transition: opacity 0s 0s;
+        ul {
+            -webkit-overflow-scrolling: touch;
+            padding:0;
+            margin:0;
+                li {
+                    padding:10px 0;
+                    border-bottom: 1px solid #0d1012;
+                    border-top:1px solid #3b444c;
+                    color:#f0f0f0;
+                        i {
+                            margin:0 10px 0 10px;
+                        }
+                        span {
+                            text-shadow: 0 1px 0 #000;
+                        }
+                        &.current {
+                            background-color: #0d1012;
+                            color:#fff;
+                        }
+                        &:first-child i {
+                            color:$blue;
+                        }
+                        &:nth-child(2) i {
+                            color:$purple;
+                        }
+                        &:nth-child(3) i {
+                            color:$green;
+                        }
+                        &:nth-child(4) i {
+                            color:$orange;
+                        }
+                        &:nth-child(5) i {
+                            color:$yellow;
+                        }
+                        &:nth-child(6) i {
+                            color:$red;
+                        }
+                        &:last-child i {
+                            color:$magenta;
+                        }
+                }
+        }
 }
 @media handheld, only screen and (max-width: 500px) {
     body {
@@ -126,15 +181,11 @@ header {
     
             & ~ #slide-menu {
                 opacity: 1;
-                transform: opacity 0s 0s;
-                -webkit-transition: opacity 0s 0s;
-                -moz-transition: opacity 0s 0s;
+                @include transform(opacity 0s 0s);
             }
         
             & ~ .all-wrapper {
-                transform: translate3D($menuOffset,0,0);
-                -webkit-transform: translate3D($menuOffset,0,0);
-                -moz-transform: translate3D($menuOffset,0,0);
+                @include transform3d(translate3D($menuOffset,0,0));
                 overflow: hidden;
             }
         }
