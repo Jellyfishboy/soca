@@ -1,3 +1,143 @@
+@import "compass/css3";
+
+$blue: #00AEEF;
+$purple: #855FA8;
+$green: #8DC73F;
+$orange: #F7941D;
+$yellow: #FFF200;
+$red: #ED1C24;
+$magenta: #F06EA9;
+
+$menuOffset: 80%;
+
 p {
-    font-size:30px;
+    margin:0 0 10px;
+}
+.main {
+    margin:60px 0 0 60px;
+    padding:30px 0 0 30px;
+}
+.mobile {
+    display:none;
+}
+.desktop {
+    display: block;
+}
+.menu-trigger-handler {
+    display:none;
+}
+header {
+    background-color: #CDC9C9;
+    height:60px;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1030;
+        #logo {
+            height:60px;
+            width:60px;
+            background-color:#fff;
+        }
+        #menu-trigger {
+            background-color:#fff;
+            color:rgba(35,40,45, 1);
+            padding:7px;
+            height:40px;
+            width:40px;
+            text-align:center;
+            @include box-sizing(border-box);
+            font-size:1.4em;
+            margin:10px 0 0 10px;
+            vertical-align: center;
+            cursor:pointer;
+        }
+}
+#sidebar {
+    position: fixed;
+    width:60px;
+    top:0px;
+    bottom:0px;
+    margin-top:60px;
+    background-color:#23282d;
+        ul {
+            margin-top:50px;
+            padding:0px;
+                li {
+                    text-align:center;
+                    padding:7px 0;
+                        i {
+                            font-size:1.1em;
+                        }
+                        &.current {
+                            background-color: #0d1012;
+                        }
+                        &:first-child {
+                            color:$blue;
+                        }
+                        &:nth-child(2) {
+                            color:$purple;
+                        }
+                        &:nth-child(3) {
+                            color:$green;
+                        }
+                        &:nth-child(4) {
+                            color:$orange;
+                        }
+                        &:nth-child(5) {
+                            color:$yellow;
+                        }
+                        &:nth-child(6) {
+                            color:$red;
+                        }
+                        &:last-child {
+                            color:$magenta;
+                        }
+                }
+        }
+}
+#slide-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: $menuOffset;
+    z-index: 1;
+    background: #333;
+    overflow: auto;
+    opacity: 0;
+    -webkit-transition: opacity 0s 0s;
+}
+@media handheld, only screen and (max-width: 500px) {
+    body {
+        .mobile {
+            display:block;
+        }
+        .desktop {
+            display:none;
+        }
+        .sidebar, .logo {
+            display:none;
+        }
+        .main {
+            margin:60px 0 0;
+        }
+
+        #menu-trigger-input:checked {
+    
+            & ~ #slide-menu {
+                opacity: 1;
+                transform: opacity 0s 0s;
+                -webkit-transition: opacity 0s 0s;
+                -moz-transition: opacity 0s 0s;
+            }
+        
+            & ~ .all-wrapper {
+                transform: translate3D($menuOffset,0,0);
+                -webkit-transform: translate3D($menuOffset,0,0);
+                -moz-transform: translate3D($menuOffset,0,0);
+                overflow: hidden;
+            }
+        }
+        
+    }
 }
