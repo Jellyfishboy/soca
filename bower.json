@@ -1,0 +1,22 @@
+{
+  "name": "soca",
+  "version": "0.0.1",
+  "authors": [
+    "Tom Dallimore"
+  ],
+  "description": "Admin responsive template built using Yeoman, Grunt, Bower, HTML5, CSS3 and jQuery.",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "~3.0.1",
+    "modernizr": "~2.7.2",
+    "jquery": "~2.1.0"
+  }
+}
