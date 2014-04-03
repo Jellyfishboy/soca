@@ -1,0 +1,23 @@
+.btn {
+    padding:14px 14px;
+    color:#fff;
+    font-weight:bold;
+    font-size:1.1em;
+    display: inline-block;
+        &.btn-green {
+            background-color:$green;
+        }
+        &.btn-blue {
+            background-color:$blue;
+        }
+        i {
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        &.btn-normal {
+            height:50px;
+        }
+        &:hover {
+            color:#fff;
+        }
+}

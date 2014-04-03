@@ -20,10 +20,13 @@ body {
     color:$dark-grey;
 }
 .page-header {
-    margin:0;
-    padding:0 0 10px 0;
-    border-bottom:1px solid #d0d0d0;
-    margin-bottom:20px;
+        h2 {
+            margin-top:0px;
+        }
+        .btn {
+            float:right;
+            border-left:10px solid #f0f0f0;
+        }
 }
 .main {
     margin:60px 0 0 60px;
@@ -48,6 +51,9 @@ body {
 
 @import "1140";
 @import "styling";
+@import "alert";
+@import "widget";
+@import "button";
 @import "header";
 @import "sidebar";
 @import "table";
