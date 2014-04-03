@@ -1,0 +1,102 @@
+#sidebar {
+    position: fixed;
+    width:60px;
+    top:0px;
+    bottom:0px;
+    margin-top:60px;
+    background-color:$dark-grey; //28292d
+        ul {
+            margin-top:50px;
+            padding:0px;
+            border-bottom:1px solid #3b444c;
+                li {
+                    text-align:center;
+                    padding:10px 0;
+                    border-bottom: 1px solid #0d1012;
+                    border-top:1px solid #3b444c;
+                        i {
+                            font-size:1.2em;
+                        }
+                        &.current {
+                            background-color: #0d1012;
+                        }
+                        &:first-child {
+                            color:$blue;
+                        }
+                        &:nth-child(2) {
+                            color:$purple;
+                        }
+                        &:nth-child(3) {
+                            color:$green;
+                        }
+                        &:nth-child(4) {
+                            color:$orange;
+                        }
+                        &:nth-child(5) {
+                            color:$cyan;
+                        }
+                        &:nth-child(6) {
+                            color:$yellow;
+                        }
+                        &:last-child {
+                            color:$grey;
+                        }
+                }
+        }
+}
+#slide-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: $menuOffset;
+    z-index: 1;
+    background: #2f363d;
+    overflow: auto;
+    opacity: 0;
+    -webkit-transition: opacity 0s 0s;
+        ul {
+            -webkit-overflow-scrolling: touch;
+            padding:0;
+            margin:0;
+            border-bottom:1px solid #3b444c;
+                li {
+                    padding:10px 0;
+                    border-bottom: 1px solid #0d1012;
+                    border-top:1px solid #3b444c;
+                    color:#f0f0f0;
+                        i {
+                            margin:0 10px 0 10px;
+                        }
+                        span {
+                            text-shadow: 0 1px 0 #0d1012;
+                            font-size:0.9em;
+                        }
+                        &.current {
+                            background-color: #0d1012;
+                            color:#fff;
+                        }
+                        &:first-child i {
+                            color:$blue;
+                        }
+                        &:nth-child(2) i {
+                            color:$purple;
+                        }
+                        &:nth-child(3) i {
+                            color:$green;
+                        }
+                        &:nth-child(4) i {
+                            color:$orange;
+                        }
+                        &:nth-child(5) i {
+                            color:$cyan;
+                        }
+                        &:nth-child(6) i {
+                            color:$yellow;
+                        }
+                        &:last-child i {
+                            color:$grey;
+                        }
+                }
+        }
+}

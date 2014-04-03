@@ -1,0 +1,26 @@
+header {
+    background-color: $light-grey;
+    height:60px;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1030;
+        #logo {
+            height:60px;
+            width:60px;
+            background-color:#fff;
+        }
+        #menu-trigger {
+            background-color:#fff;
+            color:rgba(35,40,45, 1);
+            padding:7px;
+            height:40px;
+            width:40px;
+            text-align:center;
+            @include box-sizing(border-box);
+            font-size:1.4em;
+            margin:10px 0 0 10px;
+            vertical-align: center;
+            cursor:pointer;
+        }
+}

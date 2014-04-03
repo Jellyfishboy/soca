@@ -1,0 +1,21 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+}
+*:before, *:after {
+    @include box-sizing(border-box);
+}
+a {
+    text-decoration: none;
+    color:$dark-grey;
+        &:hover {
+            color:$blue;
+        }
+}
+p {
+    margin:0 0 10px;
+}
+h2 {
+    font-weight:200;
+    // border-bottom:
+}

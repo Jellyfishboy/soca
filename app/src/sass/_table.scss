@@ -1,0 +1,25 @@
+.table {
+    width:100%;
+    background-color:transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+        th {
+            text-align: left;
+        }
+        td, th {
+            padding:8px;
+            border-right: 1px solid $light-grey;
+                &:last-child {
+                    border-right:0;
+                }
+        }
+        tbody tr td:last-child {
+            text-align: right;
+        }
+}
+.table-striped tbody tr:nth-child(odd) {
+    background-color:#f9f9f9;
+}
+.table-hover thead tr:hover th, .table-hover tbody tr:hover td {
+    background-color:#f9f8ef;
+}
