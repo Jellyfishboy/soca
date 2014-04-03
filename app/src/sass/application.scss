@@ -58,7 +58,7 @@ body {
 @import "sidebar";
 @import "table";
 
-@media handheld, only screen and (max-width: 500px) {
+@media handheld, only screen and (max-width: 700px) {
     body {
         .mobile {
             display:block;
