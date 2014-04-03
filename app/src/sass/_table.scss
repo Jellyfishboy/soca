@@ -15,6 +15,12 @@
         }
         tbody tr td:last-child {
             text-align: right;
+                a {
+                    margin-right: 3px;  
+                        &:last-child {
+                            margin-right: 0px;
+                        }
+                }
         }
 }
 .table-striped tbody tr:nth-child(odd) {
