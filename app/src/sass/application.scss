@@ -10,7 +10,7 @@ $grey: #d5d5de;
 $dark-grey: #2f363d;
 $light-grey: #d0d0d0;
 
-$menuOffset: 50%;
+$menuOffset: 30%;
 $transitionSpeed: .5s;
 
 body {
@@ -47,6 +47,15 @@ body {
     // position:relative;
     // -webkit-transition: -webkit-transform $transitionSpeed ease-in-out;
     // -moz-transition: -moz-transform $transitionSpeed ease-in-out;
+}
+.attachment {
+    position: relative;
+    i {
+        position: absolute;
+        top:5px;
+        right:13px;
+        color:red;
+    }
 }
 
 @import "1140";

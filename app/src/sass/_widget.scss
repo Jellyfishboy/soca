@@ -1,10 +1,11 @@
 .widget {
     background-color:#fff;
         &.widget-header {
-            padding:10px 15px;
+            padding:10px 20px;
             margin-bottom:15px;
         }
         &.widget-form {
             padding:20px;
+            margin-bottom:15px;
         }
 }

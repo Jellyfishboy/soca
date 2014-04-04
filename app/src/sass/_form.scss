@@ -3,6 +3,18 @@ form {
         border:0;
         margin:0;
     }
+    select {
+        margin:0 0 15px;
+        outline:0;
+        width:100%;
+    }
+    .form-header {
+        padding:10px 20px;
+        background-color:rgba(208,208,208,0.5);
+            h3 {
+                margin:0;
+            }
+    }
     .form-group {
         margin-bottom:15px;
             label {
@@ -24,11 +36,24 @@ form {
             }
             textarea.form-control {
                 height:auto;
+                resize:none;
             }
     }
+    .checkbox {
+        label {
+            display: inline;
+            margin-bottom: 0;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        input {
+            margin-right:7px;
+        }
+    }
     .form-action {
-        padding:10px;
+        padding:15px;
         background-color:rgba(208,208,208,0.5);
+        overflow: hidden;
             input {
                 float:right;
             }

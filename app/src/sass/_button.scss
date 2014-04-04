@@ -4,6 +4,14 @@
     font-weight:bold;
     font-size:1.1em;
     display: inline-block;
+    white-space: nowrap;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline:0;
+    border:0;
         &.btn-green {
             background-color:$green;
         }

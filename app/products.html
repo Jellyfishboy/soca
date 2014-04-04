@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Soca admin responsive template - Products</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="css/application.css" media="screen">
+        <link rel="stylesheet" href="components/normalize-css/normalize.css" media="screen">
+        <link rel="stylesheet" href="components/fontawesome/css/font-awesome.min.css" media="screen">
+        <link rel="stylesheet" href="components/icomoon/style.css" media="screen">
+        <script src="components/modernizr/modernizr.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <input type="checkbox" name="menu-trigger-input" class="menu-trigger-handler" id="menu-trigger-input" onclick="null">
+        <div id="slide-menu" class="mobile">
+            <ul>
+                <li class="current"><i class="icon-lab"></i> <span>Categories</span></li>
+                <li><i class="icon-drawer"></i> <span>Products</span></li>
+                <li><i class="icon-power-cord"></i> <span>Accessories</span></li>
+                <li><i class="icon-cart"></i> <span>Orders</span></li>
+                <li><i class="icon-airplane"></i> <span>Shipping</span></li>
+                <li><i class="icon-earth"></i> <span>Countries</span></li>
+                <li><i class="icon-cog"></i> <span>Settings</span></li>
+            </ul>
+        </div>
+        <div class="all-wrapper">
+            <header>
+                <div id="logo" class="desktop"></div>
+                <label id="menu-trigger" class="mobile" for="menu-trigger-input" href="#">
+                    <i class="icon-menu-2"></i>
+                </label>
+                <div class="menu"></div>
+            </header>
+            <div id="sidebar" class="desktop">
+                <ul>
+                    <li class="current"><i class="icon-lab"></i></li>
+                    <li><i class="fa fa-th-large"></i></li>
+                    <li><i class="icon-power-cord"></i></li>
+                    <li><i class="icon-cart"></i></li>
+                    <li><i class="icon-airplane"></i></li>
+                    <li><i class="icon-earth"></i></li>
+                    <li><i class="icon-cog"></i></li>
+                </ul>
+            </div>
+            <div class="main"> 
+                <div class="container">
+                    <div class="row">
+                        <div class="twelvecol">
+                            <div class="page-header">
+                                <h2 class="widget widget-header">New product</h2>
+                            </div>
+                            <form method="post" role="form" action="#">
+                                <div class="form-header">
+                                    <h3>Product information</h3>
+                                </div>
+                                <fieldset class="widget widget-form">
+                                    <div class="row">
+                                        <div class="twelvecol">
+                                            <select id="product_category_id">
+                                                <option value="">Please select..</option>
+                                                <option value="3">Motor</option>
+                                                <option selected="selected" value="2">Actuator</option>
+                                                <option value="1">Accessory</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="fourcol">
+                                            <div class="form-group">
+                                                <label for="product_part_number">Part number</label>
+                                                <input class="form-control" id="product_part_number" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="fourcol">
+                                            <div class="form-group">
+                                                <label for="product_sku">SKU</label>
+                                                <input class="form-control" id="product_sku" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="fourcol last">
+                                            <div class="form-group">
+                                                <label for="product_name">Name</label>
+                                                <input class="form-control" id="product_name" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="fourcol">
+                                            <div class="form-group">
+                                                <label for="product_short_description">Short description</label>
+                                                <input class="form-control" id="product_short_description" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="fourcol">
+                                            <div class="form-group">
+                                                <label for="product_meta_description">Meta description</label>
+                                                <input class="form-control" id="product_meta_description" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="fourcol last">
+                                            <div class="form-group">
+                                                <label for="product_weighting">Weighting</label>
+                                                <input class="form-control" id="product_weighting" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="twelvecol">
+                                            <div class="form-group">
+                                                <label for="product_description">Description</label>
+                                                <textarea class="form-control" id="product_description" rows="8"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <div class="form-header">
+                                    <h3>Additional options</h3>
+                                </div>
+                                <fieldset class="widget widget-form">
+                                    <div class="row">
+                                        <div class="twocol">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" id="category_visible" checked="checked">
+                                                    Featured
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="twocol">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" id="category_visible" checked="checked">
+                                                    Single product
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="tencol last"></div>
+                                    </div>
+                                </fieldset>
+                                <div class="form-header">
+                                    <h3>Attachments</h3>
+                                </div>
+                                <fieldset class="widget widget-form">
+                                    <div class="row">
+                                        <div class="twelvecol">
+                                            <div class="row">
+                                                <div class="twocol">
+                                                    <div class="attachment">
+                                                        <img src="http://placehold.it/140x140"/>
+                                                        <i class="icon-close"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="twocol">
+                                                    <div class="attachment">
+                                                        <img src="http://placehold.it/140x140"/>
+                                                        <i class="icon-close"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="twocol">
+                                                    <div class="attachment">
+                                                        <img src="http://placehold.it/140x140"/>
+                                                        <i class="icon-close"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="twocol">
+                                                    <div class="attachment">
+                                                        <img src="http://placehold.it/140x140"/>
+                                                        <i class="icon-close"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="twocol">
+                                                    <div class="attachment">
+                                                        <img src="http://placehold.it/140x140"/>
+                                                        <i class="icon-close"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="twocol last">
+                                                    <div class="attachment">
+                                                        <img src="http://placehold.it/140x140"/>
+                                                        <i class="icon-close"></i>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <div class="form-header">
+                                    <h3>Accessories</h3>
+                                </div>
+                                <fieldset class="widget widget-form">
+                                    <div class="row">
+                                        <div class="twocol">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" id="category_visible" checked="checked">
+                                                    Accessory #1
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="twocol">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" id="category_visible" checked="checked">
+                                                    Accessory #2
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="twocol">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" id="category_visible" checked="checked">
+                                                    Accessory #3
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="twocol">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" id="category_visible" checked="checked">
+                                                    Accessory #4
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="twocol">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" id="category_visible" checked="checked">
+                                                    Accessory #5
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="twocol last">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" id="category_visible" checked="checked">
+                                                    Accessory #6
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <div class="form-header">
+                                    <h3>Related products</h3>
+                                </div>
+                                <fieldset class="widget widget-form">
+                                    <div class="row">
+                                        <div class="twocol">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" id="category_visible" checked="checked">
+                                                    Related product #1
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="twocol">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" id="category_visible" checked="checked">
+                                                    Related product #2
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="twocol">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" id="category_visible" checked="checked">
+                                                    Related product #3
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="twocol">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" id="category_visible" checked="checked">
+                                                    Related product #4
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="twocol">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" id="category_visible" checked="checked">
+                                                    Related product #5
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="twocol last">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" id="category_visible" checked="checked">
+                                                    Related product #6
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <div class="form-header">
+                                    <h3>Tags</h3>
+                                </div>
+                                <fieldset class="widget widget-form">
+                                    <div class="row">
+
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="components/jquery/dist/jquery.min.js"><\/script>')</script>
+        <script src="http://localhost:35729/livereload.js"></script>
+
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
