@@ -52,9 +52,34 @@
                     <li><i class="icon-cog"></i></li>
                 </ul>
             </div>
-            <div class="main">
-                <h2 class="page-header">Forms</h2>
-                
+            <div class="main"> 
+                <div class="container">
+                    <div class="row">
+                        <div class="eightcol">
+                             <div class="page-header">
+                                <h2 class="widget widget-header">New category</h2>
+                            </div>
+                            <form method="post" role="form" action="#">
+                                <fieldset class="widget widget-form">
+                                    <div class="form-group">
+                                        <label for="category_name">Name</label>
+                                        <input class="form-control" id="category_name" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="category_description">Description</label>
+                                        <textarea class="form-control" id="category_description" rows="8"></textarea>
+                                    </div>
+                                </fieldset>
+                                <div class="form-action">
+                                    <div class="btn btn-blue">
+                                        Submit
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="fourcol last"></div>
+                    </div>
+                </div>
             </div>
         </div>
 
