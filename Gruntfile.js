@@ -15,6 +15,10 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         watch: {
+            coffee: {
+                files: ['app/src/coffee/{,*/}*.coffee'],
+                tasks: ['coffee:server']
+            },
             options: {
                 nospawn: true
             },
@@ -30,6 +34,7 @@ module.exports = function (grunt) {
                     'app/*.html',
                     'app/css/{,*/}*.css',
                     'app/src/sass/{,*/}*.{scss,sass}',
+                    'app/src/coffee/{,*/}*.coffee',
                     'app/js/{,*/}*.js',
                     'app/img/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
                 ]
@@ -68,16 +73,34 @@ module.exports = function (grunt) {
                     debugInfo: true
                 }
             }
+        },
+        coffee: {
+            options: {
+                sourceMap: true,
+                sourceRoot: ''
+            },
+            dist: {},
+            server: {
+                files: [{
+                    expand: true,
+                    cwd: 'app/src/coffee',
+                    src: '{,*/}*.coffee',
+                    dest: 'app/js',
+                    ext: '.js'
+                }]
+            }
         }
     });
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-coffee');
     grunt.loadNpmTasks('grunt-open');
     grunt.registerTask('server', function (target) {
 
         grunt.task.run([
             'compass:server',
+            'coffee:server',
             'connect:livereload',
             'open',
             'watch'

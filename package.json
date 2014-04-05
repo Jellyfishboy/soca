@@ -11,7 +11,8 @@
     "connect-livereload": "~0.3.2",
     "grunt-open": "~0.2.3",
     "nvm": "~0.0.3",
-    "matchdep": "~0.3.0"
+    "matchdep": "~0.3.0",
+    "grunt-contrib-coffee": "~0.10.1"
   },
   "devDependencies": {},
   "scripts": {

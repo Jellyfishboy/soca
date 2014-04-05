@@ -51,13 +51,17 @@ body {
 .attachment {
     position: relative;
     display: inline-block;
-    margin:0 10px;
-    padding:10px 0;
+    margin:10px;
+    height:140px;
+    width:140px;
     i {
         position: absolute;
-        top:15px;
+        top:6px;
         right:6px;
         color:red;
+    }
+    &:first-child {
+        border:3px solid $blue;
     }
 }
 
@@ -70,6 +74,7 @@ body {
 @import "sidebar";
 @import "table";
 @import "form";
+@import "tag_input";
 
 @media handheld, only screen and (max-width: 700px) {
     body {
