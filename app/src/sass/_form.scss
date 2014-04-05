@@ -40,6 +40,9 @@ form {
             }
     }
     .checkbox {
+        display: inline-block;
+        margin-right: 25px;
+        padding:2px 0;
         label {
             display: inline;
             margin-bottom: 0;
@@ -47,7 +50,7 @@ form {
             font-weight: bold;
         }
         input {
-            margin-right:7px;
+            margin-right:5px;
         }
     }
     .form-action {

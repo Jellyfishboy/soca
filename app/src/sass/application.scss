@@ -50,10 +50,13 @@ body {
 }
 .attachment {
     position: relative;
+    display: inline-block;
+    margin:0 10px;
+    padding:10px 0;
     i {
         position: absolute;
-        top:5px;
-        right:13px;
+        top:15px;
+        right:6px;
         color:red;
     }
 }
