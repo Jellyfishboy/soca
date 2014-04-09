@@ -1,8 +1,6 @@
 .table {
     width:100%;
     background-color:#fff;
-    border-collapse: collapse;
-    border-spacing: 0;
         th {
             text-align: left;
         }
@@ -21,6 +19,23 @@
                             margin-right: 0px;
                         }
                 }
+        }
+        td {
+            &.align-left {
+                text-align:left !important;
+            }
+            &.align-right {
+                text-align: right;
+            }
+            &.border-top {
+                border-top: 1px solid $light-grey;
+            }
+        }
+        tr.focused {
+            font-size:1.2em;
+        }
+        &.table-margin {
+            margin-bottom:15px;
         }
 }
 .table-striped tbody tr:nth-child(odd) {

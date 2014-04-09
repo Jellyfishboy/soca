@@ -18,6 +18,7 @@ body {
     font-size:0.9em;
     background-color:#f0f0f0;
     color:$dark-grey;
+    line-height:1.3em;
 }
 .page-header {
         h2 {
@@ -75,6 +76,8 @@ body {
 @import "table";
 @import "form";
 @import "tag_input";
+@import "modal";
+@import "labels";
 
 @media handheld, only screen and (max-width: 700px) {
     body {

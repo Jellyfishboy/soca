@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Soca admin responsive template - Tables</title>
+        <title>Soca admin responsive template - Accessory - Form</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -52,27 +52,46 @@
                     <li><a href="settings.html"><i class="icon-cog"></i></a></li>
                 </ul>
             </div>
-            <div class="main">
+            <div class="main"> 
                 <div class="container">
                     <div class="row">
-                        <button class="btn btn-green" data-toggle="modal" data-target="#exampleModal">Launch example model</button>
-
-                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h3 class="modal-title" id="exampleModalLabel">Modal title</h3>
-                              </div>
-                              <div class="modal-body">
-                                ...
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-orange" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-blue">Save changes</button>
-                              </div>
-                            </div>
-                          </div>
+                        <div class="alert alert-info">
+                            <i class="icon-info-2"></i>
+                            This is an information notice for the template.
                         </div>
+                        <div class="eightcol">
+                             <div class="page-header">
+                                <h2 class="widget widget-header">New accessory</h2>
+                            </div>
+                            <form method="post" role="form" action="#">
+                                <fieldset class="widget widget-form widget-last">
+                                    <div class="form-group">
+                                        <label for="accessory_part_number">Part number</label>
+                                        <input class="form-control" id="accessory_part_number" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="accessory_name">Name</label>
+                                        <input class="form-control" id="accessory_name" type="text"></input>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="accessory_weight">Weight (g)</label>
+                                        <input class="form-control" id="accessory_weight" type="text"></input>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="accessory_cost_value">Cost value</label>
+                                        <input class="form-control" id="accessory_cost_value" type="text"></input>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="accessory_net_price">Net price</label>
+                                        <input class="form-control" id="accessory_net_price" type="text"></input>
+                                    </div>
+                                </fieldset>
+                                <div class="form-action">
+                                    <input class="btn btn-blue" type="submit" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="fourcol last"></div>
                     </div>
                 </div>
             </div>

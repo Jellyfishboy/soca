@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Soca admin responsive template - Tables</title>
+        <title>Soca admin responsive template - Country - Form</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -26,10 +26,10 @@
             <ul>
                 <li><a href="category-index.html"><i class="icon-lab"></i> <span>Categories</span></a></li>
                 <li><a href="product-index.html"><i class="icon-drawer"></i> <span>Products</span></a></li>
-                <li class="current"><a href="accessory-index.html"><i class="icon-power-cord"></i> <span>Accessories</span></a></li>
+                <li><a href="accessory-index.html"><i class="icon-power-cord"></i> <span>Accessories</span></a></li>
                 <li><a href="order-index.html"><i class="icon-cart"></i> <span>Orders</span></a></li>
                 <li><a href="shipping-index.html"><i class="icon-airplane"></i> <span>Shipping</span></a></li>
-                <li><a href="country-index.html"><i class="icon-earth"></i> <span>Countries</span></a></li>
+                <li class="current"><a href="country-index.html"><i class="icon-earth"></i> <span>Countries</span></a></li>
                 <li><a href="settings.html"><i class="icon-cog"></i> <span>Settings</span></a></li>
             </ul>
         </div>
@@ -45,34 +45,45 @@
                 <ul>
                     <li><a href="category-index.html"><i class="icon-lab"></i></a></li>
                     <li><a href="product-index.html"><i class="fa fa-th-large"></i></a></li>
-                    <li class="current"><a href="accessory-index.html"><i class="icon-power-cord"></i></a></li>
+                    <li><a href="accessory-index.html"><i class="icon-power-cord"></i></a></li>
                     <li><a href="order-index.html"><i class="icon-cart"></i></a></li>
                     <li><a href="shipping-index.html"><i class="icon-airplane"></i></a></li>
-                    <li><a href="country-index.html"><i class="icon-earth"></i></a></li>
+                    <li class="current"><a href="country-index.html"><i class="icon-earth"></i></a></li>
                     <li><a href="settings.html"><i class="icon-cog"></i></a></li>
                 </ul>
             </div>
-            <div class="main">
+            <div class="main"> 
                 <div class="container">
                     <div class="row">
-                        <button class="btn btn-green" data-toggle="modal" data-target="#exampleModal">Launch example model</button>
-
-                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h3 class="modal-title" id="exampleModalLabel">Modal title</h3>
-                              </div>
-                              <div class="modal-body">
-                                ...
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-orange" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-blue">Save changes</button>
-                              </div>
-                            </div>
-                          </div>
+                        <div class="alert alert-info">
+                            <i class="icon-info-2"></i>
+                            This is an information notice for the template.
                         </div>
+                        <div class="eightcol">
+                             <div class="page-header">
+                                <h2 class="widget widget-header">New country</h2>
+                            </div>
+                            <form method="post" role="form" action="#">
+                                <fieldset class="widget widget-form widget-last">
+                                    <div class="form-group">
+                                        <label for="country_name">Name</label>
+                                        <input class="form-control" id="country_name" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country_language">Language</label>
+                                        <input class="form-control" id="country_language" type="text"></input>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country_iso">ISO 3166-1-alpha-2</label>
+                                        <input class="form-control" id="country_iso" type="text"></input>
+                                    </div>
+                                </fieldset>
+                                <div class="form-action">
+                                    <input class="btn btn-blue" type="submit" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="fourcol last"></div>
                     </div>
                 </div>
             </div>
