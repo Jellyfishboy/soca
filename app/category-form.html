@@ -25,13 +25,13 @@
         <input type="checkbox" name="menu-trigger-input" class="menu-trigger-handler" id="menu-trigger-input" onclick="null">
         <div id="slide-menu" class="mobile">
             <ul>
-                <li class="current"><i class="icon-lab"></i> <span>Categories</span></li>
-                <li><i class="fa fa-th-large"></i> <span>Products</span></li>
-                <li><i class="icon-power-cord"></i> <span>Accessories</span></li>
-                <li><i class="icon-cart"></i> <span>Orders</span></li>
-                <li><i class="icon-airplane"></i> <span>Shipping</span></li>
-                <li><i class="icon-earth"></i> <span>Countries</span></li>
-                <li><i class="icon-cog"></i> <span>Settings</span></li>
+                <li class="current"><a href="category-index.html"><i class="icon-lab"></i> <span>Categories</span></a></li>
+                <li><a href="product-index.html"><i class="icon-drawer"></i> <span>Products</span></a></li>
+                <li><a href="accessory-index.html"><i class="icon-power-cord"></i> <span>Accessories</span></a></li>
+                <li><a href="order-index.html"><i class="icon-cart"></i> <span>Orders</span></a></li>
+                <li><a href="shipping-index.html"><i class="icon-airplane"></i> <span>Shipping</span></a></li>
+                <li><a href="country-index.html"><i class="icon-earth"></i> <span>Countries</span></a></li>
+                <li><a href="settings.html"><i class="icon-cog"></i> <span>Settings</span></a></li>
             </ul>
         </div>
         <div class="all-wrapper">
@@ -40,17 +40,25 @@
                 <label id="menu-trigger" class="mobile" for="menu-trigger-input" href="#">
                     <i class="icon-menu-2"></i>
                 </label>
-                <div class="menu"></div>
+                <div class="dropdown user-menu">
+                    <a data-toggle="dropdown" href="#">
+                    </a>
+                    <i class="fa fa-caret-up"></i>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li><a href="#"><i class="icon-cog"></i> Profile settings</a></li>
+                        <li><a href="#"><i class="icon-switch"></i> Logout</a></li>
+                    </ul>
+                </div>
             </header>
             <div id="sidebar" class="desktop">
                 <ul>
-                    <li class="current"><i class="icon-lab"></i></li>
-                    <li><i class="fa fa-th-large"></i></li>
-                    <li><i class="icon-power-cord"></i></li>
-                    <li><i class="icon-cart"></i></li>
-                    <li><i class="icon-airplane"></i></li>
-                    <li><i class="icon-earth"></i></li>
-                    <li><i class="icon-cog"></i></li>
+                    <li class="current"><a href="category-index.html"><i class="icon-lab"></i></a></li>
+                    <li><a href="product-index.html"><i class="fa fa-th-large"></i></a></li>
+                    <li><a href="accessory-index.html"><i class="icon-power-cord"></i></a></li>
+                    <li><a href="order-index.html"><i class="icon-cart"></i></a></li>
+                    <li><a href="shipping-index.html"><i class="icon-airplane"></i></a></li>
+                    <li><a href="country-index.html"><i class="icon-earth"></i></a></li>
+                    <li><a href="settings.html"><i class="icon-cog"></i></a></li>
                 </ul>
             </div>
             <div class="main"> 
@@ -95,6 +103,9 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="components/jquery/dist/jquery.min.js"><\/script>')</script>
         <script src="http://localhost:35729/livereload.js"></script>
+        <script src="js/application.js"></script>
+        <script src="js/bootstrap-tagsinput.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
 
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

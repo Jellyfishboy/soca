@@ -37,10 +37,18 @@
         &.table-margin {
             margin-bottom:15px;
         }
+        .mob {
+            display: block;
+        }
 }
 .table-striped tbody tr:nth-child(odd) {
     background-color:#f9f9f9;
 }
 .table-hover thead tr:hover th, .table-hover tbody tr:hover td {
     background-color:#f9f8ef;
+}
+.table-responsive {
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
 }

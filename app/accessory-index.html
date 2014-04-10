@@ -40,7 +40,15 @@
                 <label id="menu-trigger" class="mobile" for="menu-trigger-input" href="#">
                     <i class="icon-menu-2"></i>
                 </label>
-                <div class="menu"></div>
+                <div class="dropdown user-menu">
+                    <a data-toggle="dropdown" href="#">
+                    </a>
+                    <i class="fa fa-caret-up"></i>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li><a href="#"><i class="icon-cog"></i> Profile settings</a></li>
+                        <li><a href="#"><i class="icon-switch"></i> Logout</a></li>
+                    </ul>
+                </div>
             </header>
             <div id="sidebar" class="desktop">
                 <ul>
@@ -68,35 +76,37 @@
                                 <h2 class="widget widget-header">Accessories</h2>
                                 
                             </div>
-                            <table class="table table-striped table-bordered table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>Part no.</th>
-                                        <th>Name</th>
-                                        <th>Weight (g)</th>
-                                        <th>Cost value</th>
-                                        <th>Net price</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>23523</td>
-                                        <td>Additional lead</td>
-                                        <td>300.0</td>
-                                        <td>£0.51</td>
-                                        <td>£1.25</td>
-                                        <td>
-                                            <a href="#" class="">
-                                                <i class="icon-pencil"></i>
-                                            </a>
-                                            <a href="#" class="">
-                                                <i class="icon-remove"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Part no.</th>
+                                            <th>Name</th>
+                                            <th>Weight (g)</th>
+                                            <th>Cost value</th>
+                                            <th>Net price</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>23523</td>
+                                            <td>Additional lead</td>
+                                            <td>300.0</td>
+                                            <td>£0.51</td>
+                                            <td>£1.25</td>
+                                            <td>
+                                                <a href="#" class="">
+                                                    <i class="icon-pencil"></i>
+                                                </a>
+                                                <a href="#" class="">
+                                                    <i class="icon-remove"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
