@@ -92,3 +92,10 @@ body {
         
     }
 }
+@media handheld, only screen and (max-width: 470px) {
+    body {
+        table .mob {
+            display: block;
+        }
+    }
+}

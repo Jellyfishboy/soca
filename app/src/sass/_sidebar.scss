@@ -127,6 +127,7 @@
                         &.current {
                             background-color: #0d1012;
                             color:#fff;
+                            border-top:0;
                         }
                         &:first-child i {
                             color:$blue;
