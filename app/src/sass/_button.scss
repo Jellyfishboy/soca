@@ -12,6 +12,7 @@
     user-select: none;
     outline:0;
     border:0;
+    text-align:center;
         &.btn-green {
             background-color:$green;
         }
@@ -21,8 +22,13 @@
         &.btn-orange {
             background-color:$orange;
         }
+        &.btn-yellow {
+            background-color:$yellow;
+        }
+        &.btn-cyan {
+            background-color:$cyan;
+        }
         i {
-            margin-right: 5px;
             vertical-align: middle;
         }
         &.btn-normal {

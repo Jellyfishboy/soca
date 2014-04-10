@@ -14,7 +14,7 @@ $menuOffset: 30%;
 $transitionSpeed: .5s;
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size:0.9em;
     background-color:#f0f0f0;
     color:$dark-grey;
@@ -23,6 +23,8 @@ body {
 .page-header {
         h2 {
             margin-top:0px;
+            font-weight:500;
+            font-size:1.4em;
         }
         .btn {
             float:right;
@@ -78,6 +80,7 @@ body {
 @import "tag_input";
 @import "modal";
 @import "labels";
+@import "dropdown";
 
 @media handheld, only screen and (max-width: 700px) {
     body {

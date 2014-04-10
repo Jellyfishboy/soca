@@ -9,6 +9,7 @@ header {
             height:60px;
             width:60px;
             background-color:#fff;
+            float:left;
         }
         #menu-trigger {
             background-color:#fff;
@@ -20,7 +21,31 @@ header {
             @include box-sizing(border-box);
             font-size:1.4em;
             margin:10px 0 0 10px;
-            vertical-align: center;
             cursor:pointer;
+            float:left;
+                i {
+                    vertical-align:middle;
+                }
+        }
+        .user-menu {
+            float:right;
+            margin:10px 20px 10px 10px;
+            height:40px;
+            width:40px;
+            @include box-sizing(border-box);
+            background-color: #000;
+            position: relative;
+                .fa-caret-up {
+                    position: absolute;
+                    top: 27px;
+                    right: 13px;
+                    color: #fff;
+                    font-size: 1.3em;
+                    display:none;
+                }
+                [data-toggle="dropdown"] {
+                    display: block;
+                    height:40px;
+                }
         }
 }

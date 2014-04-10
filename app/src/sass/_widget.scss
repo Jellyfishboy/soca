@@ -1,10 +1,8 @@
 .widget {
     background-color:#fff;
         &.widget-header {
-            padding:12px 20px;
+            padding:12px 20px 13px 20px;
             margin-bottom:15px;
-            // @include box-sizing(border-box);
-            // height:50px;
         }
         &.widget-form {
             padding:20px;
