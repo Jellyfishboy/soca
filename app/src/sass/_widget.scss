@@ -7,6 +7,9 @@
         &.widget-form {
             padding:20px;
             margin-bottom:15px;
+                &.widget-last {
+                    margin:0;
+                }
         }
         &.attachment-form {
             padding:10px;

@@ -15,3 +15,12 @@ a {
 p {
     margin:0 0 10px;
 }
+.page-header {
+    h2 {
+        margin-top:0px;
+    }
+    .btn {
+        float:right;
+        border-left:10px solid #f0f0f0;
+    }
+}

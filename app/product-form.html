@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Soca admin responsive template - Products</title>
+        <title>Soca admin responsive template - Products - New</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,8 +24,8 @@
         <input type="checkbox" name="menu-trigger-input" class="menu-trigger-handler" id="menu-trigger-input" onclick="null">
         <div id="slide-menu" class="mobile">
             <ul>
-                <li class="current"><i class="icon-lab"></i> <span>Categories</span></li>
-                <li><i class="icon-drawer"></i> <span>Products</span></li>
+                <li><i class="icon-lab"></i> <span>Categories</span></li>
+                <li class="current"><i class="fa fa-th-large"></i> <span>Products</span></li>
                 <li><i class="icon-power-cord"></i> <span>Accessories</span></li>
                 <li><i class="icon-cart"></i> <span>Orders</span></li>
                 <li><i class="icon-airplane"></i> <span>Shipping</span></li>
@@ -43,8 +43,8 @@
             </header>
             <div id="sidebar" class="desktop">
                 <ul>
-                    <li class="current"><i class="icon-lab"></i></li>
-                    <li><i class="fa fa-th-large"></i></li>
+                    <li><i class="icon-lab"></i></li>
+                    <li class="current"><i class="fa fa-th-large"></i></li>
                     <li><i class="icon-power-cord"></i></li>
                     <li><i class="icon-cart"></i></li>
                     <li><i class="icon-airplane"></i></li>
@@ -176,8 +176,7 @@
                                                 <i class="icon-close"></i>
                                             </div>
                                             <div class="attachment">
-                                                <img src="http://placehold.it/140x140"/>
-                                                <i class="icon-close"></i>
+                                                <input class="form-control" id="product_attachment" type="file">
                                             </div>
                                         </div>
                                     </div>
@@ -273,16 +272,6 @@
                                     </div>
                                 </fieldset>
                                 <div class="form-header">
-                                    <h3>Tags</h3>
-                                </div>
-                                <fieldset class="widget widget-form tag-form">
-                                    <div class="row">
-                                        <div class="twelvecol">
-                                        <input id="product_tags" data-role="tagsinput" />
-                                        </div>
-                                    </div>
-                                </fieldset>
-                                <div class="form-header">
                                     <h3>SKUs</h3>
                                     <i class="icon-plus"></i>
                                 </div>
@@ -365,6 +354,16 @@
                                         </tr>
                                     </tbody>
                                 </table>
+                                <div class="form-header">
+                                    <h3>Tags</h3>
+                                </div>
+                                <fieldset class="widget widget-form tag-form widget-last">
+                                    <div class="row">
+                                        <div class="twelvecol">
+                                        <input id="product_tags" data-role="tagsinput" />
+                                        </div>
+                                    </div>
+                                </fieldset>
                                 <div class="form-action">
                                     <input class="btn btn-blue" type="submit" value="Submit">
                                 </div>

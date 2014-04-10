@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Soca admin responsive template - Dashboard</title>
+        <title>Soca admin responsive template - Accessories - New</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,9 +24,9 @@
         <input type="checkbox" name="menu-trigger-input" class="menu-trigger-handler" id="menu-trigger-input" onclick="null">
         <div id="slide-menu" class="mobile">
             <ul>
-                <li class="current"><i class="icon-lab"></i> <span>Categories</span></li>
-                <li><i class="icon-drawer"></i> <span>Products</span></li>
-                <li><i class="icon-power-cord"></i> <span>Accessories</span></li>
+                <li><i class="icon-lab"></i> <span>Categories</span></li>
+                <li><i class="fa fa-th-large"></i> <span>Products</span></li>
+                <li class="current"><i class="icon-power-cord"></i> <span>Accessories</span></li>
                 <li><i class="icon-cart"></i> <span>Orders</span></li>
                 <li><i class="icon-airplane"></i> <span>Shipping</span></li>
                 <li><i class="icon-earth"></i> <span>Countries</span></li>
@@ -43,19 +43,51 @@
             </header>
             <div id="sidebar" class="desktop">
                 <ul>
-                    <li class="current"><i class="icon-lab"></i></li>
+                    <li><i class="icon-lab"></i></li>
                     <li><i class="fa fa-th-large"></i></li>
-                    <li><i class="icon-power-cord"></i></li>
+                    <li class="current"><i class="icon-power-cord"></i></li>
                     <li><i class="icon-cart"></i></li>
                     <li><i class="icon-airplane"></i></li>
                     <li><i class="icon-earth"></i></li>
                     <li><i class="icon-cog"></i></li>
                 </ul>
             </div>
-            <div class="main">
+            <div class="main"> 
                 <div class="container">
                     <div class="row">
-                    
+                        <div class="eightcol">
+                             <div class="page-header">
+                                <h2 class="widget widget-header">New accessory</h2>
+                            </div>
+                            <form method="post" role="form" action="#">
+                                <fieldset class="widget widget-form widget-last">
+                                    <div class="form-group">
+                                        <label for="accessory_part_number">Part number</label>
+                                        <input class="form-control" id="accessory_part_number" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="accessory_name">Name</label>
+                                        <input class="form-control" id="accessory_name" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="accessory_weight">Weight</label>
+                                        <input class="form-control" id="accessory_weight" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="accessory_cost_value">Cost value</label>
+                                        <input class="form-control" id="accessory_cost_value" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="accessory_price">Price</label>
+                                        <input class="form-control" id="accessory_price" type="text">
+                                    </div>
+                                </fieldset>
+                                <div class="form-action">
+                                    <input class="btn btn-blue" type="submit" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="fourcol last"></div>
                     </div>
                 </div>
             </div>

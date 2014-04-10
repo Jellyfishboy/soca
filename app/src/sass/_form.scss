@@ -44,6 +44,12 @@ form {
                 height:auto;
                 resize:none;
             }
+            &:last-child {
+                margin:0;
+            }
+    }
+    table {
+        margin-bottom: 15px;
     }
     .checkbox {
         display: inline-block;
@@ -66,5 +72,21 @@ form {
             input {
                 float:right;
             }
+    }
+    .attachment {
+        position: relative;
+        display: inline-block;
+        margin:10px;
+        height:140px;
+        width:140px;
+        i {
+            position: absolute;
+            top:6px;
+            right:6px;
+            color:red;
+        }
+        &:first-child {
+            border:3px solid $blue;
+        }
     }
 }

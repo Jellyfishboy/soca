@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Soca admin responsive template - Dashboard</title>
+        <title>Soca admin responsive template - Categories - New</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -25,7 +25,7 @@
         <div id="slide-menu" class="mobile">
             <ul>
                 <li class="current"><i class="icon-lab"></i> <span>Categories</span></li>
-                <li><i class="icon-drawer"></i> <span>Products</span></li>
+                <li><i class="fa fa-th-large"></i> <span>Products</span></li>
                 <li><i class="icon-power-cord"></i> <span>Accessories</span></li>
                 <li><i class="icon-cart"></i> <span>Orders</span></li>
                 <li><i class="icon-airplane"></i> <span>Shipping</span></li>
@@ -52,10 +52,40 @@
                     <li><i class="icon-cog"></i></li>
                 </ul>
             </div>
-            <div class="main">
+            <div class="main"> 
                 <div class="container">
                     <div class="row">
-                    
+                        <div class="alert alert-info">
+                            <i class="icon-info-2"></i>
+                            This is an information notice for the template.
+                        </div>
+                        <div class="eightcol">
+                             <div class="page-header">
+                                <h2 class="widget widget-header">New category</h2>
+                            </div>
+                            <form method="post" role="form" action="#">
+                                <fieldset class="widget widget-form widget-last">
+                                    <div class="form-group">
+                                        <label for="category_name">Name</label>
+                                        <input class="form-control" id="category_name" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="category_description">Description</label>
+                                        <textarea class="form-control" id="category_description" rows="8"></textarea>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" id="category_visible" checked="checked">
+                                            Visible
+                                        </label>
+                                    </div>
+                                </fieldset>
+                                <div class="form-action">
+                                    <input class="btn btn-blue" type="submit" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="fourcol last"></div>
                     </div>
                 </div>
             </div>
