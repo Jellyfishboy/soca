@@ -1,5 +1,5 @@
 .btn {
-    padding:14px 14px;
+    padding:12px;
     color:#fff;
     font-weight:bold;
     font-size:1.1em;
@@ -12,14 +12,23 @@
     user-select: none;
     outline:0;
     border:0;
+    text-align:center;
         &.btn-green {
             background-color:$green;
         }
         &.btn-blue {
             background-color:$blue;
         }
+        &.btn-orange {
+            background-color:$orange;
+        }
+        &.btn-yellow {
+            background-color:$yellow;
+        }
+        &.btn-cyan {
+            background-color:$cyan;
+        }
         i {
-            margin-right: 5px;
             vertical-align: middle;
         }
         &.btn-normal {

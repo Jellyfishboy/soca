@@ -8,19 +8,6 @@ form {
         outline:0;
         width:100%;
     }
-    .form-header {
-        padding:10px 20px;
-        background-color:rgba(208,208,208,0.5);
-        overflow: hidden;
-            h3 {
-                margin:0;
-                float:left;
-            }
-            i {
-                float:right;
-                margin-top:5px;
-            }
-    }
     .form-group {
         margin-bottom:15px;
             label {
@@ -54,7 +41,7 @@ form {
     .checkbox {
         display: inline-block;
         margin-right: 25px;
-        padding:2px 0;
+        padding:3px 0;
         label {
             display: inline;
             margin-bottom: 0;
@@ -63,6 +50,9 @@ form {
         }
         input {
             margin-right:5px;
+        }
+        &.blocked {
+            display: block;
         }
     }
     .form-action {

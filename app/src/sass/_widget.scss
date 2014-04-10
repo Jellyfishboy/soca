@@ -1,7 +1,7 @@
 .widget {
     background-color:#fff;
         &.widget-header {
-            padding:10px 20px;
+            padding:12px 20px 13px 20px;
             margin-bottom:15px;
         }
         &.widget-form {
@@ -16,5 +16,36 @@
         }
         &.tag-form {
             padding:15px 10px 15px 20px;   
+        }
+        &.widget-last {
+            margin:0;
+        }
+        ul {
+            list-style-type: none;
+            padding:0;
+            margin:0;
+            overflow:overlay;
+                li {
+                    margin-bottom:10px;
+                        &:last-child {
+                            margin:0;
+                        }
+                        i {
+                            margin-right:7px;
+                        }
+                }
+        }
+}
+.widget-sub-heading {
+    padding:10px 20px;
+    background-color:rgba(208,208,208,0.5);
+    overflow: hidden;
+        h3 {
+            margin:0;
+            float:left;
+        }
+        i {
+            float:right;
+            margin-top:5px;
         }
 }

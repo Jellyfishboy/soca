@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Soca admin responsive template - Accessory - Form</title>
+        <title>Soca admin responsive template - Tier - Form</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -27,9 +27,9 @@
             <ul>
                 <li><a href="category-index.html"><i class="icon-lab"></i> <span>Categories</span></a></li>
                 <li><a href="product-index.html"><i class="icon-drawer"></i> <span>Products</span></a></li>
-                <li class="current"><a href="accessory-index.html"><i class="icon-power-cord"></i> <span>Accessories</span></a></li>
+                <li><a href="accessory-index.html"><i class="icon-power-cord"></i> <span>Accessories</span></a></li>
                 <li><a href="order-index.html"><i class="icon-cart"></i> <span>Orders</span></a></li>
-                <li><a href="shipping-index.html"><i class="icon-airplane"></i> <span>Shipping</span></a></li>
+                <li class="current"><a href="shipping-index.html"><i class="icon-airplane"></i> <span>Shipping</span></a></li>
                 <li><a href="country-index.html"><i class="icon-earth"></i> <span>Countries</span></a></li>
                 <li><a href="settings.html"><i class="icon-cog"></i> <span>Settings</span></a></li>
             </ul>
@@ -46,9 +46,9 @@
                 <ul>
                     <li><a href="category-index.html"><i class="icon-lab"></i></a></li>
                     <li><a href="product-index.html"><i class="fa fa-th-large"></i></a></li>
-                    <li class="current"><a href="accessory-index.html"><i class="icon-power-cord"></i></a></li>
+                    <li><a href="accessory-index.html"><i class="icon-power-cord"></i></a></li>
                     <li><a href="order-index.html"><i class="icon-cart"></i></a></li>
-                    <li><a href="shipping-index.html"><i class="icon-airplane"></i></a></li>
+                    <li class="current"><a href="shipping-index.html"><i class="icon-airplane"></i></a></li>
                     <li><a href="country-index.html"><i class="icon-earth"></i></a></li>
                     <li><a href="settings.html"><i class="icon-cog"></i></a></li>
                 </ul>
@@ -62,29 +62,48 @@
                         </div>
                         <div class="eightcol">
                              <div class="page-header">
-                                <h2 class="widget widget-header">New accessory</h2>
+                                <h2 class="widget widget-header">New shipping tier</h2>
                             </div>
                             <form method="post" role="form" action="#">
                                 <fieldset class="widget widget-form widget-last">
                                     <div class="form-group">
-                                        <label for="accessory_part_number">Part number</label>
-                                        <input class="form-control" id="accessory_part_number" type="text">
+                                        <label for="tier_length_start">Length start</label>
+                                        <input class="form-control" id="tier_length_start" type="text">
                                     </div>
                                     <div class="form-group">
-                                        <label for="accessory_name">Name</label>
-                                        <input class="form-control" id="accessory_name" type="text"></input>
+                                        <label for="tier_length_end">Length end</label>
+                                        <input class="form-control" id="tier_length_end" type="text"></input>
                                     </div>
                                     <div class="form-group">
-                                        <label for="accessory_weight">Weight (g)</label>
-                                        <input class="form-control" id="accessory_weight" type="text"></input>
+                                        <label for="tier_weight_start">Weight start</label>
+                                        <input class="form-control" id="tier_weight_start" type="text"></input>
                                     </div>
                                     <div class="form-group">
-                                        <label for="accessory_cost_value">Cost value</label>
-                                        <input class="form-control" id="accessory_cost_value" type="text"></input>
+                                        <label for="tier_weight_end">Weight end</label>
+                                        <input class="form-control" id="tier_weight_end" type="text">
                                     </div>
                                     <div class="form-group">
-                                        <label for="accessory_net_price">Net price</label>
-                                        <input class="form-control" id="accessory_net_price" type="text"></input>
+                                        <label for="tier_thickness_start">Thickness start</label>
+                                        <input class="form-control" id="tier_thickness_start" type="text"></input>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="tier_thickness_end">Thickness end</label>
+                                        <input class="form-control" id="tier_thickness_end" type="text"></input>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="tier_shipping_methods">Shipping methods</label>
+                                        <div class="checkbox blocked">
+                                            <label>
+                                                <input type="checkbox" id="tier_shipping_methods_1" checked="checked">
+                                                Royal Mail 1st class
+                                            </label>
+                                        </div>
+                                        <div class="checkbox blocked">
+                                            <label>
+                                                <input type="checkbox" id="tier_shipping_methods_2" checked="checked">
+                                                Parcelforce 24h
+                                            </label>
+                                        </div>
                                     </div>
                                 </fieldset>
                                 <div class="form-action">
