@@ -9,6 +9,7 @@
             border-right: 1px solid $light-grey;
                 &:last-child {
                     border-right:0;
+                    min-width:35px;
                 }
         }
         tbody tr td:last-child {
@@ -41,6 +42,10 @@
             margin:0;
             padding-left:20px;
         }
+
+}
+.table-form input {
+    width:100%;
 }
 .table-striped tbody tr:nth-child(odd) {
     background-color:#f9f9f9;
@@ -51,5 +56,5 @@
 .table-responsive {
     width: 100%;
     overflow-y: hidden;
-    overflow-x: scroll;
+    // overflow-x: scroll;
 }

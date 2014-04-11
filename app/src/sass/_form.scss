@@ -69,14 +69,43 @@ form {
         margin:10px;
         height:140px;
         width:140px;
-        i {
-            position: absolute;
-            top:6px;
-            right:6px;
-            color:red;
-        }
-        &:first-child {
-            border:3px solid $blue;
-        }
+        cursor:pointer; 
+        @include box-sizing(border-box);
+        @include transition-property(background-color);
+        @include transition-duration(1s);
+        @include transition-timing-function(linear);
+            .icon-close {
+                position: absolute;
+                top:6px;
+                right:6px;
+                color:red;
+            }
+            .icon-upload-3 {
+                position: absolute;
+                font-size:4em;
+                top:41px;
+                left:41px;
+            }
+            img {
+                display: block;
+            }
+            &.default {
+                border:3px solid $blue;
+            }
+            &.new-file {
+                background-color: $blue;
+                color:#fff;   
+            }
+            div {
+                position: absolute;
+                bottom:10px;
+                padding:0 10px;
+            }
+            + input[type="file"] {
+                display: none;
+            }
+            + input[type="radio"] {
+                display: none;
+            }
     }
 }

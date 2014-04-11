@@ -159,34 +159,50 @@
                                 </fieldset>
                                 <div class="widget-sub-heading">
                                     <h3>Attachments</h3>
-                                    <i class="icon-plus"></i>
+                                    <div class="pull-right">
+                                        <i class="icon-plus"></i>
+                                    </div>
                                 </div>
                                 <fieldset class="widget widget-form attachment-form">
                                     <div class="row">
                                         <div class="twelvecol">
-                                            <div class="attachment">
+                                            <div class="attachment current-file default">
                                                 <img src="http://placehold.it/140x140"/>
                                                 <i class="icon-close"></i>
                                             </div>  
-                                            <div class="attachment">
+                                            <input type="radio" name="default_attachment" checked>
+                                            <div class="attachment current-file">
                                                 <img src="http://placehold.it/140x140"/>
                                                 <i class="icon-close"></i>
                                             </div>
-                                            <div class="attachment">
+                                            <input type="radio" name="default_attachment">
+                                            <div class="attachment current-file">
                                                 <img src="http://placehold.it/140x140"/>
                                                 <i class="icon-close"></i>
                                             </div>
-                                            <div class="attachment">
+                                            <input type="radio" name="default_attachment">
+                                            <div class="attachment current-file">
                                                 <img src="http://placehold.it/140x140"/>
                                                 <i class="icon-close"></i>
                                             </div>
-                                            <div class="attachment">
+                                            <input type="radio" name="default_attachment">
+                                            <div class="attachment current-file">
                                                 <img src="http://placehold.it/140x140"/>
                                                 <i class="icon-close"></i>
                                             </div>
-                                            <div class="attachment">
-                                                <input class="form-control" id="product_attachment" type="file">
+                                            <input type="radio" name="default_attachment">
+                                            <div class="attachment new-file">
+                                                <i class="icon-upload-3"></i>
+                                                <div></div>
+                                                <i class="icon-close"></i>
                                             </div>
+                                            <input id="product_attachment" type="file" class="file-upload">
+                                            <div class="attachment new-file">
+                                                <i class="icon-upload-3"></i>
+                                                <div></div>
+                                                <i class="icon-close"></i>
+                                            </div>
+                                            <input id="product_attachment" type="file" class="file-upload">
                                         </div>
                                     </div>
                                 </fieldset>
@@ -282,10 +298,12 @@
                                 </fieldset>
                                 <div class="widget-sub-heading">
                                     <h3>SKUs</h3>
-                                    <i class="icon-plus"></i>
+                                    <div class="pull-right">
+                                        <i class="icon-plus"></i>
+                                    </div>
                                 </div>
                                 <div class="table-responsive">
-                                    <table class="table table-striped table-bordered table-hover table-last">
+                                    <table class="table table-striped table-bordered table-hover table-last table-form">
                                         <thead>
                                             <tr>
                                                 <th>SKU</th>
@@ -362,6 +380,19 @@
                                                     </a>
                                                 </td>
                                             </tr>
+                                            <tr>
+                                                <td><input type="text" id="sku_sku"></td>
+                                                <td><input type="text" id="sku_weight"></td>
+                                                <td><input type="text" id="sku_length"></td>
+                                                <td><input type="text" id="sku_thickness"></td>
+                                                <td><input type="text" id="sku_attribute_value"></td>
+                                                <td><input type="text" id="sku_attribute_type"></td>
+                                                <td><input type="text" id="sku_stock"></td>
+                                                <td><input type="text" id="sku_stock_warning_level"></td>
+                                                <td><input type="text" id="sku_cost_value"></td>
+                                                <td><input type="text" id="sku_price"></td>
+                                                <td></td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -389,7 +420,7 @@
         <script>window.jQuery || document.write('<script src="components/jquery/dist/jquery.min.js"><\/script>')</script>
         <script src="http://localhost:35729/livereload.js"></script>
         <script src="js/application.js"></script>
-        <script src="js/bootstrap-tagsinput.min.js"></script>
+        <script src="components/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
 
         <script>
