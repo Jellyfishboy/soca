@@ -70,10 +70,21 @@
                           <div class="modal-dialog">
                             <div class="modal-content">
                               <div class="modal-header">
-                                <h3 class="modal-title" id="exampleModalLabel">Modal title</h3>
+                                <h2 class="modal-title" id="exampleModalLabel">Modal title</h2>
                               </div>
                               <div class="modal-body">
-                                ...
+                                <form method="post" role="form" action="#">
+                                    <fieldset class="widget widget-form widget-last">
+                                        <div class="form-group">
+                                            <label for="order_shipping_date">Shipping date</label>
+                                            <input class="form-control" id="order_shipping_date" type="text">
+                                        </div>
+                                        <div class="form-group form-last">
+                                            <label for="order_cost_value">Cost value</label>
+                                            <input class="form-control" id="order_cost_value" type="text">
+                                        </div>
+                                    </fieldset>
+                                </form>
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-orange" data-dismiss="modal">Close</button>
