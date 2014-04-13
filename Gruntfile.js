@@ -65,7 +65,8 @@ module.exports = function (grunt) {
         compass: {
             options: {
                 sassDir: 'app/src/sass',
-                cssDir: 'app/css'
+                cssDir: 'app/css',
+                outputStyle: 'compressed'
             },
             dist: {},
             server: {
@@ -89,18 +90,32 @@ module.exports = function (grunt) {
                     ext: '.js'
                 }]
             }
+        },
+        uglify: {
+            options: {
+              mangle: true
+            },
+            server: {
+                files: {
+                    'app/js/application.js': [
+                        'app/js/application.js'
+                    ]
+                }
+            }
         }
     });
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-coffee');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-open');
     grunt.registerTask('server', function (target) {
 
         grunt.task.run([
             'compass:server',
             'coffee:server',
+            'uglify:server',
             'connect:livereload',
             'open',
             'watch'

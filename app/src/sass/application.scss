@@ -43,8 +43,8 @@ body {
 }
 .all-wrapper {
     // @include transform3d(translate3D(0,0,0));
-    // z-index:2;
-    // position:relative;
+    z-index:2;
+    position:relative;
     // -webkit-transition: -webkit-transform $transitionSpeed ease-in-out;
     // -moz-transition: -moz-transform $transitionSpeed ease-in-out;
 }
