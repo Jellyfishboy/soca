@@ -12,8 +12,13 @@
                     min-width:35px;
                 }
                 .item-sub {
-                    margin-top:5px;
+                    margin:5px 0 0;
                     font-weight: 500;
+                        &.label {
+                            display: inline-block;
+                            padding: 5px 6px 6px;
+                            font-size: 80%;
+                        }
                 }
         }
         tbody tr td:last-child {
