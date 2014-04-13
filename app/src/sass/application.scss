@@ -59,8 +59,10 @@ body {
 @import "form";
 @import "tag_input";
 @import "modal";
+@import "breadcrumb";
 @import "labels";
 @import "dropdown";
+
 
 @media handheld, only screen and (max-width: 700px) {
     body {
