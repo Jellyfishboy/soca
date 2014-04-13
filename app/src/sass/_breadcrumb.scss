@@ -4,9 +4,10 @@
     margin:0 0 15px;
         li {
             display: inline-block;
+            background-color:rgba(208,208,208,0.5);
                 a {
                     color:$dark-grey;
-                    background-color:rgba(208,208,208,0.5);
+                    
                     display: inline-block;
                     padding: .5em .8em;
                     font-size: 90%;
