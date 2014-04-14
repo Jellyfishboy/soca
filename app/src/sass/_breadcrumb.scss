@@ -5,23 +5,26 @@
         li {
             display: inline-block;
             background-color:rgba(208,208,208,0.5);
+            padding: .5em .8em;
+            font-size: 90%;
+            font-weight: 500;
+            line-height: 1;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            margin-right: 7px;
+            @include box-sizing(border-box);
                 a {
                     color:$dark-grey;
-                    
                     display: inline-block;
-                    padding: .5em .8em;
-                    font-size: 90%;
-                    font-weight: 500;
-                    line-height: 1;
-                    text-align: center;
-                    white-space: nowrap;
-                    vertical-align: baseline;
-                    margin-right: 7px;
-                    @include box-sizing(border-box);
+                    
                 }
-                &.current a, &:hover a {
+                &.current, &:hover {
                     background-color: $blue;
-                    color:#fff !important;
+                    color:#fff;
+                }
+                &:hover a {
+                    color:#fff;
                 }
         }
 }
