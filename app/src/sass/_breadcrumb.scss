@@ -1,7 +1,7 @@
 #breadcrumbs {
     list-style-type: none;
     padding:0;
-    margin:0 0 15px;
+    margin:0 0 8px;
         li {
             display: inline-block;
             background-color:rgba(208,208,208,0.5);
@@ -12,7 +12,7 @@
             text-align: center;
             white-space: nowrap;
             vertical-align: baseline;
-            margin-right: 7px;
+            margin:0 7px 7px 0;
             @include box-sizing(border-box);
                 a {
                     color:$dark-grey;
