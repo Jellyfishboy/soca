@@ -40,6 +40,9 @@
             &.border-top {
                 border-top: 1px solid $light-grey;
             }
+            &.select {
+                min-width:75px;
+            }
         }
         tr.focused {
             font-size:1.2em;

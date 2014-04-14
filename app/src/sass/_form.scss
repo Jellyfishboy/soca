@@ -63,7 +63,7 @@ form {
                 float:right;
             }
     }
-    .attachment {
+    .attachments {
         position: relative;
         display: inline-block;
         margin:10px;
@@ -74,7 +74,7 @@ form {
         @include transition-property(background-color);
         @include transition-duration(1s);
         @include transition-timing-function(linear);
-            .icon-close {
+            a {
                 position: absolute;
                 top:6px;
                 right:6px;

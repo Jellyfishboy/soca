@@ -9,6 +9,7 @@ $cyan: #9bebff;
 $grey: #d5d5de;
 $dark-grey: #2f363d;
 $light-grey: #d0d0d0;
+$red: #CD2626;
 
 $menuOffset: 30%;
 $transitionSpeed: .5s;
@@ -60,6 +61,7 @@ body {
 @import "tag_input";
 @import "breadcrumb";
 @import "labels";
+@import "error";
 @import "modal";
 @import "dropdown";
 

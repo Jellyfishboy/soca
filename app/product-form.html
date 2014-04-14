@@ -166,41 +166,41 @@
                                 <fieldset class="widget widget-form attachment-form">
                                     <div class="row">
                                         <div class="twelvecol">
-                                            <div class="attachment current-file default">
+                                            <div class="attachments current-file default">
                                                 <img src="http://placehold.it/140x140"/>
-                                                <i class="icon-close"></i>
+                                                <a href="#"><i class="icon-close"></i></a>
                                             </div>  
                                             <input type="radio" name="default_attachment" checked>
-                                            <div class="attachment current-file">
+                                            <div class="attachments current-file">
                                                 <img src="http://placehold.it/140x140"/>
-                                                <i class="icon-close"></i>
+                                                <a href="#"><i class="icon-close"></i></a>
                                             </div>
                                             <input type="radio" name="default_attachment">
-                                            <div class="attachment current-file">
+                                            <div class="attachments current-file">
                                                 <img src="http://placehold.it/140x140"/>
-                                                <i class="icon-close"></i>
+                                                <a href="#"><i class="icon-close"></i></a>
                                             </div>
                                             <input type="radio" name="default_attachment">
-                                            <div class="attachment current-file">
+                                            <div class="attachments current-file">
                                                 <img src="http://placehold.it/140x140"/>
-                                                <i class="icon-close"></i>
+                                                <a href="#"><i class="icon-close"></i></a>
                                             </div>
                                             <input type="radio" name="default_attachment">
-                                            <div class="attachment current-file">
+                                            <div class="attachments current-file">
                                                 <img src="http://placehold.it/140x140"/>
-                                                <i class="icon-close"></i>
+                                                <a href="#"><i class="icon-close"></i></a>
                                             </div>
                                             <input type="radio" name="default_attachment">
-                                            <div class="attachment new-file">
+                                            <div class="attachments new-file">
                                                 <i class="icon-upload-3"></i>
                                                 <div></div>
-                                                <i class="icon-close"></i>
+                                                <a href="#"><i class="icon-close"></i></a>
                                             </div>
                                             <input id="product_attachment" type="file" class="file-upload">
-                                            <div class="attachment new-file">
+                                            <div class="attachments new-file">
                                                 <i class="icon-upload-3"></i>
                                                 <div></div>
-                                                <i class="icon-close"></i>
+                                                <a href="#"><i class="icon-close"></i></a>
                                             </div>
                                             <input id="product_attachment" type="file" class="file-upload">
                                         </div>
@@ -386,7 +386,14 @@
                                                 <td><input type="text" id="sku_length"></td>
                                                 <td><input type="text" id="sku_thickness"></td>
                                                 <td><input type="text" id="sku_attribute_value"></td>
-                                                <td><input type="text" id="sku_attribute_type"></td>
+                                                <td class="select">
+                                                    <select class="form-control" id="product_sku_attribute_type">
+                                                        <option value="">Select...</option>
+                                                        <option value="5">Weight</option>
+                                                        <option value="6">Color</option>
+                                                        <option value="7">Length</option>
+                                                    </select>
+                                                </td>
                                                 <td><input type="text" id="sku_stock"></td>
                                                 <td><input type="text" id="sku_stock_warning_level"></td>
                                                 <td><input type="text" id="sku_cost_value"></td>
