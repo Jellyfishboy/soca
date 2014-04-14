@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Soca admin responsive template - Dashboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/application.css" media="screen">
+        <link rel="stylesheet" href="components/normalize-css/normalize.css" media="screen">
+        <link rel="stylesheet" href="components/fontawesome/css/font-awesome.min.css" media="screen">
+        <link rel="stylesheet" href="components/icomoon/style.css" media="screen">
+        <script src="components/modernizr/modernizr.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="all-wrapper">
+            <div class="main">
+                <div class="container">
+                    <div class="row">
+                        <div class="threecol"></div>
+                        <div class="sixcol">
+                            <div class="page-header">
+                                <h2 class="widget widget-header">Administration login</h2>
+                            </div>
+                            <form method="post" role="form" action="#">
+                                <fieldset class="widget widget-form widget-last">
+                                    <div class="form-group">
+                                        <label for="login_email">Email</label>
+                                        <input class="form-control" id="login_email" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="login_password">Password</label>
+                                        <input class="form-control" id="login_password" type="text"></input>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" id="login_remember_me" checked="checked">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                </fieldset>
+                                <div class="form-action">
+                                    <input class="btn btn-blue" type="submit" value="Login">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="threecol last"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="components/jquery/dist/jquery.min.js"><\/script>')</script>
+        <script src="http://localhost:35729/livereload.js"></script>
+        <script src="js/application.js"></script>
+        <script src="components/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
