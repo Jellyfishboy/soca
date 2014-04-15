@@ -44,8 +44,8 @@ This will run through compiling, uglifying, copying the HTML, JavaScript, CSS an
 
 ##Credits
 [Bootstrap](http://getbootstrap.com/) - JS support for tooltips, modals and dropdowns   
-[Font Awesome](http://fortawesome.github.com/Font-Awesome/) - Iconography support   
-[Icomoon](http://icomoon.io/) - Iconography support     
+[Font Awesome](http://fortawesome.github.com/Font-Awesome/) - Iconography   
+[Icomoon](http://icomoon.io/) - Iconography     
 [Tim Schlechter](https://github.com/TimSchlechter/bootstrap-tagsinput) - Tag input plugin   
 
 ##Copyright
