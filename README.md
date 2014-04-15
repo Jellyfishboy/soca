@@ -6,7 +6,7 @@ Soca is a responsive administration template built using Yeoman, Grunt, Bower, H
 
 For development purposes, this repository requires the use of [Grunt](http://gruntjs.com/) and [Bower](http://bower.io/) in order to run the application.
 
-Grunt is a JavaScript based task runner, such as unit testing, compilation, uglifying, livereload, web server and many many more. If you haven't used Grunt before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. 
+Grunt is a JavaScript based task runner, for tasks such as unit testing, compilation, uglifying, livereload, web server and many many more. If you haven't used Grunt before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. 
 
 Bower is a package manager tool (much like [NuGet](http://www.nuget.org/) or [Bundler](http://bundler.io/)) which can manage your third part asset library for you. You can find information on using and installing Bower over at their [github](https://github.com/bower/bower) page.
 
@@ -16,23 +16,23 @@ However, if you would not like to perform any development and want just the basi
 
 First off, you will need to install the Grunt package dependencies listed in `package.json`:
 
-```npm install
+    npm install
 
 Then you will need to install the Bower asset dependencies, listed in `bower.json`:
 
-```bower install
+    bower install
 
 ##Build process
 
 Now we have all our required dependencies, we can start to use the Grunt task runner. To start viewing the application on the Grunt web server, run the following command:
 
-```grunt server
+    grunt server
 
 However, if you would like to create a distribution package of the application, ready for use in your application, run the following command:
 
-```grunt dist
+    grunt build
 
-This will run through and compile, uglify, copy the HTML, JavaScript, CSS and Bower dependencies into a folder called `dist` in the root of the application.
+This will run through compiling, uglifying, copying the HTML, JavaScript, CSS and Bower dependencies into a folder called `dist` in the root of the application.
 
 ##How to contribute
 
@@ -43,7 +43,7 @@ This will run through and compile, uglify, copy the HTML, JavaScript, CSS and Bo
 * Send a pull request against the *development* branch
 
 ##Copyright
-Copyright (c) 2014 [Tom Dallimore](http://www.tomdallimore.com) (@billy_dallimore)
+Copyright (c) 2014 [Tom Dallimore](http://www.tomdallimore.com) ([@billy_dallimore](http://twitter.com/billy_dallimore))  
 Licenced under the MIT licence.
 
 
