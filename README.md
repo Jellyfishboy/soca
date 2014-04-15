@@ -12,7 +12,7 @@ Bower is a package manager tool (much like [NuGet](http://www.nuget.org/) or [Bu
 
 Furthermore, you will need **npm** for both of these tools to function. You can find a quick and easy installation guide over at the [npm github](https://github.com/npm/npm).
 
-**If you would not like to perform any development and want just the basic template [click here]()**
+**If you would not like to perform any development and want just the basic template [click here](tomdallimore.com/wp-content/uploads/soca.zip)**
 
 ##Resolving dependencies
 
@@ -35,6 +35,11 @@ If you would like to create a distribution package of the application, ready for
     grunt build
 
 This will run through compiling, uglifying, copying the HTML, JavaScript, CSS and Bower dependencies into a folder called `dist` in the root of the application.
+
+##Screenshots
+![Tables](http://tomdallimore.com/wp-content/uploads/2014/04/soca_1.png "Tables")  
+![Forms](http://tomdallimore.com/wp-content/uploads/2014/04/soca_2.png "Forms")  
+![Orders](http://tomdallimore.com/wp-content/uploads/2014/04/soca_3.png "Orders")  
 
 ##How to contribute
 
