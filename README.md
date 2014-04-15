@@ -38,9 +38,8 @@ This will run through compiling, uglifying, copying the HTML, JavaScript, CSS an
 
 * Fork the project
 * Create your feature or bug fix
-* Add the requried tests for it.
 * Commit (do not change version or history)
-* Send a pull request against the *development* branch
+* Send a pull request against the *master* branch
 
 ##Copyright
 Copyright (c) 2014 [Tom Dallimore](http://www.tomdallimore.com) ([@billy_dallimore](http://twitter.com/billy_dallimore))  
