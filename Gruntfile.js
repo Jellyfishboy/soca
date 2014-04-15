@@ -176,6 +176,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-concurrent');
     grunt.loadNpmTasks('grunt-open');
+    
     grunt.registerTask('server', function (target) {
         grunt.task.run([
             'clean:server',
