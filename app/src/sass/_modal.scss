@@ -65,13 +65,7 @@
 }
 
 .modal-header {
-  padding: 15px;
-  min-height: 16.42857143px;
-  background-color: #fff;
-  border-bottom:20px solid #f0f0f0;
-  .close {
-    margin-top: -2px;
-  }
+  @extend .widget-sub-heading;
 }
 
 .modal-title {
