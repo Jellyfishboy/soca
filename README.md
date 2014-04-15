@@ -10,7 +10,9 @@ Grunt is a JavaScript based task runner, for tasks such as unit testing, compila
 
 Bower is a package manager tool (much like [NuGet](http://www.nuget.org/) or [Bundler](http://bundler.io/)) which can manage your third part asset library for you. You can find information on using and installing Bower over at their [github](https://github.com/bower/bower) page.
 
-However, if you would not like to perform any development and want just the basic template [click here]()
+Furthermore, you will need **npm** for both of these tools to function. You can find a quick and easy installation guide over at the [npm github](https://github.com/npm/npm).
+
+**If you would not like to perform any development and want just the basic template [click here]()**
 
 ##Resolving dependencies
 
@@ -28,7 +30,7 @@ Now we have all our required dependencies, we can start to use the Grunt task ru
 
     grunt server
 
-However, if you would like to create a distribution package of the application, ready for use in your application, run the following command:
+If you would like to create a distribution package of the application, ready for use in your application, run the following command:
 
     grunt build
 
@@ -40,7 +42,6 @@ This will run through compiling, uglifying, copying the HTML, JavaScript, CSS an
 * Create your feature or bug fix
 * Commit (do not change version or history)
 * Send a pull request against the *master* branch
-* 
 
 ##Credits
 [Bootstrap](http://getbootstrap.com/) - JS support for tooltips, modals and dropdowns   
