@@ -13,7 +13,13 @@ var mountFolder = function (connect, dir) {
 
 module.exports = function (grunt) {
 
+    var socaConfig = {
+        app: 'app',
+        dist: 'dist'
+    };
+
     grunt.initConfig({
+        soca: socaConfig,
         watch: {
             coffee: {
                 files: ['app/src/coffee/{,*/}*.coffee'],
@@ -57,6 +63,63 @@ module.exports = function (grunt) {
                 }
             }
         },
+        clean: {
+            dist: {
+                files: [{
+                    dot: true,
+                    src: [
+                        '<%= soca.app %>/css',
+                        '<%= soca.app %>/js/application.js',
+                        '<%= soca.app %>/js/application.js.map',
+                        '<%= soca.dist %>/*',
+                        '!<%= soca.dist %>/.git*'
+                    ]
+                }]
+            },
+            server: {
+                files: [{
+                    src: [
+                        '<%= soca.app %>/css',
+                        '<%= soca.app %>/js/application.js',
+                        '<%= soca.app %>/js/application.js.map',
+                        '<%= soca.dist %>/*'
+                    ]
+                }]
+            }
+        },
+        concurrent: {
+            server: [
+                'coffee:server',
+                'compass:server'
+            ]
+        },
+        copy: {
+            dist: {
+                files: [{
+                    expand: true,
+                    dot: true,
+                    cwd: '<%= soca.app %>',
+                    dest: '<%= soca.dist %>',
+                    src: [
+                        '*.{ico,png,txt}',
+                        'components/**/*',
+                        '*.html'
+                    ]
+                }]
+            },
+            styles: {
+                expand: true,
+                cwd: '<%= soca.app %>/css',
+                dest: 'dist/css/',
+                src: '{,*/}*.css'
+            },
+            javascripts: {
+                expand: true,
+                cwd: '<%= soca.app %>/js',
+                dest: 'dist/js/',
+                src: '{,*/}*.js'
+            }
+        },
         open: {
             server: {
                 path: 'http://localhost:<%= connect.options.port %>'
@@ -77,7 +140,7 @@ module.exports = function (grunt) {
         },
         coffee: {
             options: {
-                sourceMap: true,
+                sourceMap: false,
                 sourceRoot: ''
             },
             dist: {},
@@ -109,16 +172,25 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-coffee');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-concurrent');
     grunt.loadNpmTasks('grunt-open');
     grunt.registerTask('server', function (target) {
-
         grunt.task.run([
-            'compass:server',
-            'coffee:server',
-            'uglify:server',
+            'clean:server',
+            'concurrent:server',
             'connect:livereload',
             'open',
             'watch'
         ]);
     });
+    grunt.registerTask('build', [
+        'clean:dist',
+        'concurrent:server',
+        'uglify:server',
+        'copy:styles',
+        'copy:javascripts',
+        'copy:dist'
+    ]);
 };
