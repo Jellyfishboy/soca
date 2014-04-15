@@ -1,13 +1,12 @@
 .label {
     display: inline;
-    padding: .2em .6em .3em;
-    font-size: 75%;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 1;
     color: #ffffff;
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
+    @include box-sizing(border-box);
         &.label-orange {
             background-color: $orange;
         }
@@ -17,4 +16,20 @@
         &.label-blue {
             background-color: $blue;
         }
+        &.label-red {
+            background-color:$red;
+        }
+        &.label-grey {
+            background-color: $light-grey;
+            color:$dark-grey;
+        }
+        &.label-small {
+            padding: .2em .6em .3em;
+            font-size: 75%;
+        }
+        &.label-large {
+            padding: .5em .8em;
+            font-size: 90%;
+        }
+
 }

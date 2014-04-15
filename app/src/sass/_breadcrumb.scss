@@ -3,17 +3,11 @@
     padding:0;
     margin:0 0 8px;
         li {
-            display: inline-block;
-            background-color:rgba(208,208,208,0.5);
-            padding: .5em .8em;
-            font-size: 90%;
-            font-weight: 500;
-            line-height: 1;
-            text-align: center;
-            white-space: nowrap;
-            vertical-align: baseline;
             margin:0 7px 7px 0;
-            @include box-sizing(border-box);
+            display: inline-block !important;
+            @extend .label;
+            @extend .label-large;
+            @extend .label-grey;
                 a {
                     color:$dark-grey;
                     display: inline-block;

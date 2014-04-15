@@ -1,8 +1,6 @@
 .btn {
-    padding:12px;
     color:#fff;
-    font-weight:bold;
-    font-size:1.1em;
+    font-weight:500;
     display: inline-block;
     white-space: nowrap;
     -o-user-select: none;
@@ -22,11 +20,23 @@
         &.btn-orange {
             background-color:$orange;
         }
-        &.btn-yellow {
-            background-color:$yellow;
+        &.btn-red {
+            background-color:$red;
         }
-        &.btn-cyan {
-            background-color:$cyan;
+        &.btn-grey {
+            color:$dark-grey;
+            background-color:$light-grey;
+                &:hover {
+                    color: $dark-grey;
+                }
+        }
+        &.btn-large {
+            padding:12px;
+            font-size:1.1em;
+        }
+        &.btn-normal {
+            padding:10px;
+            font-size:1em;
         }
         i {
             vertical-align: middle;

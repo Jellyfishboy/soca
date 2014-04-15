@@ -27,7 +27,7 @@
             <ul>
                 <li><a href="category-index.html"><i class="icon-lab"></i> <span>Categories</span></a></li>
                 <li><a href="product-index.html"><i class="icon-drawer"></i> <span>Products</span></a></li>
-                <li class="current"><a href="accessory-index.html"><i class="icon-power-cord"></i> <span>Accessories</span></a></li>
+                <li><a href="accessory-index.html"><i class="icon-power-cord"></i> <span>Accessories</span></a></li>
                 <li><a href="order-index.html"><i class="icon-cart"></i> <span>Orders</span></a></li>
                 <li><a href="shipping-index.html"><i class="icon-airplane"></i> <span>Shipping</span></a></li>
                 <li><a href="country-index.html"><i class="icon-earth"></i> <span>Countries</span></a></li>
@@ -36,7 +36,7 @@
         </div>
         <div class="all-wrapper">
             <header>
-                <div id="logo" class="desktop"></div>
+                <a href="/"><div id="logo" class="desktop"></div></a>
                 <label id="menu-trigger" class="mobile" for="menu-trigger-input" href="#">
                     <i class="icon-menu-2"></i>
                 </label>
@@ -54,7 +54,7 @@
                 <ul>
                     <li><a href="category-index.html"><i class="icon-lab"></i></a></li>
                     <li><a href="product-index.html"><i class="fa fa-th-large"></i></a></li>
-                    <li class="current"><a href="accessory-index.html"><i class="icon-power-cord"></i></a></li>
+                    <li><a href="accessory-index.html"><i class="icon-power-cord"></i></a></li>
                     <li><a href="order-index.html"><i class="icon-cart"></i></a></li>
                     <li><a href="shipping-index.html"><i class="icon-airplane"></i></a></li>
                     <li><a href="country-index.html"><i class="icon-earth"></i></a></li>
@@ -64,7 +64,61 @@
             <div class="main">
                 <div class="container">
                     <div class="row">
-                        <button class="btn btn-green" data-toggle="modal" data-target="#exampleModal">Launch example model</button>
+                        <div class="page-header">
+                            <h2 class="widget widget-header">Buttons</h2>
+                        </div>
+                        <div class="widget-sub-heading">
+                            <h3>Normal</h3>
+                        </div>
+                        <div class="widget widget-content">
+                            <a href="#" class="btn btn-blue btn-normal">Blue button</a>
+                            <a href="#" class="btn btn-green btn-normal">Green button</a>
+                            <a href="#" class="btn btn-orange btn-normal">Orange button</a>
+                            <a href="#" class="btn btn-red btn-normal">Red button</a>
+                            <a href="#" class="btn btn-grey btn-normal">Grey button</a>
+                        </div>
+                        <div class="widget-sub-heading">
+                            <h3>Large</h3>
+                        </div>
+                        <div class="widget widget-content">
+                            <a href="#" class="btn btn-blue btn-large">Blue button</a>
+                            <a href="#" class="btn btn-green btn-large">Green button</a>
+                            <a href="#" class="btn btn-orange btn-large">Orange button</a>
+                            <a href="#" class="btn btn-red btn-large">Red button</a>
+                            <a href="#" class="btn btn-grey btn-large">Grey button</a>
+                        </div>
+
+                        <div class="page-header">
+                            <h2 class="widget widget-header">Labels</h2>
+                        </div>
+                        <div class="widget-sub-heading">
+                            <h3>Small</h3>
+                        </div>
+                        <div class="widget widget-content">
+                            <div class="label label-blue label-small">Blue label</div>
+                            <div class="label label-green label-small">Green label</div>
+                            <div class="label label-orange label-small">Orange label</div>
+                            <div class="label label-red label-small">Red label</div>
+                            <div class="label label-grey label-small">Red label</div>
+                        </div>
+                        <div class="widget-sub-heading">
+                            <h3>Large</h3>
+                        </div>
+                        <div class="widget widget-content">
+                            <div class="label label-blue label-large">Blue label</div>
+                            <div class="label label-green label-large">Green label</div>
+                            <div class="label label-orange label-large">Orange label</div>
+                            <div class="label label-red label-large">Red label</div>
+                            <div class="label label-grey label-large">Red label</div>
+                        </div>
+
+                        <div class="page-header">
+                            <h2 class="widget widget-header">Extra</h2>
+                        </div>
+                        <div class="widget widget-content">
+                            <a class="btn btn-green btn-large" data-toggle="modal" data-target="#exampleModal">Launch example modal</a>
+                            <a class="btn btn-blue btn-large" href="login.html">Login page</a>
+                        </div>
 
                         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                           <div class="modal-dialog">
@@ -74,7 +128,7 @@
                               </div>
                               <div class="modal-body">
                                 <form method="post" role="form" action="#">
-                                    <fieldset class="widget widget-form widget-last">
+                                    <fieldset class="widget widget-content widget-last">
                                         <div class="form-group">
                                             <label for="order_shipping_date">Shipping date</label>
                                             <input class="form-control" id="order_shipping_date" type="text">
