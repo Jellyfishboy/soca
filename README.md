@@ -2,6 +2,8 @@
 
 Soca is a responsive administration template built using Yeoman, Grunt, Bower, HTML5, CSS3 and CoffeeScript. It was purpose built to be used for [Trado](https://github.com/Jellyfishboy/trado), a lightweight, easy to use e-commerce platform designed for sole traders and SME businesses. However, Soca has been released as an open source template for other developers to utilise in their applications.
 
+[Demo site](http://soca.tomdallimore.com/)
+
 ##Getting started
 
 For development purposes, this repository requires the use of [Grunt](http://gruntjs.com/) and [Bower](http://bower.io/) in order to run the application.
