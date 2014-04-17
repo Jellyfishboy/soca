@@ -29,7 +29,7 @@ p {
 .pull-right {
     float:right;
 }
-input {
+input[type=text], textarea {
     -webkit-appearance: none;
     -webkit-border-radius:0px;
     border-radius: 0;
