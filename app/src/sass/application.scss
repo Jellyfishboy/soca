@@ -11,7 +11,7 @@ $dark-grey: #2f363d;
 $light-grey: #d0d0d0;
 $red: #CD2626;
 
-$menuOffset: 30%;
+$menuOffset: 35%;
 $transitionSpeed: .5s;
 
 body {
@@ -92,6 +92,9 @@ body {
         
             & ~ .all-wrapper {
                 @include transform3d(translate3D($menuOffset,0,0));
+                overflow: hidden;
+            }
+            & ~ body {
                 overflow: hidden;
             }
         }

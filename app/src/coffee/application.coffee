@@ -14,7 +14,12 @@ $(document).ready ->
         $(@).next('input[type="radio"]').prop 'checked', true
         $('.current-file').removeClass 'default'
         $(@).addClass 'default'
-    
+
+    $('#menu-trigger-input').change ->
+        if @checked
+            $('body').css 'overflow', 'hidden'
+        else
+            $('body').css 'overflow', 'auto'
 
 $(document).ajaxComplete ->
     attachment_ui()
