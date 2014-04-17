@@ -1,10 +1,11 @@
 .label {
-    display: inline;
+    display: inline-block;
     font-weight: 500;
     line-height: 1;
     color: #ffffff;
     text-align: center;
     white-space: nowrap;
+    padding: .5em .8em;
     vertical-align: baseline;
     @include box-sizing(border-box);
         &.label-orange {
@@ -24,11 +25,10 @@
             color:$dark-grey;
         }
         &.label-small {
-            padding: .2em .6em .3em;
             font-size: 75%;
         }
         &.label-large {
-            padding: .5em .8em;
+            
             font-size: 90%;
         }
 

@@ -4,7 +4,6 @@
     margin:0 0 8px;
         li {
             margin:0 7px 7px 0;
-            display: inline-block !important;
             @extend .label;
             @extend .label-large;
             @extend .label-grey;
