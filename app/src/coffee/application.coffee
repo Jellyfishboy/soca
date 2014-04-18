@@ -21,14 +21,11 @@ $(document).ready ->
         else
             $('body').css 'overflow', 'auto'
 
-$(document).ajaxComplete ->
-    attachment_ui()
-
 attachment_ui = ->
-    $('.new-file').on 'click', ->
+    $('body').on 'click', '.new-file', ->
         $(@).next('input[type="file"]').trigger 'click'
 
-    $('.file-upload').change ->
+    $('body').on 'change', '.file-upload', ->
         value = $(@).val()
         clean = value.replace(/^.*[\\\/]/, '')
         parent = $(@).prev '.new-file'

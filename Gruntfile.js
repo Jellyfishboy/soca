@@ -25,7 +25,7 @@ module.exports = function (grunt) {
         watch: {
             coffee: {
                 files: ['app/src/coffee/{,*/}*.coffee'],
-                tasks: ['coffee:server', 'uglify:server']
+                tasks: ['coffee:server']
             },
             options: {
                 nospawn: true

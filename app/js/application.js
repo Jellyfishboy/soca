@@ -23,15 +23,11 @@
     });
   });
 
-  $(document).ajaxComplete(function() {
-    return attachment_ui();
-  });
-
   attachment_ui = function() {
-    $('.new-file').on('click', function() {
+    $('body').on('click', '.new-file', function() {
       return $(this).next('input[type="file"]').trigger('click');
     });
-    return $('.file-upload').change(function() {
+    return $('body').on('change', '.file-upload', function() {
       var clean, parent, value;
       value = $(this).val();
       clean = value.replace(/^.*[\\\/]/, '');
