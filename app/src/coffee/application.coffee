@@ -31,8 +31,6 @@ attachment_ui = ->
         parent = $(@).prev '.new-file'
         parent.children('div').text clean
         if clean
-            parent.css 'background-color', '#8DC73F'
-            parent.children('.icon-upload-3').css 'top', '20px'
+            parent.css('background-color', '#8DC73F').children('.icon-upload-3').css 'top', '20px'
         else 
-            parent.css 'background-color', '#00aff1'
-            parent.children('.icon-upload-3').css 'top', '41px'
+            parent.css('background-color', '#00aff1').children('.icon-upload-3').css 'top', '41px'
