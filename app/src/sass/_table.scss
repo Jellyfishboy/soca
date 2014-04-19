@@ -20,6 +20,9 @@
                             font-size: 80%;
                         }
                 }
+                &.triple-menu {
+                    min-width:60px;
+                }
         }
         tbody tr td:last-child {
             text-align: right;
@@ -43,9 +46,6 @@
             &.select {
                 min-width:75px;
             }
-            &.triple {
-                min-width:55px;
-            }
             &.fifty {
                 width:40%;
             }
@@ -60,10 +60,6 @@
             margin:0;
             padding-left:20px;
         }
-        select {
-            margin:0;
-        }
-
 }
 .table-form input {
     width:100%;
