@@ -15,18 +15,6 @@ form {
                 margin-bottom:7px;
                 font-weight: bold;
             }
-            .form-control {
-                display:block;
-                width:100%;
-                height:38px;
-                padding:8px 10px;
-                line-height: 1.428571429;
-                vertical-align: middle;
-                background-color:rgba(208,208,208,0.5);
-                border:0px;
-                outline:0;
-                @include box-sizing(border-box);
-            }
             textarea.form-control {
                 height:auto;
                 resize:none;
@@ -108,4 +96,16 @@ form {
                 display: none;
             }
     }
+}
+.form-control {
+    display:block;
+    width:100%;
+    height:38px;
+    padding:8px 10px;
+    line-height: 1.428571429;
+    vertical-align: middle;
+    background-color:rgba(208,208,208,0.5);
+    border:0px;
+    outline:0;
+    @include box-sizing(border-box);
 }

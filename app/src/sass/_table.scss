@@ -43,6 +43,12 @@
             &.select {
                 min-width:75px;
             }
+            &.triple {
+                min-width:55px;
+            }
+            &.fifty {
+                width:40%;
+            }
         }
         tr.focused {
             font-size:1.2em;
@@ -53,6 +59,9 @@
         ul {
             margin:0;
             padding-left:20px;
+        }
+        select {
+            margin:0;
         }
 
 }
@@ -68,5 +77,4 @@
 .table-responsive {
     width: 100%;
     overflow-y: hidden;
-    // overflow-x: scroll;
 }

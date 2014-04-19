@@ -79,7 +79,7 @@
                                 <fieldset class="widget widget-content">
                                     <div class="row">
                                         <div class="twelvecol">
-                                            <select id="product_category_id">
+                                            <select id="product_category_id" class="full_width">
                                                 <option value="">Please select..</option>
                                                 <option value="3">Motor</option>
                                                 <option selected="selected" value="2">Actuator</option>
@@ -316,7 +316,7 @@
                                                 <th>Stock warning level</th>
                                                 <th>Cost value</th>
                                                 <th>Price</th>
-                                                <th></th>
+                                                <th class="triple"></th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -331,7 +331,10 @@
                                                 <td>5</td>
                                                 <td>2.50</td>
                                                 <td>12.78</td>
-                                                <td>
+                                                <td class="triple">
+                                                    <a href="#" class="" data-toggle="modal" data-target="#skuModal">
+                                                        <i class="icon-plus"></i>
+                                                    </a>
                                                     <a href="#" class="">
                                                         <i class="icon-pencil"></i>
                                                     </a>
@@ -351,7 +354,10 @@
                                                 <td>7</td>
                                                 <td>5.50</td>
                                                 <td>24.78</td>
-                                                <td>
+                                                <td class="triple">
+                                                    <a href="#" class="" data-toggle="modal" data-target="#skuModal">
+                                                        <i class="icon-plus"></i>
+                                                    </a>
                                                     <a href="#" class="">
                                                         <i class="icon-pencil"></i>
                                                     </a>
@@ -371,7 +377,10 @@
                                                 <td>5</td>
                                                 <td>2.50</td>
                                                 <td>12.78</td>
-                                                <td>
+                                                <td class="triple">
+                                                    <a href="#" class="" data-toggle="modal" data-target="#skuModal">
+                                                        <i class="icon-plus"></i>
+                                                    </a>
                                                     <a href="#" class="">
                                                         <i class="icon-pencil"></i>
                                                     </a>
@@ -381,11 +390,11 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><input type="text" id="sku_sku"></td>
-                                                <td><input type="text" id="sku_weight"></td>
-                                                <td><input type="text" id="sku_length"></td>
-                                                <td><input type="text" id="sku_thickness"></td>
-                                                <td><input type="text" id="sku_attribute_value"></td>
+                                                <td><input type="text" id="sku_sku" class="form-control"></td>
+                                                <td><input type="text" id="sku_weight" class="form-control"></td>
+                                                <td><input type="text" id="sku_length" class="form-control"></td>
+                                                <td><input type="text" id="sku_thickness" class="form-control"></td>
+                                                <td><input type="text" id="sku_attribute_value" class="form-control"></td>
                                                 <td class="select">
                                                     <select class="form-control" id="product_sku_attribute_type">
                                                         <option value="">Select...</option>
@@ -394,11 +403,11 @@
                                                         <option value="7">Length</option>
                                                     </select>
                                                 </td>
-                                                <td><input type="text" id="sku_stock"></td>
-                                                <td><input type="text" id="sku_stock_warning_level"></td>
-                                                <td><input type="text" id="sku_cost_value"></td>
-                                                <td><input type="text" id="sku_price"></td>
-                                                <td>
+                                                <td><input type="text" id="sku_stock" class="form-control"></td>
+                                                <td><input type="text" id="sku_stock_warning_level" class="form-control"></td>
+                                                <td><input type="text" id="sku_cost_value" class="form-control"></td>
+                                                <td><input type="text" id="sku_price" class="form-control"></td>
+                                                <td class="triple">
                                                     <a href="#" class="">
                                                         <i class="icon-remove"></i>
                                                     </a>
@@ -426,7 +435,54 @@
                 </div>
             </div>
         </div>
-
+        <div class="modal fade" id="skuModal" tabindex="-1" role="dialog" aria-labelledby="skuModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 id="skuModalLabel">Stock level</h2>
+              </div>
+              <div class="modal-body">
+                <p>Stock level total is <b>4</b></p>
+                <div class="table-responsive">
+                    <form method="post" role="form" action="#">
+                        <table class="table table-striped table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th class="fifty">Description</th>
+                                    <th>Adjustment</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input class="btn btn-blue btn-normal" type="submit" value="Add">
+                                    </td>
+                                    <td>
+                                        <input type="text" id="sku_stock_level_descrption" class="form-control">
+                                    </td>
+                                    <td>
+                                        <input type="text" id="sku_stock_level_adjustment" class="form-control">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>April 19, 2014 10:08</td>
+                                    <td class="fifty">Order #01</td>
+                                    <td class="align-left">-2</td>
+                                </tr>
+                                <tr>
+                                    <td>April 19, 2014 05:32</td>
+                                    <td class="fifty">New stock</td>
+                                    <td class="align-left">5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="components/jquery/dist/jquery.min.js"><\/script>')</script>
 
