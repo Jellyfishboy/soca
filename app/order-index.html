@@ -12,7 +12,7 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="components/bootstrap-datepicker/css/datepicker.css" media="screen">
+        <link rel="stylesheet" href="components/bootstrap-datepicker/css/datepicker3.css" media="screen">
         <link rel="stylesheet" href="css/application.css" media="screen">
         <link rel="stylesheet" href="components/normalize-css/normalize.css" media="screen">
         <link rel="stylesheet" href="components/fontawesome/css/font-awesome.min.css" media="screen">
@@ -166,6 +166,12 @@
         <script src="js/application.js"></script>
         <script src="components/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
         <script src="components/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+        <script>
+            $(".datepicker").datepicker({
+              format: "dd/mm/yyyy",
+              startDate: "0"
+            });
+        </script>
         <script src="js/bootstrap.min.js"></script>
 
         <script>

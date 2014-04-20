@@ -3,10 +3,6 @@
 
   $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
-    $(".datepicker").datepicker({
-      format: "dd/mm/yyyy",
-      startDate: "0"
-    });
     $(".user-menu ul li:first-child a").hover((function() {
       return $(".user-menu .fa-caret-up").css('color', '#2f363d');
     }), function() {

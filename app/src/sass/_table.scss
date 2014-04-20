@@ -50,8 +50,19 @@
                 width:40%;
             }
         }
-        tr.focused {
-            font-size:1.2em;
+        tr {
+            &.focused {
+                font-size:1.2em;
+            }
+            &.tr-red {
+                background-color:rgba(205,38,38,0.7);
+            }
+            &.tr-green {
+                background-color:rgba(141,199,63,0.7) !important;
+            }
+            &.tr-green td, &.tr-red td {
+                border-right: 0;
+            }
         }
         &.table-margin {
             margin-bottom:15px;
