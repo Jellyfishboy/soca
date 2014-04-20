@@ -12,6 +12,7 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="components/bootstrap-datepicker/css/datepicker.css" media="screen">
         <link rel="stylesheet" href="css/application.css" media="screen">
         <link rel="stylesheet" href="components/normalize-css/normalize.css" media="screen">
         <link rel="stylesheet" href="components/fontawesome/css/font-awesome.min.css" media="screen">
@@ -97,10 +98,10 @@
                                             <td>£876.50</td>
                                             <td>04/02/2014 at 12:36PM</td>
                                             <td>
-                                                <a href="#" class="">
+                                                <a href="#" class="" data-toggle="modal" data-target="#editOrderModal">
                                                     <i class="icon-pencil"></i>
                                                 </a>
-                                                <a href="#" class="">
+                                                <a href="#" class="" data-toggle="modal" data-target="#dispatchOrderModal">
                                                     <i class="icon-airplane"></i>
                                                 </a>
                                             </td>
@@ -113,12 +114,58 @@
                 </div>
             </div>
         </div>
-
+        <div class="modal fade" id="editOrderModal" tabindex="-1" role="dialog" aria-labelledby="editOrderModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 id="editOrderModalLabel">Edit Order #001</h2>
+              </div>
+              <div class="modal-body">
+                <form method="post" role="form" action="#">
+                    <fieldset class="widget widget-content widget-last">
+                        <div class="form-group">
+                            <label for="order_actual_shipping_cost">Actual shipping cost</label>
+                            <input class="form-control" id="order_actual_shipping_cost" type="text">
+                        </div>
+                    </fieldset>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-orange btn-large" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-blue btn-large">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="dispatchOrderModal" tabindex="-1" role="dialog" aria-labelledby="dispatchOrderModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 id="shippingOrderModalLabel">Dispatch Order #001</h2>
+              </div>
+              <div class="modal-body">
+                <form method="post" role="form" action="#">
+                    <fieldset class="widget widget-content widget-last">
+                        <div class="form-group">
+                            <label for="order_shipping_date">Shipping date</label>
+                            <input class="form-control datepicker" id="order_shipping_date" type="text">
+                        </div>
+                    </fieldset>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-orange btn-large" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-blue btn-large">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="components/jquery/dist/jquery.min.js"><\/script>')</script>
 
         <script src="js/application.js"></script>
         <script src="components/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+        <script src="components/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
         <script src="js/bootstrap.min.js"></script>
 
         <script>

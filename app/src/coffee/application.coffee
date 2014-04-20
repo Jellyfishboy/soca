@@ -1,6 +1,9 @@
 $(document).ready ->
 
     $('[data-toggle="tooltip"]').tooltip()
+    $(".datepicker").datepicker
+        format: "dd/mm/yyyy"
+        startDate: "0"
 
     ## Handle colour change for user-menu caveat
     $(".user-menu ul li:first-child a").hover (->

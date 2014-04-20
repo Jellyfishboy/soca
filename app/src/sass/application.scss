@@ -49,6 +49,11 @@ body {
     // -webkit-transition: -webkit-transform $transitionSpeed ease-in-out;
     // -moz-transition: -moz-transform $transitionSpeed ease-in-out;
 }
+.datepicker {
+    right:auto !important;
+    z-index:1051 !important;
+
+}
 @import "1140";
 @import "styling";
 @import "alert";
