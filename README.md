@@ -60,7 +60,8 @@ This will run through compiling, uglifying, copying the HTML, JavaScript, CSS an
 [Bootstrap](http://getbootstrap.com/) - JS support for tooltips, modals and dropdowns   
 [Font Awesome](http://fortawesome.github.com/Font-Awesome/) - Iconography   
 [Icomoon](http://icomoon.io/) - Iconography     
-[Tim Schlechter](https://github.com/TimSchlechter/bootstrap-tagsinput) - Tag input plugin   
+[Tim Schlechter](https://github.com/TimSchlechter/bootstrap-tagsinput) - Tag input plugin
+[Bootstrap-datepicker](http://www.eyecon.ro/bootstrap-datepicker/) - Datepicker plugin
 
 ##Copyright
 Copyright (c) 2014 [Tom Dallimore](http://www.tomdallimore.com) ([@billy_dallimore](http://twitter.com/billy_dallimore))  
