@@ -1,6 +1,7 @@
 $(document).ready ->
 
-    $('[data-toggle="tooltip"]').tooltip()
+    unless $('html').hasClass 'touch'
+        $('[data-toggle="tooltip"]').tooltip()
     ## Handle colour change for user-menu caveat
     $(".user-menu ul li:first-child a").hover (->
         $(".user-menu .fa-caret-up").css 'color', '#2f363d'
