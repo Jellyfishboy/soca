@@ -72,21 +72,12 @@
                                         }
                                 }
                         }
-                        &:nth-child(6) {
+                        &:last-child {
                             color:$yellow;
                                 a {
                                     color:$yellow;
                                         &:hover {
                                             color: $yellow;
-                                        }
-                                }
-                        }
-                        &:last-child {
-                            color:$grey;
-                                a {
-                                    color:$grey;
-                                        &:hover {
-                                            color: $grey;
                                         }
                                 }
                         }
