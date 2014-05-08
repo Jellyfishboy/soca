@@ -96,11 +96,26 @@
     overflow: auto;
     opacity: 0;
     -webkit-transition: opacity 0s 0s;
+        .about {
+            height:50px;   
+            display:table-row;
+                img {
+                    margin-right:10px;
+                    height:50px;
+                    width:50px;
+                }
+                div, img {
+                    color:#fff;
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+        }
         ul {
             -webkit-overflow-scrolling: touch;
             padding:0;
             margin:0;
             border-bottom:1px solid #3b444c;
+            border-top: 1px solid #0d1012;
                 li {
                     border-bottom: 1px solid #0d1012;
                     border-top:1px solid #3b444c;
