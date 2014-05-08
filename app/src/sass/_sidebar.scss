@@ -136,11 +136,8 @@
                         &:nth-child(5) i {
                             color:$cyan;
                         }
-                        &:nth-child(6) i {
-                            color:$yellow;
-                        }
                         &:last-child i {
-                            color:$grey;
+                            color:$yellow;
                         }
                 }
         }
