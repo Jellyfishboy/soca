@@ -6,6 +6,8 @@ Soca is a responsive administration template built using Yeoman, Grunt, Bower, H
 
 [Demo site](http://soca.tomdallimore.com/)
 
+[Release notes](http://release.tomdallimore.com/)
+
 ##Getting started
 
 For development purposes, this repository requires the use of [Grunt](http://gruntjs.com/) and [Bower](http://bower.io/) in order to run the application.
