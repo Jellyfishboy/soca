@@ -53,6 +53,11 @@ This will run through compiling, uglifying, copying the HTML, JavaScript, CSS an
 ![Mobile1](http://tomdallimore.com/wp-content/uploads/2014/04/soca_4.png "Mobile1")
 ![Mobile2](http://tomdallimore.com/wp-content/uploads/2014/04/soca_5.png "Mobile2")
 
+## Versioning
+
+shoulda-matchers follows Semantic Versioning 2.0 as defined at
+<http://semver.org>.
+
 ##How to contribute
 
 * Fork the project
