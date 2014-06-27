@@ -55,7 +55,7 @@ This will run through compiling, uglifying, copying the HTML, JavaScript, CSS an
 
 ## Versioning
 
-shoulda-matchers follows Semantic Versioning 2.0 as defined at
+Soca follows Semantic Versioning 2.0 as defined at
 <http://semver.org>.
 
 ##How to contribute
