@@ -1,87 +1,161 @@
-.table {
+.table 
+{
     width:100%;
     background-color:#fff;
-        th {
+        th 
+        {
             text-align: left;
         }
-        td, th {
+        td, th 
+        {
             padding:8px;
             border-right: 1px solid $light-grey;
-                &:last-child {
+                &:last-child 
+                {
                     border-right:0;
                     min-width:35px;
                 }
-                .item-sub {
+                .item-sub 
+                {
                     margin:5px 0 0;
                     font-weight: 500;
-                        &.label {
+                        &.label 
+                        {
                             display: inline-block;
                             padding: 5px 6px 6px;
                             font-size: 80%;
                         }
                 }
-                &.triple-menu {
+                &.triple-menu 
+                {
                     min-width:60px;
                 }
         }
-        tbody tr td:last-child {
-            text-align: right;
-                a {
-                    margin-right: 3px;  
-                        &:last-child {
-                            margin-right: 0px;
-                        }
+        tbody 
+        {
+            tr 
+            {
+                td:last-child 
+                {
+                    text-align: right;
+
+                    a 
+                    {
+                        margin-right: 3px;  
+                            &:last-child 
+                            {
+                                margin-right: 0px;
+                            }
+                    }
                 }
+                &:first-child
+                {
+                    td
+                    {
+                        border-top: 0;
+                    }
+                }
+            }
         }
-        td {
-            &.align-left {
+        td 
+        {
+            &.align-left 
+            {
                 text-align:left !important;
             }
-            &.align-right {
+            &.align-right 
+            {
                 text-align: right;
             }
-            &.border-top {
+            &.border-top 
+            {
                 border-top: 1px solid $light-grey;
             }
-            &.select {
+            &.select 
+            {
                 min-width:75px;
             }
-            &.fifty {
+            &.fifty 
+            {
                 width:40%;
             }
         }
-        tr {
-            &.focused {
+        tr 
+        {
+            &.focused 
+            {
                 font-size:1.2em;
             }
-            &.tr-red {
+            &.tr-red 
+            {
                 background-color:rgba(205,38,38,0.7);
             }
-            &.tr-green {
+            &.tr-green 
+            {
                 background-color:rgba(141,199,63,0.7) !important;
             }
-            &.tr-green td, &.tr-red td {
+            &.tr-green td, &.tr-red td 
+            {
                 border-right: 0;
             }
         }
-        &.table-margin {
+        &.table-margin 
+        {
             margin-bottom:15px;
         }
-        ul {
+        ul 
+        {
             margin:0;
             padding-left:20px;
         }
+        tr td 
+        {
+            border-top:1px solid #d0d0d0;
+        }
+        .inner-table
+        {
+            padding:0;
+
+            table
+            {
+                width:100%;
+
+                tbody
+                {
+                    tr:first-child td
+                    {
+                        border-top:0px;
+                    }
+                }
+            }
+        }
 }
-.table-form input {
+.table-form input 
+{
     width:100%;
 }
-.table-striped tbody tr:nth-child(odd) {
+.table-striped tbody tr:nth-child(odd) 
+{
     background-color:#f9f9f9;
+
+    table tr
+    {
+        background-color:#f9f9f9;
+    }
 }
-.table-hover thead tr:hover th, .table-hover tbody tr:hover td {
+.table-striped tbody tr:nth-child(even) 
+{
+    table tr
+    {
+        background-color:#fff;
+    }
+}
+.table-hover thead tr:hover th, .table-hover tbody tr:hover td 
+{
     background-color:#f9f8ef;
 }
-.table-responsive {
+.table-responsive 
+{
     width: 100%;
     overflow-y: hidden;
 }
