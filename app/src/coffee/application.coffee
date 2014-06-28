@@ -1,4 +1,8 @@
 $(document).ready ->
+    attachmentUi()
+    
+    $('td.inner-table').each ->
+        $(@).find('table').height($(@).outerHeight())
 
     unless $('html').hasClass 'touch'
         $('[data-toggle="tooltip"]').tooltip()
@@ -7,8 +11,6 @@ $(document).ready ->
         $(".user-menu .fa-caret-up").css 'color', '#2f363d'
     ), ->
         $(".user-menu .fa-caret-up").css 'color', '#ffffff'
-
-    attachment_ui()
 
     $('.current-file').click ->
         $(@).next('input[type="radio"]').prop 'checked', true
@@ -21,7 +23,7 @@ $(document).ready ->
         else
             $('body').css 'overflow', 'auto'
 
-attachment_ui = ->
+attachmentUi = ->
     $('body').on 'click', '.new-file', ->
         $(@).next('input[type="file"]').trigger 'click'
 

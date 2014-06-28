@@ -127,6 +127,14 @@
                         border-top:0px;
                     }
                 }
+                th, td
+                {
+                    width: 33%;
+                }
+                td
+                {
+                    min-width:68px;
+                }
             }
         }
 }
