@@ -73,7 +73,7 @@ Soca follows Semantic Versioning 2.0 as defined at
 [Bootstrap-datepicker](http://www.eyecon.ro/bootstrap-datepicker/) - Datepicker plugin
 
 ##Copyright
-Copyright (c) 2014 [Tom Dallimore](http://www.tomdallimore.com) ([@billy_dallimore](http://twitter.com/billy_dallimore))  
+Copyright (c) 2014 [Tom Dallimore](http://www.tomdallimore.com) ([@tom_dallimore](http://twitter.com/tom_dallimore))  
 Licenced under the MIT licence.
 
 
