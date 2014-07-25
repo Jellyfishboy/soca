@@ -6,7 +6,7 @@ Soca is a responsive administration template built using Yeoman, Grunt, Bower, H
 
 [Demo site](http://soca.tomdallimore.com/)
 
-[Release notes](http://release.tomdallimore.com/)
+[Release notes](http://release.tomdallimore.com/projects/soca)
 
 ##Getting started
 
