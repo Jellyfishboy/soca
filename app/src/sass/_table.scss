@@ -2,168 +2,181 @@
 {
     width:100%;
     background-color:#fff;
-        th 
+
+    th 
+    {
+        text-align: left;
+    }
+    td, th 
+    {
+        padding:8px;
+        border-right: 1px solid $light-grey;
+
+        &:last-child 
         {
-            text-align: left;
+            border-right:0;
+            min-width:35px;
         }
-        td, th 
+        .item-sub 
         {
-            padding:8px;
-            border-right: 1px solid $light-grey;
-                &:last-child 
-                {
-                    border-right:0;
-                    min-width:35px;
-                }
-                .item-sub 
-                {
-                    margin:5px 0 0;
-                    font-weight: 500;
-                        &.label 
-                        {
-                            display: inline-block;
-                            padding: 5px 6px 6px;
-                            font-size: 80%;
-                        }
-                }
-                &.triple-menu 
-                {
-                    min-width:60px;
-                }
-        }
-        tbody 
-        {
-            tr 
+            margin:5px 0 0;
+            font-weight: 500;
+
+            &.label 
             {
-                td:last-child 
-                {
-                    text-align: right;
-                    min-width:55px;
-                    a 
-                    {
-                        margin-right: 3px;  
-                            &:last-child 
-                            {
-                                margin-right: 0px;
-                            }
-                    }
-                }
-                &:first-child
-                {
-                    td
-                    {
-                        border-top: 0;
-                    }
-                }
+                display: inline-block;
+                padding: 5px 6px 6px;
+                font-size: 80%;
             }
         }
-        td 
+        &.triple-menu 
         {
-            &.align-left 
-            {
-                text-align:left !important;
-            }
-            &.align-right 
-            {
-                text-align: right;
-            }
-            &.border-top 
-            {
-                border-top: 1px solid $light-grey;
-            }
-            &.select 
-            {
-                min-width:75px;
-            }
-            &.fifty 
-            {
-                width:40%;
-            }
+            min-width:60px;
         }
+    }
+    tbody 
+    {
         tr 
         {
-            &.focused 
+            td:last-child 
             {
-                font-size:1.2em;
-            }
-            &.tr-red 
-            {
-                background-color:rgba(205,38,38,0.7);
-            }
-            &.tr-green 
-            {
-                background-color:rgba(141,199,63,0.7) !important;
-            }
-            &.tr-green td, &.tr-red td 
-            {
-                border-right: 0;
-            }
-        }
-        &.table-margin 
-        {
-            margin-bottom:15px;
-        }
-        ul 
-        {
-            margin:0;
-            padding-left:20px;
-        }
-        tr td 
-        {
-            border-top:1px solid #d0d0d0;
-        }
-        .inner-table
-        {
-            padding:0;
-
-            table
-            {
-                width:100%;
-
-                tbody
+                text-align: right;
+                min-width:55px;
+                a 
                 {
-                    tr:first-child td
+                    margin-right: 3px;  
+
+                    &:last-child 
                     {
-                        border-top:0px;
+                        margin-right: 0px;
                     }
                 }
-                th, td
-                {
-                    width: 33%;
-                }
+            }
+            &:first-child
+            {
                 td
                 {
-                    min-width:68px;
+                    border-top: 0;
                 }
             }
         }
-}
-.table-form input 
-{
-    width:100%;
-}
-.table-striped tbody tr:nth-child(odd) 
-{
-    background-color:#f9f9f9;
+    }
+    td 
+    {
+        &.align-left 
+        {
+            text-align:left !important;
+        }
+        &.align-right 
+        {
+            text-align: right;
+        }
+        &.border-top 
+        {
+            border-top: 1px solid $light-grey;
+        }
+        &.select 
+        {
+            min-width:75px;
+        }
+        &.fifty 
+        {
+            width:40%;
+        }
+        &.sku, &.part-no
+        {
+            width:7%;
+        }
+        &.name
+        {
+            width:35%;
+        }
+    }
+    tr 
+    {
+        &.focused 
+        {
+            font-size:1.2em;
+        }
+        &.tr-red 
+        {
+            background-color:rgba(205,38,38,0.7);
+        }
+        &.tr-green 
+        {
+            background-color:rgba(141,199,63,0.7) !important;
+        }
+        &.tr-green td, &.tr-red td 
+        {
+            border-right: 0;
+        }
+    }
+    &.table-margin 
+    {
+        margin-bottom:15px;
+    }
+    ul 
+    {
+        margin:0;
+        padding-left:20px;
+    }
+    tr td 
+    {
+        border-top:1px solid #d0d0d0;
+    }
+    .inner-table
+    {
+        padding:0;
 
-    table tr
+        table
+        {
+            width:100%;
+
+            tbody
+            {
+                tr:first-child td
+                {
+                    border-top:0px;
+                }
+            }
+            th, td
+            {
+                width: 33%;
+            }
+            td
+            {
+                min-width:68px;
+            }
+        }
+    }
+
+    &.table-form input 
+    {
+        width:100%;
+    }
+    &.table-striped tbody tr:nth-child(odd) 
     {
         background-color:#f9f9f9;
+
+        table tr
+        {
+            background-color:#f9f9f9;
+        }
     }
-}
-.table-striped tbody tr:nth-child(even) 
-{
-    table tr
+    &.table-striped tbody tr:nth-child(even) 
     {
-        background-color:#fff;
+        table tr
+        {
+            background-color:#fff;
+        }
     }
-}
-.table-hover thead tr:hover th, .table-hover tbody tr:hover td 
-{
-    background-color:#f9f8ef;
-}
-.table-responsive 
-{
-    width: 100%;
-    overflow-y: hidden;
+    &.table-hover thead tr:hover th, .table-hover tbody tr:hover td 
+    {
+        background-color:#f9f8ef;
+    }
+    &.table-responsive 
+    {
+        width: 100%;
+        overflow-y: hidden;
+    }
 }
