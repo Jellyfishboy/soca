@@ -31,7 +31,7 @@
                 <li><a href="accessory-index.html"><i class="icon-power-cord"></i> <span>Accessories</span></a></li>
                 <li class="current"><a href="order-index.html"><i class="icon-cart"></i> <span>Orders</span></a></li>
                 <li><a href="shipping-index.html"><i class="icon-airplane"></i> <span>Shipping</span></a></li>
-                <li><a href="country-index.html"><i class="icon-earth"></i> <span>Countries</span></a></li>
+                <li><a href="zone-index.html"><i class="icon-location"></i> <span>Zones</span></a></li>
                 
             </ul>
         </div>
@@ -59,7 +59,7 @@
                     <li><a href="accessory-index.html" data-toggle="tooltip" data-placement="right" title="Accessories"><i class="icon-power-cord"></i></a></li>
                     <li class="current"><a href="order-index.html" data-toggle="tooltip" data-placement="right" title="Orders"><i class="icon-cart"></i></a></li>
                     <li><a href="shipping-index.html" data-toggle="tooltip" data-placement="right" title="Shippings"><i class="icon-airplane"></i></a></li>
-                    <li><a href="country-index.html" data-toggle="tooltip" data-placement="right" title="Countries"><i class="icon-earth"></i></a></li>
+                    <li><a href="zone-index.html" data-toggle="tooltip" data-placement="right" title="Zones"><i class="icon-location"></i></a></li>
                     
                 </ul>
             </div>
@@ -102,9 +102,6 @@
                                                 <a href="#" class="" data-toggle="modal" data-target="#editOrderModal">
                                                     <i class="icon-pencil"></i>
                                                 </a>
-                                                <a href="#" class="" data-toggle="modal" data-target="#dispatchOrderModal">
-                                                    <i class="icon-airplane"></i>
-                                                </a>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -125,31 +122,12 @@
                 <form method="post" role="form" action="#">
                     <fieldset class="widget widget-content widget-last">
                         <div class="form-group">
-                            <label for="order_actual_shipping_cost">Actual shipping cost</label>
-                            <input class="form-control" id="order_actual_shipping_cost" type="text">
-                        </div>
-                    </fieldset>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-orange btn-large" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-blue btn-large">Save changes</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="dispatchOrderModal" tabindex="-1" role="dialog" aria-labelledby="dispatchOrderModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h3 id="shippingOrderModalLabel">Dispatch Order #001</h2>
-              </div>
-              <div class="modal-body">
-                <form method="post" role="form" action="#">
-                    <fieldset class="widget widget-content widget-last">
-                        <div class="form-group">
                             <label for="order_shipping_date">Shipping date</label>
                             <input class="form-control datepicker" id="order_shipping_date" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="order_actual_shipping_cost">Actual shipping cost</label>
+                            <input class="form-control" id="order_actual_shipping_cost" type="text">
                         </div>
                     </fieldset>
                 </form>
