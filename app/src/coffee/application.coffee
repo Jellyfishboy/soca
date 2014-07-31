@@ -23,6 +23,11 @@ $(document).ready ->
         else
             $('body').css 'overflow', 'auto'
 
+    $('.loading-trigger').on 'click', ->
+        $('.main').css 'pointer-events', 'none'
+        $('.loading-overlay').css('height', '100%').addClass 'active'
+        $('.loading5').addClass 'active'
+
 attachmentUi = ->
     $('body').on 'click', '.new-file', ->
         $(@).next('input[type="file"]').trigger 'click'

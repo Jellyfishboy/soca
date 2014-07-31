@@ -1,0 +1,411 @@
+.loading-overlay, .loading5
+{
+    @include transition-property(opacity);
+    @include transition-duration(0.4s);
+    @include transition-timing-function(linear);
+}
+.loading-overlay
+{
+    background-color: white;
+    @include opacity(0);
+    // height:100%;
+    width:100%;
+    position: fixed;
+    z-index:5000;
+    margin-top: -20px;
+
+    &.active
+    {
+        @include opacity(0.6);
+    }
+}
+.loading5
+{
+    width: 40px;
+    height: 40px;
+    transform:rotate(45deg);
+    -webkit-animation: loading5-ani1 3s ease-in-out infinite;
+    -moz-animation-name: loading5-ani1 3s ease-in-out infinite;
+    -ms-animation-name: loading5-ani1 3s ease-in-out infinite;
+    -o-animation-name: loading5-ani1 3s ease-in-out infinite;
+    animation-name: loading5-ani1 3s ease-in-out infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    z-index:5001;
+    @include opacity(0);
+
+    &.active
+    {
+        @include opacity(1);
+    }
+}
+.loading5 i
+{
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  position:absolute;
+
+}
+.loading5 i:nth-child(1)
+{
+    background: $purple;
+    transform:translate(0,50px);
+    -webkit-animation: loading5-ani2 3s ease-in-out infinite;
+    -moz-animation-name: loading5-ani2 3s ease-in-out infinite;
+    -ms-animation-name: loading5-ani2 3s ease-in-out infinite;
+    -o-animation-name: loading5-ani2 3s ease-in-out infinite;
+    animation-name: loading5-ani2 3s ease-in-out infinite;
+}
+.loading5 i:nth-child(2)
+{
+    background: $green;
+    transform:rotate(90deg) translate(0,50px);
+    -webkit-animation: loading5-ani3 3s ease-in-out infinite;
+    -moz-animation-name: loading5-ani3 3s ease-in-out infinite;
+    -ms-animation-name: loading5-ani3 3s ease-in-out infinite;
+    -o-animation-name: loading5-ani3 3s ease-in-out infinite;
+    animation-name: loading5-ani3 3s ease-in-out infinite;
+}
+.loading5 i:nth-child(3)
+{
+    background: $blue;
+    transform:rotate(180deg) translate(0,50px);
+    -webkit-animation: loading5-ani4 3s ease-in-out infinite;
+    -moz-animation-name: loading5-ani4 3s ease-in-out infinite;
+    -ms-animation-name: loading5-ani4 3s ease-in-out infinite;
+    -o-animation-name: loading5-ani4 3s ease-in-out infinite;
+    animation-name: loading5-ani4 3s ease-in-out infinite;
+}
+.loading5 i:nth-child(4)
+{
+    background: $orange;
+    transform:rotate(270deg) translate(0,50px);
+    -webkit-animation: loading5-ani5 3s ease-in-out infinite;
+    -moz-animation-name: loading5-ani5 3s ease-in-out infinite;
+    -ms-animation-name: loading5-ani5 3s ease-in-out infinite;
+    -o-animation-name: loading5-ani5 3s ease-in-out infinite;
+    animation-name: loading5-ani5 3s ease-in-out infinite;
+}
+@-webkit-keyframes loading5-ani1
+{
+  25%
+  {
+    transform:rotate(135deg);
+  }
+  50%
+  {
+    transform:rotate(225deg);
+  }
+  75%
+  {
+    transform:rotate(315deg);
+  }
+  100%
+  {
+    transform:rotate(405deg);
+  }
+}
+@-moz-keyframes loading5-ani1
+{
+  25%
+  {
+    transform:rotate(135deg);
+  }
+  50%
+  {
+    transform:rotate(225deg);
+  }
+  75%
+  {
+    transform:rotate(315deg);
+  }
+  100%
+  {
+    transform:rotate(405deg);
+  }
+}
+@-ms-keyframes loading5-ani1
+{
+  25%
+  {
+    transform:rotate(135deg);
+  }
+  50%
+  {
+    transform:rotate(225deg);
+  }
+  75%
+  {
+    transform:rotate(315deg);
+  }
+  100%
+  {
+    transform:rotate(405deg);
+  }
+}
+@-o-keyframes loading5-ani1
+{
+  25%
+  {
+    transform:rotate(135deg);
+  }
+  50%
+  {
+    transform:rotate(225deg);
+  }
+  75%
+  {
+    transform:rotate(315deg);
+  }
+  100%
+  {
+    transform:rotate(405deg);
+  }
+}
+@keyframes loading5-ani1
+{
+  25%
+  {
+    transform:rotate(135deg);
+  }
+  50%
+  {
+    transform:rotate(225deg);
+  }
+  75%
+  {
+    transform:rotate(315deg);
+  }
+  100%
+  {
+    transform:rotate(405deg);
+  }
+}
+
+@-webkit-keyframes loading5-ani2
+{
+  17.5%,25%,42.5%,50%,67.5%,75%,92.5%,100%
+  {
+    transform:translate(0,50px);
+  }
+  12.5%,37.5%,62.5%,87.5%
+  {
+    transform:translate(0,35px);
+  }
+}
+@-moz-keyframes loading5-ani2
+{
+  17.5%,25%,42.5%,50%,67.5%,75%,92.5%,100%
+  {
+    transform:translate(0,50px);
+  }
+  12.5%,37.5%,62.5%,87.5%
+  {
+    transform:translate(0,35px);
+  }
+}
+@-ms-keyframes loading5-ani2
+{
+  17.5%,25%,42.5%,50%,67.5%,75%,92.5%,100%
+  {
+    transform:translate(0,50px);
+  }
+  12.5%,37.5%,62.5%,87.5%
+  {
+    transform:translate(0,35px);
+  }
+}
+@-o-keyframes loading5-ani2
+{
+  17.5%,25%,42.5%,50%,67.5%,75%,92.5%,100%
+  {
+    transform:translate(0,50px);
+  }
+  12.5%,37.5%,62.5%,87.5%
+  {
+    transform:translate(0,35px);
+  }
+}
+@keyframes loading5-ani2
+{
+  17.5%,25%,42.5%,50%,67.5%,75%,92.5%,100%
+  {
+    transform:translate(0,50px);
+  }
+  12.5%,37.5%,62.5%,87.5%
+  {
+    transform:translate(0,35px);
+  }
+}
+
+@-webkit-keyframes loading5-ani3
+{
+  17.5%,25%,42.5%,50%,67.5%,75%,92.5%,100%
+  {
+    transform:rotate(90deg) translate(0,50px);
+  }
+  12.5%,37.5%,62.5%,87.5%
+  {
+    transform:rotate(90deg) translate(0,35px);
+  }
+}
+@-moz-keyframes loading5-ani3
+{
+  17.5%,25%,42.5%,50%,67.5%,75%,92.5%,100%
+  {
+    transform:rotate(90deg) translate(0,50px);
+  }
+  12.5%,37.5%,62.5%,87.5%
+  {
+    transform:rotate(90deg) translate(0,35px);
+  }
+}
+@-ms-keyframes loading5-ani3
+{
+  17.5%,25%,42.5%,50%,67.5%,75%,92.5%,100%
+  {
+    transform:rotate(90deg) translate(0,50px);
+  }
+  12.5%,37.5%,62.5%,87.5%
+  {
+    transform:rotate(90deg) translate(0,35px);
+  }
+}
+@-o-keyframes loading5-ani3
+{
+  17.5%,25%,42.5%,50%,67.5%,75%,92.5%,100%
+  {
+    transform:rotate(90deg) translate(0,50px);
+  }
+  12.5%,37.5%,62.5%,87.5%
+  {
+    transform:rotate(90deg) translate(0,35px);
+  }
+}
+@keyframes loading5-ani3
+{
+  17.5%,25%,42.5%,50%,67.5%,75%,92.5%,100%
+  {
+    transform:rotate(90deg) translate(0,50px);
+  }
+  12.5%,37.5%,62.5%,87.5%
+  {
+    transform:rotate(90deg) translate(0,35px);
+  }
+}
+
+@-webkit-keyframes loading5-ani4
+{
+  17.5%,25%,42.5%,50%,67.5%,75%,92.5%,100%
+  {
+    transform:rotate(180deg) translate(0,50px);
+  }
+  12.5%,37.5%,62.5%,87.5%
+  {
+    transform:rotate(180deg) translate(0,35px);
+  }
+}
+@-moz-keyframes loading5-ani4
+{
+  17.5%,25%,42.5%,50%,67.5%,75%,92.5%,100%
+  {
+    transform:rotate(180deg) translate(0,50px);
+  }
+  12.5%,37.5%,62.5%,87.5%{
+    transform:rotate(180deg) translate(0,35px);
+  }
+}
+@-ms-keyframes loading5-ani4
+{
+  17.5%,25%,42.5%,50%,67.5%,75%,92.5%,100%
+  {
+    transform:rotate(180deg) translate(0,50px);
+  }
+  12.5%,37.5%,62.5%,87.5%
+  {
+    transform:rotate(180deg) translate(0,35px);
+  }
+}
+@-o-keyframes loading5-ani4
+{
+  17.5%,25%,42.5%,50%,67.5%,75%,92.5%,100%
+  {
+    transform:rotate(180deg) translate(0,50px);
+  }
+  12.5%,37.5%,62.5%,87.5%
+  {
+    transform:rotate(180deg) translate(0,35px);
+  }
+}
+@keyframes loading5-ani4
+{
+  17.5%,25%,42.5%,50%,67.5%,75%,92.5%,100%
+  {
+    transform:rotate(180deg) translate(0,50px);
+  }
+  12.5%,37.5%,62.5%,87.5%
+  {
+    transform:rotate(180deg) translate(0,35px);
+  }
+}
+
+@-webkit-keyframes loading5-ani5
+{
+  17.5%,25%,42.5%,50%,67.5%,75%,92.5%,100%
+  {
+    transform:rotate(270deg) translate(0,50px);
+  }
+  12.5%,37.5%,62.5%,87.5%
+  {
+    transform:rotate(270deg) translate(0,35px);
+  }
+}
+@-moz-keyframes loading5-ani5
+{
+  17.5%,25%,42.5%,50%,67.5%,75%,92.5%,100%
+  {
+    transform:rotate(270deg) translate(0,50px);
+  }
+  12.5%,37.5%,62.5%,87.5%
+  {
+    transform:rotate(270deg) translate(0,35px);
+  }
+}
+@-ms-keyframes loading5-ani5
+{
+  17.5%,25%,42.5%,50%,67.5%,75%,92.5%,100%
+  {
+    transform:rotate(270deg) translate(0,50px);
+  }
+  12.5%,37.5%,62.5%,87.5%
+  {
+    transform:rotate(270deg) translate(0,35px);
+  }
+}
+@-o-keyframes loading5-ani5
+{
+  17.5%,25%,42.5%,50%,67.5%,75%,92.5%,100%
+  {
+    transform:rotate(270deg) translate(0,50px);
+  }
+  12.5%,37.5%,62.5%,87.5%
+  {
+    transform:rotate(270deg) translate(0,35px);
+  }
+}
+@keyframes loading5-ani5
+{
+  17.5%,25%,42.5%,50%,67.5%,75%,92.5%,100%
+  {
+    transform:rotate(270deg) translate(0,50px);
+  }
+  12.5%,37.5%,62.5%,87.5%
+  {
+    transform:rotate(270deg) translate(0,35px);
+  }
+}
