@@ -6,6 +6,11 @@
     th 
     {
         text-align: left;
+
+        &.align-center
+        {
+            text-align: center;
+        }
     }
     td, th 
     {
@@ -113,7 +118,7 @@
     }
     &.table-margin 
     {
-        margin-bottom:15px;
+        margin-bottom:15px !important;
     }
     ul 
     {
@@ -150,9 +155,32 @@
         }
     }
 
-    &.table-form input 
+    &.table-form 
     {
-        width:100%;
+        margin:0;
+
+        input 
+        {
+            width:100%;
+        }
+        tr
+        {
+            th:first-child, td:first-child
+            {
+                padding:8px 8px 8px 20px;
+            }
+            th:last-child, td:last-child
+            {
+                padding:8px 20px 8px 8px;
+            }
+            td
+            {
+                &.triple-menu 
+                {
+                    min-width:85px !important;
+                }
+            }
+        }
     }
     &.table-striped tbody tr:nth-child(odd) 
     {

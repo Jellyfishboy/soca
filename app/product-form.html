@@ -76,10 +76,6 @@
                                 <h2 class="widget widget-header">New product</h2>
                             </div>
                             <form method="post" role="form" action="#">
-
-                                <div class="widget-sub-heading">
-                                    <h3>Product information</h3>
-                                </div>
                                 <fieldset class="widget widget-content">
                                     <div class="row">
                                         <div class="twelvecol">
@@ -215,93 +211,61 @@
                                 <div class="widget-sub-heading">
                                     <h3>Accessories</h3>
                                 </div>
-                                <fieldset class="widget widget-content">
-                                    <div class="row">
-                                        <div class="twelvecol">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" id="category_visible" checked="checked">
-                                                    Accessory #1
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" id="category_visible" checked="checked">
-                                                    Accessory #2
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" id="category_visible" checked="checked">
-                                                    Accessory #3
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" id="category_visible" checked="checked">
-                                                    Accessory #4
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" id="category_visible" checked="checked">
-                                                    Accessory #5
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" id="category_visible" checked="checked">
-                                                    Accessory #6
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </fieldset>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover table-form table-margin">
+                                        <thead>
+                                            <tr>
+                                                <th>Part no.</th>
+                                                <th>Name</th>
+                                                <th>Weight (g)</th>
+                                                <th class="align-center">Select</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>46272</td>
+                                                <td>50mm plug</td>
+                                                <td>20.0</td>
+                                                <td><input type="checkbox" id="product_accessory_1" ></td>
+                                            </tr>
+                                            <tr>
+                                                <td>23523</td>
+                                                <td>Additional lead</td>
+                                                <td>300.0</td>
+                                                <td><input type="checkbox" id="product_accessory_2" checked="checked"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>76342</td>
+                                                <td>Mini hinge</td>
+                                                <td>10.0</td>
+                                                <td><input type="checkbox" id="product_accessory_3" checked="checked"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                                 <div class="widget-sub-heading">
                                     <h3>Related products</h3>
                                 </div>
-                                <fieldset class="widget widget-content">
-                                    <div class="row">
-                                        <div class="twelvecol">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" id="category_visible" checked="checked">
-                                                    Related product #1
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" id="category_visible" checked="checked">
-                                                    Related product #2
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" id="category_visible" checked="checked">
-                                                    Related product #3
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" id="category_visible" checked="checked">
-                                                    Related product #4
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" id="category_visible" checked="checked">
-                                                    Related product #5
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" id="category_visible" checked="checked">
-                                                    Related product #6
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </fieldset>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover table-form table-margin">
+                                        <thead>
+                                            <tr>
+                                                <th>SKU</th>
+                                                <th>Part no.</th>
+                                                <th>Name</th>
+                                                <th class="align-center">Select</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>GR02</td>
+                                                <td>1</td>
+                                                <td>GR02 Gearmotor</td>
+                                                <td><input type="checkbox" id="product_accessory_3" checked="checked"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                                 <div class="widget-sub-heading">
                                     <h3>SKU</h3>
                                     <div class="pull-right">
@@ -309,7 +273,7 @@
                                     </div>
                                 </div>
                                 <div class="table-responsive">
-                                    <table class="table table-striped table-bordered table-hover">
+                                    <table class="table table-striped table-bordered table-hover table-form table-margin">
                                         <thead>
                                             <tr>
                                                 <th>SKU</th>
