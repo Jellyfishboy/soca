@@ -6,11 +6,6 @@
     th 
     {
         text-align: left;
-
-        &.align-center
-        {
-            text-align: center;
-        }
     }
     td, th 
     {
@@ -37,6 +32,10 @@
         &.triple-menu 
         {
             min-width:75px !important;
+        }
+        &.align-center
+        {
+            text-align: center !important;
         }
     }
     tbody 
@@ -162,6 +161,10 @@
         input 
         {
             width:100%;
+        }
+        input[type=checkbox]
+        {
+            width:auto;
         }
         tr
         {
