@@ -50,3 +50,22 @@
         vertical-align: middle;
     }
 }
+.widget-controls
+{
+    margin-bottom:15px;
+    overflow: hidden;
+    line-height: 38px;
+
+    select, span
+    {
+        float:right;
+    }
+    select 
+    {
+        margin-left:15px;
+    }   
+    .widget-control-margin
+    {
+        margin-right:15px;
+    }
+}

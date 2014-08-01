@@ -27,6 +27,22 @@ $(document).ready ->
         $('.loading-overlay').css('height', '100%').addClass 'active'
         $('.loading5').addClass 'active'
 
+    $(".mixitup").mixItUp 
+        layout:
+            display: "table-row"
+        animation:
+            effects: "fade"
+            duration: "400"
+
+    $('#filter-product-category').on 'change', ->
+        item = $(this).find(':selected').data('filter')
+        $('.mixitup').mixItUp 'filter', item
+
+    $('#sort-product').on 'change', ->
+        item = $(this).find(':selected').data('sort')
+        $('.mixitup').mixItUp 'sort', item
+
+
 attachmentUi = ->
     $('body').on 'click', '.new-file', ->
         $(@).next('input[type="file"]').trigger 'click'

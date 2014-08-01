@@ -113,3 +113,15 @@ form {
     outline:0;
     @include box-sizing(border-box);
 }
+.form-select
+{
+    display: block;
+    height: 40px;
+    background-color:#fff;
+    line-height: 1.428571429;
+    vertical-align: middle;
+    border:0px;
+    outline:0;
+    padding:10px 10px;
+    width:170px;
+}
