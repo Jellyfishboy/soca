@@ -11,7 +11,7 @@
     // height:100%;
     width:100%;
     position: fixed;
-    z-index:5000;
+    z-index:1036;
     margin-top: -20px;
 
     &.active
@@ -34,7 +34,7 @@
     left: 50%;
     margin-top: -20px;
     margin-left: -20px;
-    z-index:5001;
+    z-index:1037;
     @include opacity(0);
 
     &.active
