@@ -96,6 +96,13 @@ module.exports = function (grunt) {
                         '<%= soca.dist %>/*'
                     ]
                 }]
+            },
+            css: {
+                files: [{
+                    src: [
+                        '<%= soca.dist %>/css/application.css'
+                    ]
+                }]
             }
         },
         copy: {
@@ -133,16 +140,13 @@ module.exports = function (grunt) {
         compass: {
             options: {
                 sassDir: '<%= soca.app %>/src/sass',
-                cssDir: '<%= soca.app %>/css'
+                cssDir: '<%= soca.app %>/css',
+                outputStyle: 'nested',
             },
             dist: {
-                options: {
-                    outputStyle: 'compressed'
-                }
             },
             server: {
                 options: {
-                    outputStyle: 'nested',
                     debugInfo: true
                 }
             }
@@ -208,6 +212,16 @@ module.exports = function (grunt) {
                 src: ['<%= soca.app %>/templates/login/*.hbs'],
                 dest: '<%= soca.app %>/.'
             }
+        },
+        cssmin: {
+            add_banner: {
+                options: {
+                    banner: '/* My minified css file */'
+                },
+                files: {
+                    '<%= soca.dist %>/css/soca.css': ['<%= soca.dist %>/css/application.css']
+                }
+            }
         }
     });
 
@@ -232,6 +246,8 @@ module.exports = function (grunt) {
         'assemble:application',
         'assemble:login',
         'copy:styles',
+        'cssmin',
+        'clean:css',
         'copy:javascripts',
         'uglify:server',
         'copy:dist'
