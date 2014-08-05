@@ -27,9 +27,13 @@ module.exports = function (grunt) {
             options: {
                 nospawn: true
             },
-            concat: {
+            concatJavascript: {
                 files: ['<%= soca.app %>/js/lib/*.js'],
-                tasks: ['concat:server']
+                tasks: ['concat:javascripts']
+            },
+            concatStylesheet: {
+                files: ['<%= soca.app %>/css/*.css'],
+                tasks: ['concat:stylesheets']
             },
             compass: {
                 files: ['<%= soca.app %>/src/sass/{,*/}*.{scss,sass}'],
@@ -151,10 +155,11 @@ module.exports = function (grunt) {
                 src: [
                     '<%= soca.app %>/components/mixitup/build/jquery.mixitup.min.js',
                     '<%= soca.app %>/components/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js',
-                    '<%= soca.app %>/js/bootstrap.min.js',
+                    '<%= soca.app %>/js/vendor/bootstrap.min.js',
                     '<%= soca.app %>/components/bootstrap-datepicker/js/bootstrap-datepicker.js',
                     '<%= soca.app %>/js/lib/_soca.js', 
                     '<%= soca.app %>/js/lib/soca.misc.js',
+                    '<%= soca.app %>/js/lib/soca.modal.js',
                     '<%= soca.app %>/js/lib/soca.animation.js', 
                     '<%= soca.app %>/js/lib/soca.filter.js',
                     '<%= soca.app %>/js/lib/soca.mobile.js'

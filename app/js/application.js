@@ -7,9 +7,9 @@ $(document).ready(function()
     soca.filter.products();
     soca.misc.updateTableHeight();
     soca.mobile.disableScrolling();
-    soca.mobile.disableTooltips()
+    soca.mobile.disableTooltips();
+    soca.modal.open('.edit-order-modal', '#editOrderModal')
 });
-$(document).ajaxComplete(function()
-{
+$('#editOrderModal').on('shown.bs.modal', function (e) {
     soca.misc.datepicker();
-});
+})
