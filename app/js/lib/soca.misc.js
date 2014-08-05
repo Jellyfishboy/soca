@@ -31,7 +31,7 @@ soca.misc =
         var $elem = $('.calculate-tax');
         $elem.each(function() 
         {
-            return $(this).closest('input').after('<div class="gross label label-green">Gross amount: ' + parseFloat(soca.misc.taxify(this.value), 10).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").toString() + '</div>');
+            return $(this).closest('input').after('<div class="gross label label-blue">Gross amount: ' + parseFloat(soca.misc.taxify(this.value), 10).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").toString() + '</div>');
         });
         $elem.bind("input", function() 
         {
