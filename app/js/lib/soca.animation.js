@@ -3,7 +3,7 @@ soca.animation =
 
     loading: function()
     {
-        $('.loading-trigger').on('click', function() 
+        $('.loading-trigger, input[type=submit]').on('click', function() 
         {
             $('.loading-overlay').css('height', '100%').addClass('active');
             return $('.loading5').addClass('active');
@@ -27,7 +27,7 @@ soca.animation =
         {
             return $(this).next('input[type="file"]').trigger('click');
         });
-        return $('body').on('change', '.file-upload', function()
+        $('body').on('change', '.file-upload', function()
         {
           var clean, parent, value;
           value = $(this).val();

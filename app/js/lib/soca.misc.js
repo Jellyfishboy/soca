@@ -7,6 +7,7 @@ soca.misc =
             return $(this).find('table').height($(this).outerHeight());
         });
     },
+
     datepicker: function()
     {
         $(".datepicker").datepicker(
@@ -14,5 +15,28 @@ soca.misc =
           format: "dd/mm/yyyy",
           startDate: "0"
         });
+    },
+
+    taxify: function(value)
+    {
+        var number, sum;
+        number = Number(value);
+        sum = number + (number* (parseFloat(taxRate)/100));
+        sum = isNaN(sum) ? 0 : sum;
+        return sum;
+    },
+
+    taxField: function()
+    {   
+        var $elem = $('.calculate-tax');
+        $elem.each(function() 
+        {
+            return $(this).closest('input').after('<div class="gross label label-green">Gross amount: ' + parseFloat(soca.misc.taxify(this.value), 10).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").toString() + '</div>');
+        });
+        $elem.bind("input", function() 
+        {
+            return $(this).next('.gross').text('Gross amount: ' + parseFloat(soca.misc.taxify(this.value)).toFixed(2));
+        });
     }
+
 }

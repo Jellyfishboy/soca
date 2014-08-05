@@ -112,6 +112,12 @@ form {
     border:0px;
     outline:0;
     @include box-sizing(border-box);
+
+    + .gross
+    {
+        display: block;
+        text-align: left;
+    }
 }
 .form-select
 {
