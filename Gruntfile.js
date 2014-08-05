@@ -13,6 +13,7 @@ var mountFolder = function (connect, dir) {
 
 module.exports = function (grunt) {
     require('load-grunt-tasks')(grunt, {config: 'package.json'});
+    grunt.loadNpmTasks('assemble');
     require('time-grunt')(grunt);
 
     var socaConfig = {
@@ -23,15 +24,15 @@ module.exports = function (grunt) {
     grunt.initConfig({
         soca: socaConfig,
         watch: {
-            coffee: {
-                files: ['app/src/coffee/{,*/}*.coffee'],
-                tasks: ['coffee:server']
-            },
             options: {
                 nospawn: true
             },
+            concat: {
+                files: ['<%= soca.app %>/js/lib/*.js'],
+                tasks: ['concat:server']
+            },
             compass: {
-                files: ['app/src/sass/{,*/}*.{scss,sass}'],
+                files: ['<%= soca.app %>/src/sass/{,*/}*.{scss,sass}'],
                 tasks: ['compass:server']
             },
             livereload: {
@@ -39,12 +40,11 @@ module.exports = function (grunt) {
                     livereload: LIVERELOAD_PORT
                 },
                 files: [
-                    'app/*.html',
-                    'app/css/{,*/}*.css',
-                    'app/src/sass/{,*/}*.{scss,sass}',
-                    'app/src/coffee/{,*/}*.coffee',
-                    'app/js/{,*/}*.js',
-                    'app/img/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+                    '<%= soca.app %>/*.html',
+                    '<%= soca.app %>/css/{,*/}*.css',
+                    '<%= soca.app %>/src/sass/{,*/}*.{scss,sass}',
+                    '<%= soca.app %>/js/{,*/}*.js',
+                    '<%= soca.app %>/img/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
                 ]
             }
         },
@@ -71,8 +71,7 @@ module.exports = function (grunt) {
                     dot: true,
                     src: [
                         '<%= soca.app %>/css',
-                        '<%= soca.app %>/js/application.js',
-                        '<%= soca.app %>/js/application.js.map',
+                        '<%= soca.app %>/js/soca.js',
                         '<%= soca.dist %>/*',
                         '!<%= soca.dist %>/.git*'
                     ]
@@ -82,18 +81,11 @@ module.exports = function (grunt) {
                 files: [{
                     src: [
                         '<%= soca.app %>/css',
-                        '<%= soca.app %>/js/application.js',
-                        '<%= soca.app %>/js/application.js.map',
+                        '<%= soca.app %>/js/soca.js',
                         '<%= soca.dist %>/*'
                     ]
                 }]
             }
-        },
-        concurrent: {
-            server: [
-                'coffee:server',
-                'compass:server'
-            ]
         },
         copy: {
             dist: {
@@ -112,14 +104,14 @@ module.exports = function (grunt) {
             styles: {
                 expand: true,
                 cwd: '<%= soca.app %>/css',
-                dest: 'dist/css/',
+                dest: '<%= soca.dist %>/css/',
                 src: '{,*/}*.css'
             },
             javascripts: {
                 expand: true,
                 cwd: '<%= soca.app %>/js',
-                dest: 'dist/js/',
-                src: '{,*/}*.js'
+                dest: '<%= soca.dist %>/js/',
+                src: '*.js'
             }
         },
         open: {
@@ -129,8 +121,8 @@ module.exports = function (grunt) {
         },
         compass: {
             options: {
-                sassDir: 'app/src/sass',
-                cssDir: 'app/css',
+                sassDir: '<%= soca.app %>/src/sass',
+                cssDir: '<%= soca.app %>/css',
                 outputStyle: 'compressed'
             },
             dist: {},
@@ -140,21 +132,20 @@ module.exports = function (grunt) {
                 }
             }
         },
-        coffee: {
+        concat: {
             options: {
-                sourceMap: false,
-                sourceRoot: ''
+              separator: ';',
             },
-            dist: {},
             server: {
-                files: [{
-                    expand: true,
-                    cwd: 'app/src/coffee',
-                    src: '{,*/}*.coffee',
-                    dest: 'app/js',
-                    ext: '.js'
-                }]
-            }
+                src: [
+                    '<%= soca.app %>/js/lib/_soca.js', 
+                    '<%= soca.app %>/js/lib/soca.misc.js',
+                    '<%= soca.app %>/js/lib/soca.animation.js', 
+                    '<%= soca.app %>/js/lib/soca.filter.js',
+                    '<%= soca.app %>/js/lib/soca.mobile.js'
+                ],
+                dest: '<%= soca.app %>/js/soca.js',
+            },
         },
         uglify: {
             options: {
@@ -162,9 +153,15 @@ module.exports = function (grunt) {
             },
             server: {
                 files: {
-                    'app/js/application.js': [
-                        'app/js/application.js'
+                    '<%= soca.app %>/js/application.js': 
+                    [
+                        '<%= soca.app %>/js/application.js'
+                    ],
+                    '<%= soca.app %>/js/soca.js': 
+                    [
+                        '<%= soca.app %>/js/soca.js'
                     ]
+
                 }
             }
         }
@@ -173,7 +170,8 @@ module.exports = function (grunt) {
     grunt.registerTask('server', function (target) {
         grunt.task.run([
             'clean:server',
-            'concurrent:server',
+            'compass:server',
+            'concat:server',
             'connect:livereload',
             'open',
             'watch'
@@ -181,7 +179,8 @@ module.exports = function (grunt) {
     });
     grunt.registerTask('build', [
         'clean:dist',
-        'concurrent:server',
+        'compass:dist',
+        'concat:server',
         'uglify:server',
         'copy:styles',
         'copy:javascripts',

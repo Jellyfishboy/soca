@@ -12,13 +12,13 @@
     "grunt-open": "~0.2.3",
     "nvm": "~0.0.3",
     "matchdep": "~0.3.0",
-    "grunt-contrib-coffee": "~0.10.1",
     "grunt-contrib-uglify": "~0.3.0",
     "grunt-contrib-copy": "~0.5.0",
     "grunt-contrib-clean": "~0.5.0",
-    "grunt-concurrent": "~0.3.0",
     "time-grunt": "~0.2.0",
-    "load-grunt-tasks": "~0.2.0"
+    "load-grunt-tasks": "~0.2.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "assemble": "^0.6.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -30,5 +30,7 @@
   "author": "Tom Dallimore <tom.alan.dallimore@googlemail.com>",
   "license": "MIT",
   "readmeFilename": "README.md",
-  "gitHead": "243e8f617c99006b9be3a84e07f38963ffe09921"
+  "gitHead": "243e8f617c99006b9be3a84e07f38963ffe09921",
+  "devDependencies": {
+  }
 }
