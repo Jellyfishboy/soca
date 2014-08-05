@@ -1,0 +1,74 @@
+<div class="row">
+    <div class="alert alert-info">
+        <i class="icon-info-2"></i>
+        This is an information notice for the template.
+    </div>
+    <div class="eightcol">
+         <div class="page-header">
+            <h2 class="widget widget-header">New tier</h2>
+        </div>
+        <form method="post" role="form" action="#">
+            <fieldset class="widget widget-content">
+                <div class="form-group">
+                    <label for="tier_length_start">Length start</label>
+                    <input class="form-control" id="tier_length_start" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="tier_length_end">Length end</label>
+                    <input class="form-control" id="tier_length_end" type="text"></input>
+                </div>
+                <div class="form-group">
+                    <label for="tier_weight_start">Weight start</label>
+                    <input class="form-control" id="tier_weight_start" type="text"></input>
+                </div>
+                <div class="form-group">
+                    <label for="tier_weight_end">Weight end</label>
+                    <input class="form-control" id="tier_weight_end" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="tier_thickness_start">Thickness start</label>
+                    <input class="form-control" id="tier_thickness_start" type="text"></input>
+                </div>
+                <div class="form-group form-last">
+                    <label for="tier_thickness_end">Thickness end</label>
+                    <input class="form-control" id="tier_thickness_end" type="text"></input>
+                </div>
+            </fieldset>
+            <div class="widget-sub-heading">
+                <h3>Shippings</h3>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered table-hover table-form">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th class="align-center">Select</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Royal Mail 1st class</td>
+                            <td>£12.67</td>
+                            <td class="align-center"><input type="checkbox" id="shipping_method_zones_2" ></td>
+                        </tr>
+                        <tr>
+                            <td>Parcelforce 24h</td>
+                            <td>£8.62</td>
+                            <td class="align-center"><input type="checkbox" id="shipping_method_zones_2" checked="checked"></td>
+                        </tr>
+                        <tr>
+                            <td>Yodal 48h</td>
+                            <td>£5.34</td>
+                            <td class="align-center"><input type="checkbox" id="shipping_method_zones_3" checked="checked"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="form-action">
+                <input class="btn btn-blue btn-large" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <div class="fourcol last"></div>
+</div>

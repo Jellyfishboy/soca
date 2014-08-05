@@ -1,0 +1,97 @@
+<div class="row">
+    <div class="alert alert-info">
+        <i class="icon-info-2"></i>
+        This is an information notice for the template.
+    </div>
+    <div class="eightcol">
+         <div class="page-header">
+            <h2 class="widget widget-header">New shipping method</h2>
+        </div>
+        <form method="post" role="form" action="#">
+            <fieldset class="widget widget-content">
+                <div class="form-group">
+                    <label for="shipping_method_name">Name</label>
+                    <input class="form-control" id="shipping_method_name" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="shipping_method_price">Price</label>
+                    <input class="form-control" id="shipping_method_price" type="text"></input>
+                </div>
+                <div class="form-group form-last">
+                    <label for="shipping_method_description">Description</label>
+                    <textarea class="form-control" id="shipping_method_description" rows="8"></textarea>
+                </div>
+            </fieldset>
+            <div class="widget-sub-heading">
+                <h3>Zones</h3>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered table-hover table-form table-margin">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th class="align-center">Select</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>EU Zone 1</td>
+                            <td class="align-center"><input type="checkbox" id="shipping_method_zones_1" checked="checked"></td>
+                        </tr>
+                        <tr>
+                            <td>EU Zone 2</td>
+                            <td class="align-center"><input type="checkbox" id="shipping_method_zones_2"></td>
+                        </tr>
+                        <tr>
+                            <td>EU Zone 3</td>
+                            <td class="align-center"><input type="checkbox" id="shipping_method_zones_3" checked="checked"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="widget-sub-heading">
+                <h3>Tiers</h3>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered table-hover table-form">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Length (mm)</th>
+                            <th>Weight (g)</th>
+                            <th>Thickness (mm)</th>
+                            <th class="align-center">Select</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>0.0 - 100.0</td>
+                            <td>0.0 - 300.0</td>
+                            <td>0.0 - 50.0</td>
+                            <td class="align-center"><input type="checkbox" id="shipping_method_tiers_1" checked="checked"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>101.0 - 200.0</td>
+                            <td>301.0 - 500.0</td>
+                            <td>51.0 - 100.0</td>
+                            <td class="align-center"><input type="checkbox" id="shipping_method_tiers_2"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>201.0 - 400.0</td>
+                            <td>501.0 - 700.0</td>
+                            <td>101.0 - 500.0</td>
+                            <td class="align-center"><input type="checkbox" id="shipping_method_tiers_3"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="form-action">
+                <input class="btn btn-blue btn-large" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <div class="fourcol last"></div>
+</div>

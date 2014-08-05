@@ -1,0 +1,232 @@
+<div class="row">
+    <div class="alert alert-success">
+        <i class="icon-checkmark-circle"></i>
+        This is a successful notice for an action.
+    </div>
+    <div class="twelvecol">
+        <div class="page-header">
+            <a class="btn btn-blue btn-large" href="product-form.html" data-toggle="tooltip" data-placement="bottom" title="Add product">
+                <i class="icon-plus"></i>
+            </a>
+            <a class="btn btn-blue btn-large" href="attribute-type-index.html" data-toggle="tooltip" data-placement="bottom" title="Attribute types">
+                <i class="icon-filter-2"></i>
+            </a>
+            <h2 class="widget widget-header">Products</h2>
+        </div>
+        <div class='widget-controls'>
+            <select id="filter-product-category" class="form-select">
+                <option class="filter" data-filter="all">Show all</option>
+                <option class="filter" data-filter=".category-electric-motors">Electric motors</option>
+                <option class="filter" data-filter=".category-actuator-accessories">Actuator accessories</option>
+                <option class="filter" data-filter=".category-other">Other</option>
+            </select>
+            <span>Filter by:</span>
+            <select id="sort-product" class="form-select widget-control-margin">
+                <option class="sort" data-sort="default">Weighting ↑</option>
+                <option class="sort" data-sort="weighting:asc">Weighting ↓</option>
+                <option class="sort" data-sort="name:desc">Name ↑</option>
+                <option class="sort" data-sort="name:asc">Name ↓</option>
+            </select>
+            <span>Sort by:</span>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover table-margin">
+                <thead>
+                    <tr>
+                        <th>SKU</th>
+                        <th>Part no.</th>
+                        <th>Name</th>
+                        <th class="inner-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Variant</th>
+                                        <th>Net price</th>
+                                        <th>Gross price</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="mixitup">
+                    <tr class="mix category-electric-motors" data-name="gr02-gearmotor" data-weighting="1000">
+                        <td class="sku">GR02</td>
+                        <td class="part-no">1</td>
+                        <td class="name"><a href="#">GR02 Gearmotor</a></td>
+                        <td class="inner-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>30g</td>
+                                        <td>£29.50</td>
+                                        <td>£33.56</td>
+                                    </tr>
+                                    <tr>
+                                        <td>55g</td>
+                                        <td>£69.50</td>
+                                        <td>£83.56</td>
+                                    </tr>
+                                    <tr>
+                                        <td>123g</td>
+                                        <td>£129.50</td>
+                                        <td>£233.56</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <a href="#" class="">
+                                <i class="icon-pencil"></i>
+                            </a>
+                            <a href="#" class="">
+                                <i class="icon-remove"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="mix category-electric-motors" data-name="additional-gearmotor" data-weighting="500">
+                        <td class="sku">GR02</td>
+                        <td class="part-no">1</td>
+                        <td class="name"><a href="#">Additional gearmotor</a></td>
+                        <td class="inner-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>30g</td>
+                                        <td>£29.50</td>
+                                        <td>£33.56</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <a href="#" class="">
+                                <i class="icon-pencil"></i>
+                            </a>
+                            <a href="#" class="">
+                                <i class="icon-remove"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="mix category-other" data-name="motorised-mouse" data-weighting="3000">
+                        <td class="sku">GR02</td>
+                        <td class="part-no">1</td>
+                        <td class="name"><a href="#">Motorised mouse</a></td>
+                        <td class="inner-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>30g</td>
+                                        <td>£29.50</td>
+                                        <td>£33.56</td>
+                                    </tr>
+                                    <tr>
+                                        <td>55g</td>
+                                        <td>£69.50</td>
+                                        <td>£83.56</td>
+                                    </tr>
+                                    <tr>
+                                        <td>123g</td>
+                                        <td>£129.50</td>
+                                        <td>£233.56</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <a href="#" class="">
+                                <i class="icon-pencil"></i>
+                            </a>
+                            <a href="#" class="">
+                                <i class="icon-remove"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="mix category-other" data-name="screw-toolbox" data-weighting="3500">
+                        <td class="sku">GR02</td>
+                        <td class="part-no">1</td>
+                        <td class="name"><a href="#">Screwdriver toolbox</a></td>
+                        <td class="inner-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>30g</td>
+                                        <td>£29.50</td>
+                                        <td>£33.56</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <a href="#" class="">
+                                <i class="icon-pencil"></i>
+                            </a>
+                            <a href="#" class="">
+                                <i class="icon-remove"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="mix category-actuator-accessories" data-name="piston" data-weighting="5000">
+                        <td class="sku">GR02</td>
+                        <td class="part-no">1</td>
+                        <td class="name"><a href="#">Piston</a></td>
+                        <td class="inner-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>30g</td>
+                                        <td>£29.50</td>
+                                        <td>£33.56</td>
+                                    </tr>
+                                    <tr>
+                                        <td>55g</td>
+                                        <td>£69.50</td>
+                                        <td>£83.56</td>
+                                    </tr>
+                                    <tr>
+                                        <td>123g</td>
+                                        <td>£129.50</td>
+                                        <td>£233.56</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <a href="#" class="">
+                                <i class="icon-pencil"></i>
+                            </a>
+                            <a href="#" class="">
+                                <i class="icon-remove"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="mix category-actuator-accessories" data-name="50mm head" data-weighting="200">
+                        <td class="sku">GR02</td>
+                        <td class="part-no">1</td>
+                        <td class="name"><a href="#">50mm head</a></td>
+                        <td class="inner-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>30g</td>
+                                        <td>£29.50</td>
+                                        <td>£33.56</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <a href="#" class="">
+                                <i class="icon-pencil"></i>
+                            </a>
+                            <a href="#" class="">
+                                <i class="icon-remove"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

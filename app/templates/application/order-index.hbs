@@ -1,0 +1,74 @@
+<div class="row">
+    <div class="alert alert-success">
+        <i class="icon-checkmark-circle"></i>
+        This is a successful notice for an action.
+    </div>
+    <div class="twelvecol last">
+        <div class="page-header">
+            <h2 class="widget widget-header">Orders</h2>
+            
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Order no.</th>
+                        <th>Transaction ID</th>
+                        <th>Name</th>
+                        <th>Shipping status</th>
+                        <th>Payment status</th>
+                        <th>Gross amount</th>
+                        <th>Last updated</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>137</td>
+                        <td><a href="#" target="_blank">8UJ7201702418315T</a></td>
+                        <td>Tom Dallimore</td>
+                        <td><span class="label label-orange label-small">Pending</span></td>
+                        <td><span class="label label-green label-small">Completed</span></td>
+                        <td>£876.50</td>
+                        <td>04/02/2014 at 12:36PM</td>
+                        <td>
+                            <a href="order.html">
+                                <i class="icon-search"></i>
+                            </a>
+                            <a href="#" class="" data-toggle="modal" data-target="#editOrderModal">
+                                <i class="icon-pencil"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="editOrderModal" tabindex="-1" role="dialog" aria-labelledby="editOrderModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="editOrderModalLabel">Edit Order #001</h2>
+      </div>
+      <div class="modal-body">
+        <form method="post" role="form" action="#">
+            <fieldset class="widget widget-content widget-last">
+                <div class="form-group">
+                    <label for="order_shipping_date">Shipping date</label>
+                    <input class="form-control datepicker" id="order_shipping_date" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="order_actual_shipping_cost">Actual shipping cost</label>
+                    <input class="form-control" id="order_actual_shipping_cost" type="text">
+                </div>
+            </fieldset>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-orange btn-large" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-blue btn-large">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

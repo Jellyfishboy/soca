@@ -1,4 +1,4 @@
-trado.filter =
+soca.filter =
 {
     tableRowTarget: function()
     {

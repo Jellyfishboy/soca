@@ -35,12 +35,17 @@ module.exports = function (grunt) {
                 files: ['<%= soca.app %>/src/sass/{,*/}*.{scss,sass}'],
                 tasks: ['compass:server']
             },
+            assemble: {
+                files: ['app/layouts/*.hbs', 'app/pages/{,*/}*.hbs'],
+                tasks: ['assemble']
+            },
             livereload: {
                 options: {
                     livereload: LIVERELOAD_PORT
                 },
                 files: [
-                    '<%= soca.app %>/*.html',
+                    'app/layouts/*.hbs',
+                    'app/pages/{,*/}*.hbs',
                     '<%= soca.app %>/css/{,*/}*.css',
                     '<%= soca.app %>/src/sass/{,*/}*.{scss,sass}',
                     '<%= soca.app %>/js/{,*/}*.js',
@@ -70,6 +75,7 @@ module.exports = function (grunt) {
                 files: [{
                     dot: true,
                     src: [
+                        '<%= soca.app %>/*.html',
                         '<%= soca.app %>/css',
                         '<%= soca.app %>/js/soca.js',
                         '<%= soca.dist %>/*',
@@ -80,6 +86,7 @@ module.exports = function (grunt) {
             server: {
                 files: [{
                     src: [
+                        '<%= soca.app %>/*.html',
                         '<%= soca.app %>/css',
                         '<%= soca.app %>/js/soca.js',
                         '<%= soca.dist %>/*'
@@ -153,16 +160,29 @@ module.exports = function (grunt) {
             },
             server: {
                 files: {
-                    '<%= soca.app %>/js/application.js': 
-                    [
-                        '<%= soca.app %>/js/application.js'
-                    ],
-                    '<%= soca.app %>/js/soca.js': 
-                    [
-                        '<%= soca.app %>/js/soca.js'
-                    ]
-
+                    '<%= soca.app %>/js/application.js': ['<%= soca.app %>/js/application.js'],
+                    '<%= soca.app %>/js/soca.js': ['<%= soca.app %>/js/soca.js']
                 }
+            }
+        },
+        assemble: {
+            options: {
+                layoutdir: "<%= soca.app %>/layouts",
+                flatten: true
+            },
+            application: {
+                options: {
+                    layout: 'application.hbs'
+                },
+                src: ['<%= soca.app %>/templates/application/*.hbs'],
+                dest: '<%= soca.app %>/.'
+            },
+            login: {
+                options: {
+                    layout: 'login.hbs'
+                },
+                src: ['<%= soca.app %>/templates/login/*.hbs'],
+                dest: '<%= soca.app %>/.'
             }
         }
     });
@@ -172,6 +192,8 @@ module.exports = function (grunt) {
             'clean:server',
             'compass:server',
             'concat:server',
+            'assemble:application',
+            'assemble:login',
             'connect:livereload',
             'open',
             'watch'
@@ -181,6 +203,8 @@ module.exports = function (grunt) {
         'clean:dist',
         'compass:dist',
         'concat:server',
+        'assemble:application',
+        'assemble:login',
         'uglify:server',
         'copy:styles',
         'copy:javascripts',

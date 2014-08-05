@@ -1,4 +1,4 @@
-trado.animation =
+soca.animation =
 {
 
     loading: function()
