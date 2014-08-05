@@ -129,22 +129,30 @@ module.exports = function (grunt) {
         compass: {
             options: {
                 sassDir: '<%= soca.app %>/src/sass',
-                cssDir: '<%= soca.app %>/css',
-                outputStyle: 'compressed'
+                cssDir: '<%= soca.app %>/css'
             },
-            dist: {},
+            dist: {
+                options: {
+                    outputStyle: 'compressed'
+                }
+            },
             server: {
                 options: {
+                    outputStyle: 'nested',
                     debugInfo: true
                 }
             }
         },
         concat: {
-            options: {
-              separator: ';',
-            },
-            server: {
+            javascripts: {
+                options: {
+                  separator: ';'
+                },
                 src: [
+                    '<%= soca.app %>/components/mixitup/build/jquery.mixitup.min.js',
+                    '<%= soca.app %>/components/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js',
+                    '<%= soca.app %>/js/bootstrap.min.js',
+                    '<%= soca.app %>/components/bootstrap-datepicker/js/bootstrap-datepicker.js',
                     '<%= soca.app %>/js/lib/_soca.js', 
                     '<%= soca.app %>/js/lib/soca.misc.js',
                     '<%= soca.app %>/js/lib/soca.animation.js', 
@@ -153,6 +161,17 @@ module.exports = function (grunt) {
                 ],
                 dest: '<%= soca.app %>/js/soca.js',
             },
+            stylesheets: {
+                options: {
+                    separator: ''
+                },
+                src: [
+                    '<%= soca.app %>/components/normalize-css/normalize.css',
+                    '<%= soca.app %>/css/application.css',
+                    '<%= soca.app %>/components/bootstrap-datepicker/css/datepicker3.css' 
+                ],
+                dest: '<%= soca.app %>/css/application.css'
+            }
         },
         uglify: {
             options: {
@@ -160,8 +179,8 @@ module.exports = function (grunt) {
             },
             server: {
                 files: {
-                    '<%= soca.app %>/js/application.js': ['<%= soca.app %>/js/application.js'],
-                    '<%= soca.app %>/js/soca.js': ['<%= soca.app %>/js/soca.js']
+                    '<%= soca.dist %>/js/application.js': ['<%= soca.dist %>/js/application.js'],
+                    '<%= soca.dist %>/js/soca.js': ['<%= soca.dist %>/js/soca.js']
                 }
             }
         },
@@ -191,7 +210,8 @@ module.exports = function (grunt) {
         grunt.task.run([
             'clean:server',
             'compass:server',
-            'concat:server',
+            'concat:javascripts',
+            'concat:stylesheets',
             'assemble:application',
             'assemble:login',
             'connect:livereload',
@@ -202,12 +222,13 @@ module.exports = function (grunt) {
     grunt.registerTask('build', [
         'clean:dist',
         'compass:dist',
-        'concat:server',
+        'concat:javascripts',
+        'concat:stylesheets',
         'assemble:application',
         'assemble:login',
-        'uglify:server',
         'copy:styles',
         'copy:javascripts',
+        'uglify:server',
         'copy:dist'
     ]);
 };

@@ -1,1 +1,15 @@
-$(document).ready(function(){soca.animation.loading(),soca.animation.colourCaveat(),soca.animation.attachmentHandler(),soca.filter.tableRowTarget(),soca.filter.products(),soca.misc.updateTableHeight(),soca.mobile.disableScrolling(),soca.mobile.disableTooltips()});
+$(document).ready(function()
+{
+    soca.animation.loading();
+    soca.animation.colourCaveat();
+    soca.animation.attachmentHandler();
+    soca.filter.tableRowTarget();
+    soca.filter.products();
+    soca.misc.updateTableHeight();
+    soca.mobile.disableScrolling();
+    soca.mobile.disableTooltips()
+});
+$(document).ajaxComplete(function()
+{
+    soca.misc.datepicker();
+});
