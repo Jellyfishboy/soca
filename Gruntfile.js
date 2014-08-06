@@ -216,7 +216,7 @@ module.exports = function (grunt) {
         cssmin: {
             add_banner: {
                 options: {
-                    banner: '/* My minified css file */'
+                    banner: '/* Compiled Soca stylesheet assets */'
                 },
                 files: {
                     '<%= soca.dist %>/css/soca.css': ['<%= soca.dist %>/css/application.css']
