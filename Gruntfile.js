@@ -28,7 +28,7 @@ module.exports = function (grunt) {
                 nospawn: true
             },
             concatJavascript: {
-                files: ['<%= soca.app %>/js/lib/*.js'],
+                files: ['<%= soca.app %>/js/{,*/}*.js'],
                 tasks: ['concat:javascripts']
             },
             concatStylesheet: {
