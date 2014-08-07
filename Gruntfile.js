@@ -248,8 +248,8 @@ module.exports = function (grunt) {
         'copy:styles',
         'cssmin',
         'clean:css',
-        'copy:javascripts',
         'uglify:server',
+        'copy:javascripts',
         'copy:dist'
     ]);
 };
