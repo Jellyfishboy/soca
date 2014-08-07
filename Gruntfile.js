@@ -25,36 +25,26 @@ module.exports = function (grunt) {
         soca: socaConfig,
         watch: {
             options: {
-                nospawn: true
+                nospawn: true,
+                livereload: true
             },
             concatJavascript: {
                 files: ['<%= soca.app %>/js/{,*/}*.js'],
                 tasks: ['concat:javascripts']
             },
-            concatStylesheet: {
-                files: ['<%= soca.app %>/css/*.css'],
-                tasks: ['concat:stylesheets']
-            },
             compass: {
                 files: ['<%= soca.app %>/src/sass/{,*/}*.{scss,sass}'],
-                tasks: ['compass:server']
+                tasks: ['compass:server', 'concat:stylesheets']
             },
             assemble: {
                 files: ['app/layouts/*.hbs', 'app/pages/{,*/}*.hbs'],
                 tasks: ['assemble']
             },
-            livereload: {
+            img: {
+                files: ['<%= soca.app %>/img/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'],
                 options: {
-                    livereload: LIVERELOAD_PORT
-                },
-                files: [
-                    'app/layouts/*.hbs',
-                    'app/pages/{,*/}*.hbs',
-                    '<%= soca.app %>/css/{,*/}*.css',
-                    '<%= soca.app %>/src/sass/{,*/}*.{scss,sass}',
-                    '<%= soca.app %>/js/{,*/}*.js',
-                    '<%= soca.app %>/img/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
-                ]
+                    livereload: true
+                }
             }
         },
         connect: {
@@ -176,8 +166,8 @@ module.exports = function (grunt) {
                 },
                 src: [
                     '<%= soca.app %>/components/normalize-css/normalize.css',
-                    '<%= soca.app %>/css/application.css',
-                    '<%= soca.app %>/components/bootstrap-datepicker/css/datepicker3.css' 
+                    '<%= soca.app %>/components/bootstrap-datepicker/css/datepicker3.css',
+                    '<%= soca.app %>/css/application.css'
                 ],
                 dest: '<%= soca.app %>/css/application.css'
             }
