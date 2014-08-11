@@ -37,6 +37,11 @@ soca.misc =
         {
             return $(this).next('.gross').text('Gross amount: ' + parseFloat(soca.misc.taxify(this.value)).toFixed(2));
         });
+    },
+
+    multiSelect: function()
+    {
+        $('select.chosen').chosen();
     }
 
 }

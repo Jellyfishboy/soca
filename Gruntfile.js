@@ -151,6 +151,7 @@ module.exports = function (grunt) {
                     '<%= soca.app %>/components/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js',
                     '<%= soca.app %>/js/vendor/bootstrap.min.js',
                     '<%= soca.app %>/components/bootstrap-datepicker/js/bootstrap-datepicker.js',
+                    '<%= soca.app %>/components/chosen-bower/chosen.jquery.js',
                     '<%= soca.app %>/js/lib/_soca.js', 
                     '<%= soca.app %>/js/lib/soca.misc.js',
                     '<%= soca.app %>/js/lib/soca.modal.js',
@@ -167,6 +168,7 @@ module.exports = function (grunt) {
                 src: [
                     '<%= soca.app %>/components/normalize-css/normalize.css',
                     '<%= soca.app %>/components/bootstrap-datepicker/css/datepicker3.css',
+                    '<%= soca.app %>/components/chosen-bower/chosen.css',
                     '<%= soca.app %>/css/application.css'
                 ],
                 dest: '<%= soca.app %>/css/application.css'

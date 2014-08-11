@@ -9,6 +9,7 @@ $(document).ready(function()
     soca.filter.products();
     soca.misc.updateTableHeight();
     soca.misc.taxField();
+    soca.misc.multiSelect();
     soca.mobile.disableScrolling();
     soca.mobile.disableTooltips();
     soca.modal.open('.edit-order-modal', '#editOrderModal');
