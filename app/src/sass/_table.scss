@@ -210,4 +210,15 @@
         width: 100%;
         overflow-y: hidden;
     }
+    &.table-zone
+    {
+        tr
+        {
+            td, th
+            {
+                width:33%;
+            }
+        }
+
+    }
 }

@@ -37,7 +37,7 @@ module.exports = function (grunt) {
                 tasks: ['compass:server', 'concat:stylesheets']
             },
             assemble: {
-                files: ['app/layouts/*.hbs', 'app/pages/{,*/}*.hbs'],
+                files: ['app/layouts/*.hbs', 'app/templates/{,*/}*.hbs'],
                 tasks: ['assemble']
             },
             img: {
@@ -238,8 +238,8 @@ module.exports = function (grunt) {
         'copy:styles',
         'cssmin',
         'clean:css',
-        'uglify:server',
         'copy:javascripts',
+        'uglify:server',
         'copy:dist'
     ]);
 };
