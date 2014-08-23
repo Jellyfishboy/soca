@@ -35,14 +35,25 @@
       font-size: 1.1em;
       font-weight: bold;
       @include box-sizing(border-box);
-        [data-role="remove"] {
-          margin-left: 8px;
-          cursor: pointer;
-            &:after {
-              content: "x";
-              padding: 0px 2px;
-            }
+
+      [data-role="remove"] {
+        margin-left: 8px;
+        cursor: pointer;
+        font-family: 'icomoon';
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        font-size: 11px;
+
+        &:after {
+          content: "\e0fd";
+          padding: 0px 2px;
         }
+      }
     }
 }
 
