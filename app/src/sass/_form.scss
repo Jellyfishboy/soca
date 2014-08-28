@@ -62,42 +62,24 @@ form {
         position: relative;
         display: inline-block;
         margin:10px;
-        height:140px;
+        height:168px;
         width:140px;
         cursor:pointer; 
         @include box-sizing(border-box);
         @include transition-property(background-color);
         @include transition-duration(1s);
         @include transition-timing-function(linear);
+        overflow: hidden;
             a {
-                position: absolute;
-                top:6px;
-                right:6px;
-                color:red;
-            }
-            .icon-upload-3 {
-                position: absolute;
-                font-size:4em;
-                top:41px;
-                left:41px;
+                float:left;
+                color:white;
+                width:70px;
             }
             img {
                 display: block;
             }
-            &.default {
+            &.default img {
                 border:3px solid $blue;
-            }
-            &.new-file {
-                background-color: $blue;
-                color:#fff;   
-            }
-            div {
-                position: absolute;
-                bottom:10px;
-                padding:0 10px;
-            }
-            + input[type="file"] {
-                display: none;
             }
     }
 }
