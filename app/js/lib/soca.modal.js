@@ -1,11 +1,11 @@
 soca.modal =
 {
-    standard: function(target)
+    settings: function(target, backdrop, keyboard)
     {
         $(target).modal(
         {
-            backdrop: 'static',
-            keyboard: false
+            backdrop: backdrop,
+            keyboard: keyboard
         });
     },
 
