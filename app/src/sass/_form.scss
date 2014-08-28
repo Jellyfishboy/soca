@@ -64,7 +64,6 @@ form {
         margin:10px;
         height:168px;
         width:140px;
-        cursor:pointer; 
         @include box-sizing(border-box);
         @include transition-property(background-color);
         @include transition-duration(1s);
