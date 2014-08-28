@@ -86,13 +86,6 @@ module.exports = function (grunt) {
                         '<%= soca.dist %>/*'
                     ]
                 }]
-            },
-            css: {
-                files: [{
-                    src: [
-                        '<%= soca.dist %>/css/application.css'
-                    ]
-                }]
             }
         },
         copy: {
@@ -171,9 +164,9 @@ module.exports = function (grunt) {
                 src: [
                     '<%= soca.app %>/components/normalize-css/normalize.css',
                     '<%= soca.app %>/components/bootstrap-datepicker/css/datepicker3.css',
-                    '<%= soca.app %>/css/application.css'
+                    '<%= soca.app %>/css/soca.css'
                 ],
-                dest: '<%= soca.app %>/css/application.css'
+                dest: '<%= soca.app %>/css/soca.css'
             }
         },
         uglify: {
@@ -213,7 +206,7 @@ module.exports = function (grunt) {
                     banner: '/* Compiled Soca stylesheet assets */'
                 },
                 files: {
-                    '<%= soca.dist %>/css/soca.css': ['<%= soca.dist %>/css/application.css']
+                    '<%= soca.dist %>/css/soca.css': ['<%= soca.dist %>/css/soca.css']
                 }
             }
         }
@@ -241,7 +234,6 @@ module.exports = function (grunt) {
         'assemble:login',
         'copy:styles',
         'cssmin',
-        'clean:css',
         'copy:javascripts',
         'uglify:server',
         'copy:dist'
