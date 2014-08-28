@@ -207,10 +207,10 @@
                             <td>2.50</td>
                             <td>12.78</td>
                             <td class="triple-menu">
-                                <a href="#" data-toggle="modal" data-target="#stockModal">
+                                <a href="#" data-toggle="modal" data-target="#stockModal" data-backdrop="static" data-keyboard="false">
                                     <i class="icon-plus"></i>
                                 </a>
-                                <a href="#" data-toggle="modal" data-target="#skuModal">
+                                <a href="#" data-toggle="modal" data-target="#skuModal" data-backdrop="static" data-keyboard="false">
                                     <i class="icon-pencil"></i>
                                 </a>
                                 <a href="#" class="">
@@ -230,10 +230,10 @@
                             <td>5.50</td>
                             <td>24.78</td>
                             <td class="triple-menu">
-                                <a href="#" data-toggle="modal" data-target="#stockModal">
+                                <a href="#" data-toggle="modal" data-target="#stockModal" data-backdrop="static" data-keyboard="false">
                                     <i class="icon-plus"></i>
                                 </a>
-                                <a href="#" data-toggle="modal" data-target="#skuModal">
+                                <a href="#" data-toggle="modal" data-target="#skuModal" data-backdrop="static" data-keyboard="false">
                                     <i class="icon-pencil"></i>
                                 </a>
                                 <a href="#" class="">
@@ -253,36 +253,12 @@
                             <td>2.50</td>
                             <td>12.78</td>
                             <td class="triple-menu">
-                                <a href="#" class="" data-toggle="modal" data-target="#stockModal">
+                                <a href="#" class="" data-toggle="modal" data-target="#stockModal" data-backdrop="static" data-keyboard="false">
                                     <i class="icon-plus"></i>
                                 </a>
-                                <a href="#" data-toggle="modal" data-target="#skuModal">
+                                <a href="#" data-toggle="modal" data-target="#skuModal" data-backdrop="static" data-keyboard="false">
                                     <i class="icon-pencil"></i>
                                 </a>
-                                <a href="#" class="">
-                                    <i class="icon-remove"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><input type="text" id="sku_sku" class="form-control"></td>
-                            <td><input type="text" id="sku_weight" class="form-control"></td>
-                            <td><input type="text" id="sku_length" class="form-control"></td>
-                            <td><input type="text" id="sku_thickness" class="form-control"></td>
-                            <td><input type="text" id="sku_attribute_value" class="form-control"></td>
-                            <td class="select">
-                                <select class="form-control" id="product_sku_attribute_type">
-                                    <option value="">Select...</option>
-                                    <option value="5">Weight</option>
-                                    <option value="6">Color</option>
-                                    <option value="7">Length</option>
-                                </select>
-                            </td>
-                            <td><input type="text" id="sku_stock" class="form-control"></td>
-                            <td><input type="text" id="sku_stock_warning_level" class="form-control"></td>
-                            <td><input type="text" id="sku_cost_value" class="form-control"></td>
-                            <td><input type="text" id="sku_price" class="form-control"></td>
-                            <td class="triple-menu">
                                 <a href="#" class="">
                                     <i class="icon-remove"></i>
                                 </a>
@@ -353,16 +329,21 @@
             </form>
         </div>
       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-orange btn-large" data-dismiss="modal">Close</button>
+    </div>
     </div>
   </div>
 </div>
 <div class="modal fade" id="skuModal" tabindex="-1" role="dialog" aria-labelledby="skuModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <h3 id="skuModalLabel">Edit SKU GA275-30</h2>
-      </div>
-      <div class="modal-body">
+        <div class="loading5"><i></i><i></i><i></i><i></i></div>
+        <div class="loading-overlay"></div>
+        <div class="modal-header">
+            <h3 id="skuModalLabel">Edit SKU GA275-30</h2>
+        </div>
+        <div class="modal-body">
         <form method="post" role="form" action="#">
             <fieldset class="widget widget-content widget-last">
                 <div class="form-group">
@@ -407,7 +388,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-orange btn-large" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-blue btn-large">Save changes</button>
+        <button type="button" class="btn btn-blue btn-large loading-trigger">Save changes</button>
       </div>
     </div>
   </div>

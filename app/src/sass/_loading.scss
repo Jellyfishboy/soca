@@ -19,6 +19,10 @@
         @include opacity(0.6);
     }
 }
+.modal .loading-overlay
+{
+  margin-top: 0px;
+}
 .loading5
 {
     width: 40px;

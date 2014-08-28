@@ -4,7 +4,11 @@ soca.modal =
     {
         $(trigger).click(function() 
         {
-           $(target).modal('show');
+           $(target).modal(
+            {
+                backdrop: 'static',
+                keyboard: false
+            });
            return false;
         });
     }
