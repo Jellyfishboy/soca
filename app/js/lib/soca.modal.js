@@ -1,14 +1,19 @@
 soca.modal =
 {
+    standard: function(target)
+    {
+        $(target).modal(
+        {
+            backdrop: 'static',
+            keyboard: false
+        });
+    },
+
     open: function(trigger, target)
     {
         $(trigger).click(function() 
         {
-           $(target).modal(
-            {
-                backdrop: 'static',
-                keyboard: false
-            });
+           soca.modal.standard(target);
            return false;
         });
     }
