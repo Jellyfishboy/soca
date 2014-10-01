@@ -1,4 +1,5 @@
-#sidebar {
+#sidebar 
+{
     position: fixed;
     width:60px;
     top:0px;
@@ -6,82 +7,122 @@
     margin-top:60px;
     background-color:$dark-grey; //28292d
     z-index:1038;
-        ul {
+        ul 
+        {
             margin-top:20px;
             padding:0px;
             border-top: 1px solid #0d1012;
             border-bottom:1px solid #3b444c;
             list-style-type: none;
-                li {
+                li 
+                {
                     text-align:center;     
                     border-bottom: 1px solid #0d1012;
                     border-top:1px solid #3b444c;
-                        i {
+                        i 
+                        {
                             font-size:1.2em;
                             vertical-align:middle;
                         }
-                        a {
+                        a 
+                        {
                             display:block;
                             padding:10px 0;
                         }
-                        &.current {
+                        &.current 
+                        {
                             background-color: #0d1012;
                             border-top:0;
                         }
-                        &:first-child {
+                        &:first-child 
+                        {
                             color:$blue;
-                                a {
+                                a 
+                                {
                                     color:$blue;
-                                        &:hover {
+                                        &:hover 
+                                        {
                                             color: $blue;
                                         }
                                 }
                         }
-                        &:nth-child(2) {
+                        &:nth-child(2) 
+                        {
                             color:$purple;
-                                a {
+                                a 
+                                {
                                     color:$purple;
-                                        &:hover {
+                                        &:hover 
+                                        {
                                             color: $purple;
                                         }
                                 }
                         }
-                        &:nth-child(3) {
+                        &:nth-child(3) 
+                        {
                             color:$green;
-                                a {
+                                a 
+                                {
                                     color:$green;
-                                        &:hover {
+                                        &:hover 
+                                        {
                                             color: $green;
                                         }
                                 }
                         }
-                        &:nth-child(4) {
+                        &:nth-child(4) 
+                        {
                             color:$orange;
-                                a {
+                                a 
+                                {
                                     color:$orange;
-                                        &:hover {
+                                        &:hover 
+                                        {
                                             color: $orange;
                                         }
                                 }
                         }
-                        &:nth-child(5) {
+                        &:nth-child(5) 
+                        {
                             color:$cyan;
-                                a {
+                                a 
+                                {
                                     color:$cyan;
-                                        &:hover {
+                                        &:hover 
+                                        {
                                             color: $cyan;
                                         }
                                 }
                         }
-                        &:last-child {
+                        &:last-child 
+                        {
                             color:$yellow;
-                                a {
+                                a 
+                                {
                                     color:$yellow;
-                                        &:hover {
+                                        &:hover 
+                                        {
                                             color: $yellow;
                                         }
                                 }
                         }
                 }
+            &#secondary-menu
+            {
+                margin-top:40px;
+
+                li
+                {
+                    color:$grey;
+                    a 
+                    {
+                        color:$grey;
+                            &:hover 
+                            {
+                                color: $grey;
+                            }
+                    }
+                }
+            }
         }
 }

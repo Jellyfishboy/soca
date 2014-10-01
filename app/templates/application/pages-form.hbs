@@ -1,0 +1,73 @@
+<div class="row">
+    <div class="alert alert-info">
+        <i class="icon-info-2"></i>
+        This is an information notice for the template.
+    </div>
+    <ol id="breadcrumbs">
+        <li><a href="#">Pages</a></li>
+        <li class="current">Edit</li>
+    </ol>
+    <div class="twelvecol">
+         <div class="page-header">
+            <h2 class="widget widget-header">Edit page</h2>
+        </div>
+        <form method="post" role="form" action="#">
+            <div class="threecol">
+                <h3>Write your page</h3>
+                <p>Give your page a title and add your page content.</p>
+            </div>
+            <div class="ninecol last">
+                <fieldset class="widget widget-content">
+                    <div class="form-group">
+                        <label for="pages_title">Title</label>
+                        <input class="form-control" id="pages_title" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="pages_content">Content</label>
+                        <textarea class="form-control" id="pages_content" rows="8"></textarea>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="threecol">
+                <h3>Search engines</h3>
+                <p>Set up the page title and meta description; these help to define how a page is shown in search engines.</p>
+            </div>
+            <div class="ninecol last">
+                <fieldset class="widget widget-content">
+                    <div class="form-group">
+                        <label for="pages_page_title">Page title</label>
+                        <input class="form-control" id="pages_page_title" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="pages_meta_description">Meta description</label>
+                        <textarea class="form-control" id="pages_meta_description" rows="4"></textarea>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="threecol">
+                <h3>Visiblity</h3>
+                <p>Set if the page is visible on your storefront</p>
+            </div>
+            <div class="ninecol last">
+                <fieldset class="widget widget-content widget-last">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" id="category_visible" checked="checked" name="pages_visible" value="1">
+                            Visible
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" id="category_visible" name="pages_visible" value="0">
+                            Hidden
+                        </label>
+                    </div>
+                </fieldset>
+                <div class="form-action">
+                    <input class="btn btn-blue btn-large" type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="fourcol last"></div>
+</div>

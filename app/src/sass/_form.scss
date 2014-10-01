@@ -1,5 +1,7 @@
-form {
-    fieldset {
+form 
+{
+    fieldset 
+    {
         border:0;
         margin:0;
 
@@ -12,54 +14,99 @@ form {
             }
         }
     }
-    select {
+    .threecol
+    {
+        h3
+        {
+            margin:12px 0 12px 15px;
+        }
+        p
+        {
+            margin-left:15px;
+        }
+    }
+    select 
+    {
         border:1px solid $light-grey !important;
     }
-    .form-group {
+    .form-group 
+    {
         margin-bottom:15px;
-            label {
+            label 
+            {
                 display: inline-block;
                 margin-bottom:7px;
                 font-weight: bold;
             }
-            textarea.form-control {
+            textarea.form-control 
+            {
                 height:auto;
                 resize:none;
             }
-            &.form-last {
+            &.form-last 
+            {
                 margin:0;
             }
     }
-    table {
+    table 
+    {
         margin-bottom: 15px;
     }
-    .checkbox {
+    .checkbox 
+    {
         display: inline-block;
         margin-right: 25px;
         padding:3px 0;
-        label {
+
+        label 
+        {
             display: inline;
             margin-bottom: 0;
             cursor: pointer;
             font-weight: bold;
         }
-        input {
+        input 
+        {
             margin-right:5px;
         }
-        &.blocked {
+        &.blocked 
+        {
             display: block;
         }
     }
-    .form-action {
+    .radio
+    {
+        display: block;
+        padding:5px 0;
+
+        label 
+        {
+            display: inline;
+            margin-bottom: 0;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        input 
+        {
+            margin-right:5px;
+            position: relative;
+            top: -1px;
+        }
+    }
+    .form-action 
+    {
         padding:15px;
         background-color:rgba(208,208,208,0.5);
         overflow: hidden;
-            input {
+        margin-bottom: 20px;
+            input 
+            {
                 float:right;
                 margin-left:7px;
             }
     }
-    .attachments {
+    .attachments 
+    {
         position: relative;
         display: inline-block;
         margin:10px;
@@ -70,20 +117,24 @@ form {
         @include transition-duration(1s);
         @include transition-timing-function(linear);
         overflow: hidden;
-            a {
+            a 
+            {
                 float:left;
                 color:white;
                 width:70px;
             }
-            img {
+            img 
+            {
                 display: block;
             }
-            &.default img {
+            &.default img 
+            {
                 border:3px solid $blue;
             }
     }
 }
-.form-control {
+.form-control 
+{
     display:block;
     width:100%;
     height:38px;

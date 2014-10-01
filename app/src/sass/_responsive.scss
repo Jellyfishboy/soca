@@ -1,3 +1,22 @@
+@media handheld, only screen and (max-width: 770px) 
+{
+    form
+        {
+            .threecol
+            {
+                display: none;
+            }
+            .ninecol
+            {
+                padding-left:0 !important;
+                padding-right:0 !important;
+            }
+            .form-action
+            {
+                margin-bottom: 0px;
+            }
+        }
+}
 @media handheld, only screen and (max-width: 700px) 
 {
     body 
@@ -17,7 +36,7 @@
         .main 
         {
             margin:60px 0 0;
-        }        
+        }      
     }
 }
 @media handheld, only screen and (max-width: 530px) 
