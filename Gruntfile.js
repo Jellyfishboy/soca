@@ -144,7 +144,6 @@ module.exports = function (grunt) {
                 },
                 src: [
                     '<%= soca.app %>/components/mixitup/build/jquery.mixitup.min.js',
-                    '<%= soca.app %>/components/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js',
                     '<%= soca.app %>/js/vendor/bootstrap.min.js',
                     '<%= soca.app %>/components/bootstrap-datepicker/js/bootstrap-datepicker.js',
                     '<%= soca.app %>/js/vendor/chosen.jquery.js',
@@ -153,7 +152,8 @@ module.exports = function (grunt) {
                     '<%= soca.app %>/js/lib/soca.modal.js',
                     '<%= soca.app %>/js/lib/soca.animation.js', 
                     '<%= soca.app %>/js/lib/soca.filter.js',
-                    '<%= soca.app %>/js/lib/soca.mobile.js'
+                    '<%= soca.app %>/js/lib/soca.mobile.js',
+                    '<%= soca.app %>/components/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js'
                 ],
                 dest: '<%= soca.app %>/js/soca.js',
             },

@@ -1,17 +1,20 @@
-header {
+header 
+{
     background-color: $light-grey;
     height:60px;
     position:fixed;
     width:100%;
     top:0;
     z-index:1038;
-        #logo {
+        #logo 
+        {
             height:60px;
             width:60px;
             background-color:#fff;
             float:left;
         }
-        #menu-trigger {
+        #menu-trigger 
+        {
             background-color:#fff;
             color:rgba(35,40,45, 1);
             padding:7px;
@@ -24,11 +27,13 @@ header {
             cursor:pointer;
             float:left;
             line-height: 22px;
-                i {
+                i 
+                {
                     vertical-align:middle;
                 }
         }
-        .user-menu {
+        .user-menu 
+        {
             float:right;
             margin:10px 20px 10px 10px;
             height:40px;
@@ -36,7 +41,8 @@ header {
             @include box-sizing(border-box);
             background-color: #000;
             position: relative;
-                .fa-caret-up {
+                .fa-caret-up 
+                {
                     position: absolute;
                     top: 27px;
                     right: 14px;
@@ -44,7 +50,8 @@ header {
                     font-size: 1.3em;
                     display:none;
                 }
-                [data-toggle="dropdown"] {
+                [data-toggle="dropdown"] 
+                {
                     display: block;
                     height:40px;
                     outline:0;
@@ -55,6 +62,7 @@ header {
                 }
         }
 }
-.menu-trigger-handler {
+.menu-trigger-handler 
+{
     display:none;
 }
