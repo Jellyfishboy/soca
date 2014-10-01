@@ -162,6 +162,16 @@ html, body, .all-wrapper {
     margin: 0;
     padding: 0;
     list-style: none;
+
+    &#mobile-secondary-menu
+    {
+      margin-top:30px;
+
+      i
+      {
+        color: $grey;
+      }
+    }
   }
   h2 {
     margin: 0;
@@ -249,7 +259,7 @@ html, body, .all-wrapper {
     &:nth-child(5) i {
         color:$cyan;
     }
-    &:last-child i {
+    &:nth-child(6) i {
         color:$yellow;
     }
 }
