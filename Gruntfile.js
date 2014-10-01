@@ -37,7 +37,7 @@ module.exports = function (grunt) {
                 tasks: ['compass:server', 'concat:stylesheets']
             },
             assemble: {
-                files: ['app/layouts/*.hbs', 'app/templates/{,*/}*.hbs'],
+                files: ['app/layouts/*.hbs', 'app/templates/{,*/}*.hbs', 'app/partials/**/*.hbs'],
                 tasks: ['assemble']
             },
             img: {
@@ -143,6 +143,8 @@ module.exports = function (grunt) {
                   separator: ';'
                 },
                 src: [
+                    '<%= soca.app %>/js/vendor/classie.js',
+                    '<%= soca.app %>/js/vendor/mlpushmenu.js',
                     '<%= soca.app %>/components/mixitup/build/jquery.mixitup.min.js',
                     '<%= soca.app %>/js/vendor/bootstrap.min.js',
                     '<%= soca.app %>/components/bootstrap-datepicker/js/bootstrap-datepicker.js',
@@ -183,6 +185,7 @@ module.exports = function (grunt) {
         assemble: {
             options: {
                 layoutdir: "<%= soca.app %>/layouts",
+                partials: "app/partials/**/*.hbs",
                 flatten: true
             },
             application: {

@@ -1,11 +1,13 @@
-.bootstrap-tagsinput {
+.bootstrap-tagsinput 
+{
   background-color: #fff;
   display: inline-block;
   vertical-align: middle;
   max-width: 100%;
   line-height: 22px;
   overflow: hidden;
-    input {
+    input 
+    {
       border: none;
       box-shadow: none;
       outline: none;
@@ -17,13 +19,15 @@
       width: auto !important;
       max-width: inherit;
       @include box-sizing(border-box);
-        &:focus {
+        &:focus 
+        {
           border: none;
           box-shadow: none;
         }
     }
 
-    .tag {
+    .tag 
+    {
       margin: 5px 10px 5px 0;
       background-color:$blue;
       color: #fff;
@@ -36,7 +40,8 @@
       font-weight: bold;
       @include box-sizing(border-box);
 
-      [data-role="remove"] {
+      [data-role="remove"] 
+      {
         margin-left: 8px;
         cursor: pointer;
         font-family: 'icomoon';
@@ -49,7 +54,8 @@
         -webkit-font-smoothing: antialiased;
         font-size: 11px;
 
-        &:after {
+        &:after 
+        {
           content: "\e0fd";
           padding: 0px 2px;
         }

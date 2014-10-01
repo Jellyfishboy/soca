@@ -13,7 +13,7 @@ header
             background-color:#fff;
             float:left;
         }
-        #menu-trigger 
+        #trigger 
         {
             background-color:#fff;
             color:rgba(35,40,45, 1);
@@ -59,10 +59,7 @@ header
                 img
                 {
                     cursor: pointer;
+                    border:1px solid #2f363d;
                 }
         }
-}
-.menu-trigger-handler 
-{
-    display:none;
 }

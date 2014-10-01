@@ -9,8 +9,8 @@ $(document).ready(function()
     soca.misc.updateTableHeight();
     soca.misc.taxField();
     soca.misc.multiSelect();
-    soca.mobile.disableScrolling();
     soca.mobile.disableTooltips();
+    soca.mobile.triggerMenu();
     soca.modal.open('.edit-order-modal', '#editOrderModal');
 });
 $('#editOrderModal').on('shown.bs.modal', function (e) {

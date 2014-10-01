@@ -1,18 +1,23 @@
-.alert {
+.alert 
+{
     padding: 15px 25px;
     margin-bottom:20px;
     color:#fff;
     font-weight:500;
-        &.alert-info {
+        &.alert-info 
+        {
             background-color: $blue;
         }
-        &.alert-success {
+        &.alert-success 
+        {
             background-color: $green;
         }
-        &.alert-warning {
+        &.alert-warning 
+        {
             background-color: $orange;
         }
-        i {
+        i 
+        {
             font-size:1.2em;
             margin-right: 10px;
             vertical-align: middle;
