@@ -1,65 +1,68 @@
-header 
+.all-wrapper
 {
-    background-color: $light-grey;
-    height:60px;
-    position:fixed;
-    width:100%;
-    top:0;
-    z-index:1038;
-        #logo 
-        {
-            height:60px;
-            width:60px;
-            background-color:#fff;
-            float:left;
-        }
-        #trigger 
-        {
-            background-color:#fff;
-            color:rgba(35,40,45, 1);
-            padding:7px;
-            height:40px;
-            width:40px;
-            text-align:center;
-            @include box-sizing(border-box);
-            font-size:1.4em;
-            margin:10px 0 0 20px;
-            cursor:pointer;
-            float:left;
-            line-height: 22px;
-                i 
-                {
-                    vertical-align:middle;
-                }
-        }
-        .user-menu 
-        {
-            float:right;
-            margin:10px 20px 10px 10px;
-            height:40px;
-            width:40px;
-            @include box-sizing(border-box);
-            background-color: #000;
-            position: relative;
-                .fa-caret-up 
-                {
-                    position: absolute;
-                    top: 27px;
-                    right: 14px;
-                    color: #fff;
-                    font-size: 1.3em;
-                    display:none;
-                }
-                [data-toggle="dropdown"] 
-                {
-                    display: block;
-                    height:40px;
-                    outline:0;
-                }
-                img
-                {
-                    cursor: pointer;
-                    border:1px solid #2f363d;
-                }
-        }
+    header 
+    {
+        background-color: $light-grey;
+        height:60px;
+        position:fixed;
+        width:100%;
+        top:0;
+        z-index:1038;
+            #logo 
+            {
+                height:60px;
+                width:60px;
+                background-color:#fff;
+                float:left;
+            }
+            #trigger 
+            {
+                background-color:#fff;
+                color:rgba(35,40,45, 1);
+                padding:7px;
+                height:40px;
+                width:40px;
+                text-align:center;
+                @include box-sizing(border-box);
+                font-size:1.4em;
+                margin:10px 0 0 20px;
+                cursor:pointer;
+                float:left;
+                line-height: 22px;
+                    i 
+                    {
+                        vertical-align:middle;
+                    }
+            }
+            .user-menu 
+            {
+                float:right;
+                margin:10px 20px 10px 10px;
+                height:40px;
+                width:40px;
+                @include box-sizing(border-box);
+                background-color: #000;
+                position: relative;
+                    .fa-caret-up 
+                    {
+                        position: absolute;
+                        top: 27px;
+                        right: 14px;
+                        color: #fff;
+                        font-size: 1.3em;
+                        display:none;
+                    }
+                    [data-toggle="dropdown"] 
+                    {
+                        display: block;
+                        height:40px;
+                        outline:0;
+                    }
+                    img
+                    {
+                        cursor: pointer;
+                        border:1px solid #2f363d;
+                    }
+            }
+    }
 }
