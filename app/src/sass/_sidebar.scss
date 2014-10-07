@@ -11,14 +11,13 @@
         {
             margin-top:20px;
             padding:0px;
-            border-top: 1px solid #0d1012;
-            border-bottom:1px solid #3b444c;
+            // border-top: 1px solid rgba(13, 16, 18, 0.4);
+            // border-bottom:1px solid #3b444c;
             list-style-type: none;
                 li 
                 {
                     text-align:center;     
-                    border-bottom: 1px solid #0d1012;
-                    border-top:1px solid #3b444c;
+                    // border-bottom: 1px solid rgba(13, 16, 18, 0.4);
                         i 
                         {
                             font-size:1.2em;
@@ -29,10 +28,9 @@
                             display:block;
                             padding:10px 0;
                         }
-                        &.current 
+                        &.current, &:hover
                         {
                             background-color: #0d1012;
-                            border-top:0;
                         }
                         &:first-child 
                         {
