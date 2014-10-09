@@ -80,7 +80,7 @@
                                         }
                                 }
                         }
-                        &:nth-child(5) 
+                        &:last-child 
                         {
                             color:$cyan;
                                 a 
@@ -89,18 +89,6 @@
                                         &:hover 
                                         {
                                             color: $cyan;
-                                        }
-                                }
-                        }
-                        &:last-child 
-                        {
-                            color:$yellow;
-                                a 
-                                {
-                                    color:$yellow;
-                                        &:hover 
-                                        {
-                                            color: $yellow;
                                         }
                                 }
                         }
