@@ -38,11 +38,12 @@
     left: 50%;
     margin-top: -20px;
     margin-left: -20px;
-    z-index:1037;
+    z-index:-1;
     @include opacity(0);
 
     &.active
     {
+        z-index:1037;
         @include opacity(1);
     }
 }
