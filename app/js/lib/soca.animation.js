@@ -31,4 +31,13 @@ soca.animation =
             return $(".user-menu .fa-caret-up").css('color', '#ffffff');
         });
     },
+
+    alert: function(beforeElement, alertType, uniqueClass, message, delayCount)
+    {
+        $(beforeElement).before('<div class="alert alert-' + alertType + ' animated fadeInDown ' + uniqueClass + '">' + message + '</div>').delay(delayCount).queue(function(next)
+        {
+            $('.' + uniqueClass).addClass('fadeOutUp').delay(800).hide(1);
+            next();
+        });
+    }
 }

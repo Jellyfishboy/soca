@@ -45,6 +45,17 @@ soca.misc =
     multiSelect: function()
     {
         $('select.chosen').chosen();
-    }
+    },
 
+    log: function(message) 
+    {
+        if (typeof console === 'object') 
+        {
+            return console.log(message);
+        } 
+        else 
+        {
+            return null;
+        }
+    }
 }
