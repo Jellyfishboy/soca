@@ -52,6 +52,33 @@ form
                 margin:0;
             }
     }
+    .form-field-range
+    {
+        overflow: hidden;
+        label
+        {
+            display: block;
+
+        }
+        input, .divider
+        {
+            float:left;
+
+        }
+        input
+        {
+            width:46%;
+        }
+        .divider
+        {
+            width: 6%;
+            display: block;
+            height: 19px;
+            margin: 0 1%;
+            float: left;
+            border-bottom: 1px solid #2f363d;
+        }
+    }
     table 
     {
         margin-bottom: 15px;
