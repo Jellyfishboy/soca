@@ -29,6 +29,22 @@
         {
             margin:0;
         }
+        &.widget-chart
+        {
+            div
+            {
+                float:left;
+
+                &:first-child
+                {
+                    width:40%;
+                }
+                &:last-child
+                {
+
+                }
+            }
+        }
         ul 
         {
             list-style-type: none;

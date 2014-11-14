@@ -2,7 +2,7 @@
 {
     width:100%;
     text-align: center;
-    font-weight: bold;
+    
     padding:10px;
     cursor: pointer;
 
@@ -16,7 +16,7 @@
         }
         &:last-child
         {
-            font-size:1.2em;
+            font-size:1.1em;
             margin-bottom: 5px;
         }
     }
@@ -24,6 +24,16 @@
     &:hover
     {
         background: rgba(208, 208, 208, 0.2);
+    }
+    &.price-stat
+    {
+        div
+        {
+            &:first-child
+            {
+                font-size: 2.3em;
+            }
+        }
     }
 }
 .green-stat
@@ -37,4 +47,28 @@
 .red-stat
 {
     color: $red;
+}
+.blue-stat
+{
+    color: $blue;
+}
+.purple-stat
+{
+    color: $purple;
+}
+.yellow-stat
+{
+    color: $yellow;
+}
+.cyan-stat
+{
+    color: $cyan;
+}
+.red-stat
+{
+    color: $red;
+}
+.grey-stat
+{
+    color: $grey;
 }

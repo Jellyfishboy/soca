@@ -1,39 +1,84 @@
 
 <div class="row">
-    <div class="page-header">
-        <h2 class="widget widget-header">Dashboard</h2>
-    </div>
-    <div class="widget-sub-heading">
-        <h3>Orders</h3>
-    </div>
-    <div class="widget widget-content">
-        <div class="row">
-            <div class="twelvecol">
-                <canvas id="lineChart" width="1140" height="400" class="line-chart"></canvas>
+    <div class="row">
+        <div class="twelvecol">
+            <div class="page-header">
+                <h2 class="widget widget-header">Dashboard</h2>
+            </div>
+            <div class="widget-sub-heading">
+                <h3>Orders</h3>
+            </div>
+            <div class="widget widget-content">
+                <div class="row">
+                    <div class="twelvecol">
+                        <canvas id="lineChart" width="1140" height="400" class="line-chart"></canvas>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="fourcol">
+                        <div class="single-stat">
+                            <div class="green-stat">23</div>
+                            <div>Completed</div>
+                        </div>
+                    </div>
+                    <div class="fourcol">
+                        <div class="single-stat">
+                            <div class="orange-stat">11</div>
+                            <div>Pending</div>
+                        </div>
+                    </div>
+                    <div class="fourcol last">
+                        <div class="single-stat">
+                            <div class="red-stat">78</div>
+                            <div>Failed</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="fourcol">
-                <div class="single-stat">
-                    <div class="green-stat">23</div>
-                    <div>Completed</div>
+    </div>
+    <div class="row">
+        <div class="eightcol">
+            <div class="widget-sub-heading">
+                <h3>Revenue</h3>
+            </div>
+            <div class="widget widget-content">
+                <div class="row">
+                    <div class="fourcol">
+                        <div class="single-stat price-stat">
+                            <div class="green-stat">£2,378.28</div>
+                            <div>Gross income</div>
+                        </div>
+                    </div>
+                    <div class="fourcol">
+                        <div class="single-stat price-stat">
+                            <div class="purple-stat">£1,888.38</div>
+                            <div>Net income</div>
+                        </div>
+                    </div>
+                    <div class="fourcol last">
+                        <div class="single-stat price-stat">
+                            <div class="blue-stat">£489.90</div>
+                            <div>Tax</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="fourcol">
-                <div class="single-stat">
-                    <div class="orange-stat">11</div>
-                    <div>Pending</div>
-                </div>
+        </div>
+        <div class="fourcol last">
+            <div class="widget-sub-heading">
+                <h3>Transactions</h3>
             </div>
-            <div class="fourcol last">
-                <div class="single-stat">
-                    <div class="red-stat">78</div>
-                    <div>Failed</div>
+            <div class="widget widget-content">
+                <div class="row">
+                    <div class="twelvecol">
+                        <canvas id="pieChart" width="300" height="300" class="pie-chart"></canvas>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="page-header">
+    {{!-- <div class="page-header">
         <h2 class="widget widget-header">Buttons</h2>
     </div>
     <div class="widget-sub-heading">
@@ -98,9 +143,9 @@
         <button class="btn btn-green btn-large" data-toggle="modal" data-target="#exampleModal" >Launch example modal</button>
         <a class="btn btn-blue btn-large" href="login.html">Login page</a>
         <button class="loading-trigger btn btn-large btn-red" href="#">Loading animation</button>
-    </div>
+    </div> --}}
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+{{!--     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -126,5 +171,5 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
 </div>
