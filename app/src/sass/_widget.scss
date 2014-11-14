@@ -10,10 +10,12 @@
         {
             padding:20px;
             margin-bottom:15px;
-                &.widget-last 
-                {
-                    margin:0;
-                }
+            overflow: hidden;
+
+            &.widget-last 
+            {
+                margin:0;
+            }
         }
         &.attachment-form 
         {

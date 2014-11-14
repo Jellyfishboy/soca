@@ -1,6 +1,8 @@
 @media handheld, only screen and (max-width: 770px) 
 {
-    form
+    body
+    {
+        form
         {
             .threecol
             {
@@ -16,6 +18,14 @@
                 margin-bottom: 0px;
             }
         }
+        .widget-content
+        {
+            .twelvecol, .fourcol
+            {
+                padding:0;
+            }
+        }
+    }
 }
 @media handheld, only screen and (max-width: 700px) 
 {
