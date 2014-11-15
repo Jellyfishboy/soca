@@ -155,8 +155,9 @@ module.exports = function (grunt) {
                     '<%= soca.app %>/js/lib/soca.animation.js', 
                     '<%= soca.app %>/js/lib/soca.filter.js',
                     '<%= soca.app %>/js/lib/soca.mobile.js',
-                    '<%= soca.app %>/components/chartjs/Chart.min.js',
+                    '<%= soca.app %>/components/chartjs/Chart.js',
                     '<%= soca.app %>/components/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js'
+                    
                     
                 ],
                 dest: '<%= soca.app %>/js/soca.js',
