@@ -102,17 +102,23 @@
         {
             font-size:1.2em;
         }
+
         &.tr-red 
         {
-            background-color:rgba(205,38,38,0.7);
+            background-color:$green !important;
         }
         &.tr-green 
         {
-            background-color:rgba(141,199,63,0.7) !important;
+            background-color:$red !important;
         }
-        &.tr-green td, &.tr-red td 
+        &.tr-green, &.tr-red
         {
-            border-right: 0;
+            color: #fff;
+
+            td
+            {
+                border-right: 0;
+            }
         }
     }
     &.table-margin 
