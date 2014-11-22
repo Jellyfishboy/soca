@@ -122,6 +122,27 @@
             }
         }
     }
+    td
+    {
+        &.td-red 
+        {
+            background-color:$red !important;
+        }
+        &.td-green 
+        {
+            background-color:$green !important;
+        }
+        &.td-green, &.td-red
+        {
+            color: #fff;
+            font-weight: bold;
+
+            td
+            {
+                border-right: 0;
+            }
+        }
+    }
     &.table-margin 
     {
         margin-bottom:15px !important;
