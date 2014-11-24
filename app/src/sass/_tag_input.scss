@@ -1,17 +1,19 @@
 .bootstrap-tagsinput 
 {
-  background-color: #fff;
+  background-color: rgba(208,208,208,0.5);
   display: block;
   vertical-align: middle;
   max-width: 100%;
   line-height: 22px;
   overflow: hidden;
+  padding:10px 15px;
+  
     input 
     {
       border: none;
       box-shadow: none;
       outline: none;
-      background-color:rgba(208,208,208,0.5);
+      background:none;
       padding:0 5px;
       margin: 5px 0;
       height:38px;
