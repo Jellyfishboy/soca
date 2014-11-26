@@ -93,6 +93,13 @@
   .btn-block + .btn-block {
     margin-left: 0;
   }
+  .btn
+  {
+    &.float-left
+    {
+      float:left;
+    }
+  }
 }
 
 @media (min-width: 768px) {
