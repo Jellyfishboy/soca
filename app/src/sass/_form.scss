@@ -154,8 +154,8 @@ form
         position: relative;
         display: inline-block;
         margin:10px;
-        height:168px;
-        width:140px;
+        height:178px;
+        width:150px;
         @include box-sizing(border-box);
         @include transition-property(background-color);
         @include transition-duration(1s);
@@ -165,7 +165,7 @@ form
             {
                 float:left;
                 color:white;
-                width:70px;
+                width:50px;
             }
             img 
             {
