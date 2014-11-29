@@ -195,6 +195,27 @@ form
         text-align: left;
     }
 }
+.form-prefix
+{
+    position: relative;
+
+    span
+    {
+        position: absolute;
+        top:0;
+        left:0;
+        height:38px;
+        width:38px;
+        display:block;
+        text-align: center;
+        line-height: 38px;
+        background-color: #d0d0d0;
+    }
+    .form-control
+    {
+        padding:8px 10px 8px 46px;
+    }
+}
 .form-disabled
 {
     display:block;
