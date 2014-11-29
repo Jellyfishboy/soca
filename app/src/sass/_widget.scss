@@ -64,6 +64,23 @@
                         }
                 }
         }
+        .helper-notification
+        {
+            text-align: center;
+            
+            p
+            {
+                margin: 15px 0 10px;
+            }   
+
+            i
+            {
+                color: rgba(208,208,208,.5);
+                font-size: 100px;
+                margin-bottom: 5px;
+                display: inline-block;
+            }
+        }
 }
 .widget-sub-heading 
 {
