@@ -16,33 +16,13 @@
                 margin:0;
             }
         }
-        &.attachment-form 
-        {
-            padding:10px;
-        }
-        &.tag-form 
-        {
-            padding:15px 10px 15px 20px;   
-        }
         &.widget-last 
         {
             margin:0;
         }
         &.widget-chart
         {
-            div
-            {
-                float:left;
-
-                &:first-child
-                {
-                    width:40%;
-                }
-                &:last-child
-                {
-
-                }
-            }
+            overflow: hidden;
         }
         ul 
         {
