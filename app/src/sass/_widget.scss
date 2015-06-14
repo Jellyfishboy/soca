@@ -109,4 +109,25 @@
     {
         margin-right:15px;
     }
+    form#search
+    {
+        input[type="submit"], .form-group
+        {
+            float:right;
+        }
+        input[type="submit"]
+        {
+            margin-left:15px;
+        }
+        .form-group
+        {
+            display: inline-block;
+            margin-bottom:0;
+
+            .form-control
+            {
+                background-color: #fff;
+            }
+        }
+    }
 }

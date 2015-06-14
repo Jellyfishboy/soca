@@ -216,7 +216,7 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask('server', function (target) {
+    grunt.registerTask('serve', function (target) {
         grunt.task.run([
             'clean:server',
             'compass:server',
