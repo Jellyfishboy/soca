@@ -7,37 +7,79 @@
         <li><a href="#">Categories</a></li>
         <li class="current">New</li>
     </ol>
-    <div class="eightcol">
+    <div class="twelvecol">
          <div class="page-header">
             <h2 class="widget widget-header">New category</h2>
         </div>
-        <form method="post" role="form" action="#">
-            <div id="errors">
-                <ul>
-                    <li><i class="icon-cancel-circle"></i>Name can't be blank</li>
-                    <li><i class="icon-cancel-circle"></i>Description can't be blank</li>
-                </ul>
+        <form role="form" class="new_category" id="new_category" action="/admin/categories" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="ktrOdeY2lZ5WNQFKf1lCOy2G/2GnyVH3wxGBuw8tcUsWkPOwFOBO08F5I05BLNxGmszvxUPuwCAkyvCqppp0jg==">
+            <div class="threecol"></div>
+            <div class="ninecol last">
             </div>
-            <fieldset class="widget widget-content widget-last">
-                <div class="form-group">
-                    <label for="category_name">Name</label>
-                    <input class="form-control" id="category_name" type="text">
+            <div class="threecol">
+                <h3>Category details</h3>
+                <p>Set the name, description and sorting order for your category.</p>
+            </div>
+            <div class="ninecol last">
+                <div id="errors">
+                    <ul>
+                        <li><i class="icon-cancel-circle"></i>Name can't be blank</li>
+                        <li><i class="icon-cancel-circle"></i>Description can't be blank</li>
+                    </ul>
                 </div>
-                <div class="form-group">
-                    <label for="category_description">Description</label>
-                    <textarea class="form-control" id="category_description" rows="8"></textarea>
+                <fieldset class="widget widget-content">
+                    <div class="form-group">
+                        <label for="category_name">Name</label>
+                        <input class="form-control" type="text" name="category[name]" id="category_name">
+                    </div>
+                    <div class="form-group">
+                        <label for="category_description">Description</label>
+                        <textarea class="form-control" rows="8" name="category[description]" id="category_description"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="category_sorting">Sorting</label>
+                        <input class="form-control" type="text" value="0" name="category[sorting]" id="category_sorting">
+                    </div>
+                </fieldset>
+            </div>
+            <div class="threecol">
+                <h3>Search engines</h3>
+                <p>Set up the page title and meta description to help define how a page is shown in search engines.</p>
+            </div>
+            <div class="ninecol last">
+                <fieldset class="widget widget-content">
+                    <div class="form-group">
+                        <label for="category_page_title">Page title</label>
+                        <input class="form-control" type="text" name="category[page_title]" id="category_page_title">
+                    </div>
+                    <div class="form-group">
+                        <label for="category_meta_description">Meta description</label>
+                        <input class="form-control" type="text" name="category[meta_description]" id="category_meta_description">
+                    </div>
+                </fieldset>
+            </div>
+            <div class="threecol">
+                <h3>Visiblity</h3>
+                <p>Set if the category is visible on your storefront.</p>
+            </div>
+            <div class="ninecol last">
+                <fieldset class="widget widget-content widget-last">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" value="true" name="category[active]" id="category_active_true">
+                            Visible
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" value="false" checked="checked" name="category[active]" id="category_active_false">
+                            Hidden
+                        </label>
+                    </div>
+                </fieldset>
+                <div class="form-action">
+                    <input type="submit" name="commit" value="Submit" class="btn btn-blue btn-large">
                 </div>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox" id="category_visible" checked="checked">
-                        Visible
-                    </label>
-                </div>
-            </fieldset>
-            <div class="form-action">
-                <input class="btn btn-blue btn-large" type="submit" value="Submit">
             </div>
         </form>
     </div>
-    <div class="fourcol last"></div>
 </div>
