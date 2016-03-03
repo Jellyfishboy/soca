@@ -98,7 +98,8 @@ module.exports = function (grunt) {
                     src: [
                         '*.{ico,png,txt}',
                         'components/**/*',
-                        '*.html'
+                        '*.html',
+                        'img/*'
                     ]
                 }]
             },
@@ -125,9 +126,11 @@ module.exports = function (grunt) {
                 sassDir: '<%= soca.app %>/src/sass',
                 cssDir: '<%= soca.app %>/css',
                 outputStyle: 'nested',
-                imagesDir: 'app/img',
-                httpGeneratedImagesPath: '/img',
-                httpImagesPath: '/img'
+                imagesDir: '<%= soca.app %>/img',
+                imagesPath: '<%= soca.app %>/img',
+                httpGeneratedImagesPath: 'http://cdn1.tomdallimore.com/soca/assets/img',
+                httpImagesPath: 'http://cdn1.tomdallimore.com/soca/assets/img',
+                relative_assets: false
             },
             dist: {
             },
@@ -213,7 +216,23 @@ module.exports = function (grunt) {
                     '<%= soca.dist %>/css/soca.css': ['<%= soca.dist %>/css/soca.css']
                 }
             }
-        }
+        },
+        cdnify: {
+            dist: {
+                options: {
+                    base: 'http://cdn0.tomdallimore.com/soca/assets/',
+                    html: {
+                        'link[rel=icon]' : 'href'
+                    }
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'dist',
+                    src: '**/*.{css,html}',
+                    dest: 'dist'
+                }]
+            }
+        },
     });
 
     grunt.registerTask('serve', function (target) {
@@ -240,6 +259,23 @@ module.exports = function (grunt) {
         'cssmin',
         'copy:javascripts',
         'uglify:server',
-        'copy:dist'
+        'copy:dist',
+    ]);
+    grunt.registerTask('build-demo', [
+        'clean:dist',
+        'compass:dist',
+        'concat:javascripts',
+        'concat:stylesheets',
+        'assemble:application',
+        'assemble:login',
+        'copy:styles',
+        'cssmin',
+        'copy:javascripts',
+        'uglify:server',
+        'copy:dist',
+        'cdnify:dist'
+    ]);
+    grunt.registerTask('clean-dist', [
+        'clean:dist_folder'
     ]);
 };
