@@ -45,13 +45,13 @@ This will run through compiling, uglifying, copying the HTML, JavaScript, CSS an
 ##Screenshots
 
 ###Desktop
-![Tables](http://tomdallimore.com/wp-content/uploads/2014/04/soca_1.png "Tables")  
-![Forms](http://tomdallimore.com/wp-content/uploads/2014/04/soca_2.png "Forms")  
-![Orders](http://tomdallimore.com/wp-content/uploads/2014/04/soca_3.png "Orders")  
+![Tables](https://s3-eu-west-1.amazonaws.com/soca-template/soca-desktop-1.jpg "Tables")  
+![Forms](https://s3-eu-west-1.amazonaws.com/soca-template/soca-desktop-2.jpg "Forms")  
+![Orders](https://s3-eu-west-1.amazonaws.com/soca-template/soca-desktop-3.jpg "Orders")  
 
 ###Mobile
-![Mobile1](http://tomdallimore.com/wp-content/uploads/2014/04/soca_4.png "Mobile1")
-![Mobile2](http://tomdallimore.com/wp-content/uploads/2014/04/soca_5.png "Mobile2")
+![Tables](https://s3-eu-west-1.amazonaws.com/soca-template/soca-mobile-1.jpg "Tables")
+![Tables](https://s3-eu-west-1.amazonaws.com/soca-template/soca-mobile-2.jpg "Forms")
 
 ## Versioning
 
