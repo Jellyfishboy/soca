@@ -3,43 +3,60 @@
         <i class="icon-info-2"></i>
         This is an information notice for the template.
     </div>
-    <div class="eightcol">
+    <div class="twelvecol">
         <div class="page-header">
             <h2 class="widget widget-header">New accessory</h2>
         </div>
-        <form method="post" role="form" action="#">
-            <fieldset class="widget widget-content widget-last">
-                <div class="form-group">
-                    <label for="accessory_part_number">Part number</label>
-                    <input class="form-control" id="accessory_part_number" type="text">
-                </div>
-                <div class="form-group">
-                    <label for="accessory_name">Name</label>
-                    <input class="form-control" id="accessory_name" type="text"></input>
-                </div>
-                <div class="form-group">
-                    <label for="accessory_weight">Weight (g)</label>
-                    <input class="form-control" id="accessory_weight" type="text"></input>
-                </div>
-                <div class="form-group">
-                    <label for="accessory_cost_value">Cost value</label>
-                    <div class="form-prefix">
-                        <span>£</span>
-                        <input class="form-control calculate-tax" id="accessory_cost_value" type="text"></input>
+        <form role="form" class="new_accessory" id="new_accessory" action="/admin/accessories" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="AGdMMhCNXo52kY+uWotJ0sO+Wd4B45VIjkWN+ceuBPCELXH34luFw+Hdrapk/tevdPRJeuXEBJ9pnvzobhkBNQ==">
+            <div class="threecol"></div>
+            <div class="ninecol last">
+
+            </div>
+            <div class="threecol">
+                <h3>Accessory details</h3>
+                <p>Set the name and part number for your accessory.</p>
+            </div>
+            <div class="ninecol last">
+                <fieldset class="widget widget-content">
+                    <div class="form-group">
+                        <label for="accessory_name">Name</label>
+                        <input class="form-control" type="text" name="accessory[name]" id="accessory_name">
                     </div>
-                </div>
-                <div class="form-group form-last">
-                    <label for="accessory_net_price">Net price</label>
-                    <div class="form-prefix">
-                        <span>£</span>
-                        <input class="form-control calculate-tax" id="accessory_net_price" type="text"></input>
+                    <div class="form-group">
+                        <label for="accessory_part_number">Part number</label>
+                        <input class="form-control" type="text" name="accessory[part_number]" id="accessory_part_number">
                     </div>
+                </fieldset>
+            </div>
+            <div class="threecol">
+                <h3>Weight &amp; price</h3>
+                <p>Set the weight, net price and original cost value for your accessory.</p>
+            </div>
+            <div class="ninecol last">
+                <fieldset class="widget widget-content widget-last">
+                    <div class="form-group">
+                        <label for="accessory_Weight">Weight</label>
+                        <input class="form-control" type="text" name="accessory[weight]" id="accessory_weight">
+                    </div>
+                    <div class="form-group">
+                        <label for="accessory_cost_value">Cost value</label>
+                        <div class="form-prefix">
+                            <span>£</span>
+                            <input class="form-control calculate-tax" autocomplete="off" type="text" name="accessory[cost_value]" id="accessory_cost_value"><div class="gross label label-blue">Gross amount: 0.00</div>
+                        </div>
+                    </div>
+                    <div class="form-group form-last">
+                        <label for="accessory_Net price">Net price</label>
+                        <div class="form-prefix">
+                            <span>£</span>
+                                <input class="form-control calculate-tax" autocomplete="off" type="text" name="accessory[price]" id="accessory_price"><div class="gross label label-blue">Gross amount: 0.00</div>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="form-action">
+                    <input type="submit" name="commit" value="Submit" class="btn btn-blue btn-large">
                 </div>
-            </fieldset>
-            <div class="form-action">
-                <input class="btn btn-blue btn-large" type="submit" value="Submit">
             </div>
         </form>
     </div>
-    <div class="fourcol last"></div>
-</div>
+</div>  
