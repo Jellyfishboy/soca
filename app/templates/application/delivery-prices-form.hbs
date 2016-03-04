@@ -1,0 +1,86 @@
+<div class="row">
+
+	<ol id="breadcrumbs">
+		<li>
+			<a href="delivery-services-index.html">Delivery services</a>
+		</li>
+		<li>
+			<a href="delivery-prices-index.html">Royal Mail 1st class</a>
+		</li>
+		<li class="current">
+			New
+		</li>
+	</ol>
+
+	<div class="twelvecol">
+		<div class="page-header">
+			<h2 class="widget widget-header">New delivery pricing</h2>
+		</div>
+		<form role="form" class="new_delivery_service_price" id="new_delivery_service_price" action="/admin/delivery_services/1/prices" accept-charset="UTF-8" method="post">
+			<input name="utf8" type="hidden" value="✓">
+			<input type="hidden" name="authenticity_token" value="SzOYGEnXDJu3kN4KyOpmLwI+iLlIZQvPY0XY8bkh3CaIUKDdmluNOdOO1as1fwWSclLV4kAMX/AEMWxRmz3hKQ==">
+			<div class="threecol"></div>
+			<div class="ninecol last">
+
+			</div>
+			<div class="threecol">
+				<h3>Delivery price details</h3>
+				<p>Set the code, price and description for this delivery price. </p>
+			</div>
+			<div class="ninecol last">
+				<fieldset class="widget widget-content">
+					<div class="form-group">
+						<label for="delivery_service_price_code">Code</label>
+						<input class="form-control" type="text" name="delivery_service_price[code]" id="delivery_service_price_code">
+					</div>
+					<div class="form-group">
+						<label for="delivery_service_price_price">Price</label>
+						<div class="form-prefix">
+							<span>£</span>
+							<input class="form-control calculate-tax" autocomplete="off" type="text" name="delivery_service_price[price]" id="delivery_service_price_price"><div class="gross label label-blue">Gross amount: 0.00</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="delivery_service_price_description">Description</label>
+						<textarea class="form-control" rows="7" name="delivery_service_price[description]" id="delivery_service_price_description"></textarea>
+					</div>
+				</fieldset>
+			</div>
+			<div class="threecol">
+				<h3>Dimension allowance</h3>
+				<p>Specify the dimension and weight allowance for this delivery price.  </p>
+			</div>
+			<div class="ninecol last">
+				<fieldset class="widget widget-content widget-last">
+					<div class="form-group">
+						<label for="delivery_service_price_min_weight">Min weight</label>
+						<input class="form-control" type="text" name="delivery_service_price[min_weight]" id="delivery_service_price_min_weight">
+					</div>
+					<div class="form-group">
+						<label for="delivery_service_price_max_weight">Max weight</label>
+						<input class="form-control" type="text" name="delivery_service_price[max_weight]" id="delivery_service_price_max_weight">
+					</div>
+					<div class="form-group">
+						<label for="delivery_service_price_min_length">Min length</label>
+						<input class="form-control" type="text" name="delivery_service_price[min_length]" id="delivery_service_price_min_length">
+					</div>
+					<div class="form-group">
+						<label for="delivery_service_price_max_length">Max length</label>
+						<input class="form-control" type="text" name="delivery_service_price[max_length]" id="delivery_service_price_max_length">
+					</div>
+					<div class="form-group">
+						<label for="delivery_service_price_min_thickness">Min thickness</label>
+						<input class="form-control" type="text" name="delivery_service_price[min_thickness]" id="delivery_service_price_min_thickness">
+					</div>
+					<div class="form-group">
+						<label for="delivery_service_price_max_thickness">Max thickness</label>
+						<input class="form-control" type="text" name="delivery_service_price[max_thickness]" id="delivery_service_price_max_thickness">
+					</div>
+				</fieldset>
+				<div class="form-action">
+					<input type="submit" name="commit" value="Submit" class="btn btn-blue btn-large">
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
