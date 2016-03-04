@@ -12,6 +12,7 @@ $(document).ready(function()
     soca.mobile.disableTooltips();
     soca.mobile.triggerMenu();
     soca.modal.open('.edit-order-modal', '#editOrderModal');
+    soca.modal.open('#add-stock-adjustment-button', '#stock-adjustment-form');
 
     // example charts
     var data = {

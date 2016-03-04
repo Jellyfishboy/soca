@@ -40,5 +40,47 @@
             </table>
         </div>
     </div>
-    <div id="stock-adjustment-modal"></div>
+    <div id="stock-adjustment-modal">
+        <div aria-hidden="false" aria-labelledby="stockAdjustmentModalLabel" class="modal fade" id="stock-adjustment-form" role="dialog" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form role="form" class="amend-stock-adjustment" id="new_stock_adjustment" action="/admin/products/your-first-product/skus/1/stock_adjustments" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓">
+                        <div class="loading5">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                        <div class="loading-overlay"></div>
+                        <div class="modal-header">
+                            <h3 id="stockAdjustmentModalLabel">
+                                Add stock adjustment for 
+                                TRAD-100
+                            </h3>
+                        </div>
+                        <div class="modal-body">
+                            <p class="label label-green">
+                                Current stock is
+                                <b>60</b>
+                            </p>
+                            <fieldset class="widget widget-content widget-last">
+                                <div class="form-group">
+                                    <label for="stock_adjustment_description">Description</label>
+                                    <input class="form-control" type="text" name="stock_adjustment[description]" id="stock_adjustment_description">
+                                </div>
+                                <div class="form-group form-last">
+                                    <label for="stock_adjustment_adjustment">Adjustment</label>
+                                    <input class="form-control" type="text" value="1" name="stock_adjustment[adjustment]" id="stock_adjustment_adjustment">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-orange btn-large" data-dismiss="modal" type="button">Close</button>
+                            <input type="submit" name="commit" value="Submit" class="btn btn-blue btn-large">
+                        </div>
+                    </form>    
+                </div>
+            </div>
+        </div>
+    </div>
 </div>  
