@@ -261,20 +261,6 @@ module.exports = function (grunt) {
         'uglify:server',
         'copy:dist',
     ]);
-    grunt.registerTask('build-demo', [
-        'clean:dist',
-        'compass:dist',
-        'concat:javascripts',
-        'concat:stylesheets',
-        'assemble:application',
-        'assemble:login',
-        'copy:styles',
-        'cssmin',
-        'copy:javascripts',
-        'uglify:server',
-        'copy:dist',
-        'cdnify:dist'
-    ]);
     grunt.registerTask('clean-dist', [
         'clean:dist_folder'
     ]);
