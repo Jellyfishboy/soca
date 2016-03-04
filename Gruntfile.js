@@ -233,6 +233,12 @@ module.exports = function (grunt) {
                 }]
             }
         },
+        htmlbuild: {
+            dist: {
+                src: '<%= soca.dist %>/*.html',
+                dest: '<%= soca.dist %>/'
+            }
+        }
     });
 
     grunt.registerTask('serve', function (target) {
@@ -260,6 +266,7 @@ module.exports = function (grunt) {
         'copy:javascripts',
         'uglify:server',
         'copy:dist',
+        'htmlbuild:dist'
     ]);
     grunt.registerTask('clean-dist', [
         'clean:dist_folder'
