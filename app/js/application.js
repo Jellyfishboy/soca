@@ -13,6 +13,11 @@ $(document).ready(function()
     soca.mobile.triggerMenu();
     soca.modal.open('.edit-order-modal', '#editOrderModal');
     soca.modal.open('#add-stock-adjustment-button', '#stock-adjustment-form');
+    soca.modal.open('#sku-variant-options-button', '#sku-variants-form');
+    soca.modal.open('#add-sku-button', '#sku-form');
+    soca.modal.open('#add-image', '#attachment-form');
+
+
 
     // example charts
     var data = {
