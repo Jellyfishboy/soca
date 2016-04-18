@@ -170,6 +170,10 @@
                 {
                     border-top:0px;
                 }
+                tr:last-child td
+                {
+                    border-top: 1px solid #d0d0d0;
+                }
             }
             th, td
             {

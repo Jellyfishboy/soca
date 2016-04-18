@@ -6,3 +6,4 @@ app/js/soca.js
 dist
 app/*.html
 .ruby-version
+*.DS_Store
