@@ -4,13 +4,13 @@
 
 Soca is a responsive administration template built using Yeoman, Grunt, Bower, HTML5, CSS3, JavaScript and Handlebar templating. It was purpose built to be used for [Trado](https://github.com/Jellyfishboy/trado), a lightweight, easy to use e-commerce platform designed for sole traders and SME businesses. However, Soca has been released as an open source template for other developers to utilise in their applications.
 
-[Official site](http://soca.tomdallimore.com/)
+[Official site](http://soca.tomdallimore.com/?utm_source=github&utm_medium=website&utm_campaign=soca)
 
-[Demo site](http://socademo.tomdallimore.com/)
+[Demo site](http://socademo.tomdallimore.com/?utm_source=github&utm_medium=website&utm_campaign=soca-demo)
 
 [Release notes](http://release.tomdallimore.com/projects/soca)
 
-This template is also used with [Trado](http://www.trado.io), a new, lightweight, 
+This template is also used with [Trado](http://www.trado.io/?utm_source=soca-github&utm_medium=website&utm_campaign=trado), a new, lightweight, 
 open source e-commerce platform.
 
 ##Getting started
@@ -78,7 +78,7 @@ Soca follows Semantic Versioning 2.0 as defined at
 [Bootstrap-datepicker](http://www.eyecon.ro/bootstrap-datepicker/) - Datepicker plugin
 
 ##Copyright
-Copyright (c) 2014 [Tom Dallimore](http://www.tomdallimore.com) ([@tom_dallimore](http://twitter.com/tom_dallimore))  
+Copyright (c) 2014 [Tom Dallimore](http://tomdallimore.com/?utm_source=soca-github&utm_medium=website&utm_campaign=tomdallimore) ([@tom_dallimore](http://twitter.com/tom_dallimore))  
 Licenced under the MIT licence.
 
 
