@@ -14,6 +14,14 @@
                 width:60px;
                 background-color:#fff;
                 float:left;
+                background-color:$dark-grey;
+                border-bottom: 1px solid rgba(13, 16, 18, 0.4);
+
+                img
+                {
+                    width:60px;
+                    height:60px;
+                }
             }
             #trigger 
             {

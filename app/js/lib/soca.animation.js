@@ -39,5 +39,26 @@ soca.animation =
             $('.' + uniqueClass).addClass('fadeOutUp').delay(800).hide(1);
             next();
         });
+    },
+
+    sidebarExtension: function()
+    {
+        $('#extend-sidebar').on('click', function()
+        {
+            var $body = $('body');
+            if ($body.hasClass('open-sidebar'))
+            {
+                $('header #logo, #extend-sidebar').css({'width' : '60px'});
+                $('.main').css({ 'margin-left' : '60px' });
+                $body.removeClass('open-sidebar');
+                $('[data-toggle=tooltip]').tooltip('enable')
+            } else {
+                $body.addClass('open-sidebar')
+                var sidebarWidth = $('#sidebar').width();
+                $('header #logo, #extend-sidebar').css({'width' : sidebarWidth + 'px'});
+                $('.main').css({ 'margin-left' : sidebarWidth + 'px' });
+                $('[data-toggle=tooltip]').tooltip('disable');
+            }
+        });
     }
 }
