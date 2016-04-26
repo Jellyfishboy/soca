@@ -128,8 +128,8 @@ module.exports = function (grunt) {
                 outputStyle: 'nested',
                 imagesDir: '<%= soca.app %>/img',
                 imagesPath: '<%= soca.app %>/img',
-                httpGeneratedImagesPath: 'http://cdn1.tomdallimore.com/soca/assets/img',
-                httpImagesPath: 'http://cdn1.tomdallimore.com/soca/assets/img',
+                httpGeneratedImagesPath: '../img',
+                httpImagesPath: '../img',
                 relative_assets: false
             },
             dist: {
