@@ -50,13 +50,13 @@ This will run through compiling, uglifying, copying the HTML, JavaScript, CSS an
 ##Screenshots
 
 ###Desktop
-![Tables](https://s3-eu-west-1.amazonaws.com/soca-template/soca-desktop-1.jpg "Tables")  
-![Forms](https://s3-eu-west-1.amazonaws.com/soca-template/soca-desktop-2.jpg "Forms")  
-![Orders](https://s3-eu-west-1.amazonaws.com/soca-template/soca-desktop-3.jpg "Orders")  
+![Tables](https://s3-eu-west-1.amazonaws.com/tomdallimore/soca-promo/screenshots/soca-desktop-1.jpg "Tables")  
+![Forms](https://s3-eu-west-1.amazonaws.com/tomdallimore/soca-promo/screenshots/soca-desktop-2.jpg "Forms")  
+![Orders](https://s3-eu-west-1.amazonaws.com/tomdallimore/soca-promo/screenshots/soca-desktop-3.jpg "Orders")  
 
 ###Mobile
-![Tables](https://s3-eu-west-1.amazonaws.com/soca-template/soca-mobile-1.jpg "Tables")
-![Tables](https://s3-eu-west-1.amazonaws.com/soca-template/soca-mobile-2.jpg "Forms")
+![Tables](https://s3-eu-west-1.amazonaws.com/tomdallimore/soca-promo/screenshots/soca-mobile-1.jpg "Tables")
+![Tables](https://s3-eu-west-1.amazonaws.com/tomdallimore/soca-promo/screenshots/soca-mobile-2.jpg "Forms")
 
 ## Versioning
 
