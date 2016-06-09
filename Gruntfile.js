@@ -153,7 +153,7 @@ module.exports = function (grunt) {
                     '<%= soca.app %>/js/vendor/mlpushmenu.js',
                     '<%= soca.app %>/components/mixitup/build/jquery.mixitup.min.js',
                     '<%= soca.app %>/js/vendor/bootstrap.min.js',
-                    '<%= soca.app %>/components/bootstrap-datepicker/js/bootstrap-datepicker.js',
+                    '<%= soca.app %>/components/datetimepicker/build/jquery.datetimepicker.full.min.js',
                     '<%= soca.app %>/js/vendor/chosen.jquery.js',
                     '<%= soca.app %>/js/lib/_soca.js', 
                     '<%= soca.app %>/js/lib/soca.misc.js',
@@ -172,7 +172,7 @@ module.exports = function (grunt) {
                 },
                 src: [
                     '<%= soca.app %>/components/normalize-css/normalize.css',
-                    '<%= soca.app %>/components/bootstrap-datepicker/css/datepicker3.css',
+                    '<%= soca.app %>/components/datetimepicker/build/jquery.datetimepicker.min.css',
                     '<%= soca.app %>/css/soca.css'
                 ],
                 dest: '<%= soca.app %>/css/soca.css'

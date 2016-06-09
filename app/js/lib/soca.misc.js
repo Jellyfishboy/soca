@@ -10,10 +10,12 @@ soca.misc =
 
     datepicker: function()
     {
-        $(".datepicker").datepicker(
+        var date = new Date();
+        date.setDate(date.getDate());
+        $('.datetimepicker').datetimepicker(
         {
-          format: "dd/mm/yyyy",
-          startDate: "0"
+            format: "d/m/y h:m A",
+            minDate: date
         });
     },
 
