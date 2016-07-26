@@ -1,4 +1,4 @@
-soca.filter =
+soca.index =
 {
     tableRowTarget: function()
     {
@@ -15,15 +15,18 @@ soca.filter =
             }
         });
     },
-    standard: function()
+    filter: function(elem_id)
     {
-        $('.filter').on('change', function() 
+        $(elem_id).on('change', function() 
         {
             var item;
             item = $(this).find(':selected').data('filter');
             return $('.mixitup').mixItUp('filter', item);
         });
-        $('.sort').on('change', function() 
+    },
+    sort: function(elem_id)
+    {
+        $(elem_id).on('change', function() 
         {
             var item;
             item = $(this).find(':selected').data('sort');

@@ -5,8 +5,9 @@ $(document).ready(function()
     soca.animation.loading();
     soca.animation.colourCaveat();
     soca.animation.sidebarExtension();
-    soca.filter.tableRowTarget();
-    soca.filter.products();
+    soca.index.tableRowTarget();
+    soca.index.filter("#filter-product-category");
+    soca.index.sort("#sort-product");
     soca.misc.updateTableHeight();
     soca.misc.taxField();
     soca.misc.multiSelect();
