@@ -269,7 +269,8 @@ module.exports = function (grunt) {
         'copy:javascripts',
         'uglify:server',
         'copy:dist',
-        'htmlbuild:dist'
+        'htmlbuild:dist',
+        'cdnify'
     ]);
     grunt.registerTask('clean-dist', [
         'clean:dist_folder'
