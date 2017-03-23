@@ -7,3 +7,4 @@ dist
 app/*.html
 .ruby-version
 *.DS_Store
+app/sitemap.xml

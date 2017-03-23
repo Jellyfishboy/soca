@@ -1,0 +1,52 @@
+nav.pagination
+{
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+
+    li
+    {   
+        display: inline-block;
+        list-style-type: none;
+        margin-right:12px;
+
+        &:last-child
+        {
+            margin-right: 0;
+        }
+
+        &.active
+        {
+            a
+            {
+                background-color: $blue;
+                color: #fff;
+                cursor: default;
+            }
+        }
+
+        a
+        {
+            background-color: #fff;
+            height:35px;
+            width:35px;
+            display: block;
+            font-weight: bold;
+            line-height: 35px;
+
+            &:hover
+            {
+                background-color: $blue;
+                color: #fff;
+            }
+        }
+
+        &.prev, &.next
+        {
+            a i
+            {
+                font-size:1.2em;
+            }
+        }
+    }
+}

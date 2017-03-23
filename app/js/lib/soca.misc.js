@@ -14,8 +14,9 @@ soca.misc =
         date.setDate(date.getDate());
         $('.datetimepicker').datetimepicker(
         {
-            format: "d/m/y h:m A",
-            minDate: date
+            format: "d/m/Y HH:mm",
+            minDate: date,
+            pick12HourFormat: false
         });
     },
 
