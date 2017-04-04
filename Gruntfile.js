@@ -223,7 +223,7 @@ module.exports = function (grunt) {
         cdnify: {
             dist: {
                 options: {
-                    base: 'http://cdn0.tomdallimore.com/soca/assets/',
+                    base: 'https://d3rudm8tij9zbc.cloudfront.net/soca/assets/',
                     html: {
                         'link[rel=icon]' : 'href'
                     }
